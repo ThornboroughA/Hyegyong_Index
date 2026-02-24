@@ -59,7 +59,7 @@ Interactive reference web app for exploring *The Memoirs of Lady Hyegyong* with 
   - manifest + service worker caching for app shell and dataset files
 - Bilingual framework extension:
   - English canonical data
-  - Korean overlay for high-value people/events in key UI contexts
+  - Korean overlay for people/events/relationships/places/glossary and label taxonomies in key UI contexts
 
 ## Data and extraction
 
@@ -161,6 +161,8 @@ This writes:
 - Export editorial state JSON before major ingest/review passes so decisions can be restored on another machine/browser.
 - Tier A claims are seeded as `pending` to support deliberate review passes.
 - English is canonical in the data model; structure is ready for Korean overlay fields.
+- Korean localization overlays are currently defined in:
+  - `src/localization-ko.ts` (memoir-derived historical content + label maps)
 - Production/public safety:
   - use `VITE_APP_MODE=public` for read-only publication
   - use `VITE_APP_MODE=editorial` (default) for authoring builds

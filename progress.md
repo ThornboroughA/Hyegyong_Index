@@ -49,3 +49,22 @@ Original prompt: okay, let's proceed to tier 3 now
 - Add signed/authenticated backend for multi-user editorial publishing (current model is local browser state + build-time mode).
 - Add Korean overlay coverage from structured translation files instead of in-code map constants.
 - Add Tier C ingest import UI stubs (batch list, staged source upload placeholders) wired to future backend endpoints.
+
+### Korean localization pass (current)
+
+- Added comprehensive Korean information overlay file:
+  - `src/localization-ko.ts`
+  - covers 46 people (names + biographies + Hyegyong relation labels), 20 events, 21 relationship summaries, 9 places, 16 glossary terms, event-type/office/relation/predicate/source/group label maps.
+- Wired KO overlay into all major information surfaces in `src/App.tsx`:
+  - people list/detail, biographies, relations
+  - events (titles + summaries)
+  - relationship table/family lens/network labels
+  - office/rank labels
+  - place labels and summaries (including map)
+  - glossary list/detail/focus card + KO-aware search matching
+  - source labels/work citations in reference cards
+  - review inbox predicate/value display where it represents historical content
+- Extended in-text cross-link pattern matching so Korean person names and glossary terms also auto-link.
+- Verification after localization:
+  - `npm run lint` passed
+  - `npm run build` passed

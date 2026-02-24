@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "0.2.0",
     "dataset": "hyegyong-tier-b",
-    "generatedAt": "2026-02-24T10:12:53.940257+00:00",
+    "generatedAt": "2026-02-24T10:27:23.178306+00:00",
     "generator": "scripts/build_tier_b_data.py",
     "sourceEdition": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013).",
     "languageCanonical": "en",

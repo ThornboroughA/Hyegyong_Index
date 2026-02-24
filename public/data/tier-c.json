@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "0.3.0",
     "dataset": "hyegyong-tier-c",
-    "generatedAt": "2026-02-24T10:12:54.094481+00:00",
+    "generatedAt": "2026-02-24T10:27:23.310252+00:00",
     "generator": "scripts/build_tier_c_data.py",
     "sourceEdition": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013).",
     "languageCanonical": "en",
@@ -5405,7 +5405,7 @@
       }
     },
     "focusedPass": {
-      "generatedAt": "2026-02-24T10:12:54.094650+00:00",
+      "generatedAt": "2026-02-24T10:27:23.310501+00:00",
       "sourceCoverage": [
         {
           "sourceId": "src_principal_people",
@@ -5689,7 +5689,7 @@
       ]
     },
     "releaseNotesSeed": {
-      "generatedAt": "2026-02-24T10:12:54.094930+00:00",
+      "generatedAt": "2026-02-24T10:27:23.310792+00:00",
       "title": "Tier C Seed Snapshot",
       "summary": [
         "Tier C initialized from Tier B memoir-only dataset.",

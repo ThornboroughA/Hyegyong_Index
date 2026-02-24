@@ -21,6 +21,21 @@ import type {
   Tier,
 } from './types';
 import { GLOSSARY_TERMS } from './glossary';
+import {
+  KO_EVENT,
+  KO_EVENT_TYPE_LABELS,
+  KO_GLOSSARY,
+  KO_GROUP_LABELS,
+  KO_OFFICE_TITLE_LABELS,
+  KO_PERSON,
+  KO_PLACE,
+  KO_PREDICATE_LABELS,
+  KO_RELATION_SUMMARY,
+  KO_RELATION_TYPE_LABELS,
+  KO_SOURCE_LABELS,
+  KO_WORK_CONTRIBUTOR,
+  KO_WORK_TITLE,
+} from './localization-ko';
 
 type TabId =
   | 'overview'
@@ -214,40 +229,9 @@ const UI_COPY: Record<UiLanguage, Record<string, string>> = {
   },
 };
 
-const PERSON_NAME_OVERLAY_KO: Record<string, string> = {
-  'person-006': '홍국영',
-  'person-007': '홍낙임',
-  'person-011': '홍봉한',
-  'person-017': '김귀주',
-  'person-019': '정조',
-  'person-020': '순조',
-  'person-021': '영조',
-  'person-022': '혜경궁 홍씨',
-  'person-033': '사도세자',
-  'person-039': '화평옹주',
-  'person-041': '화완옹주',
-  'person-042': '정성왕후',
-  'person-043': '정순왕후',
-  'person-044': '인원왕후',
-  'person-046': '효의왕후',
-};
-
-const EVENT_TITLE_OVERLAY_KO: Record<string, string> = {
-  'evt-1735-birth-hyegyong': '혜경궁 홍씨 탄생',
-  'evt-1744-marriage': '가례와 입궁',
-  'evt-1752-birth-jeongjo': '정조 탄생',
-  'evt-1762-imo-tragedy': '임오화변 (사도세자 사망)',
-  'evt-1776-jeongjo-accession': '정조 즉위',
-  'evt-1795-hwaseong-visit': '화성 행차와 을묘원행',
-  'evt-1800-jeongjo-death': '정조 승하와 순조 즉위',
-  'evt-1801-catholic-persecutions': '신유박해 관련 처형',
-  'evt-1802-memoir': '1802년 회고록 집필',
-  'evt-1805-memoir': '1805년 회고록 완성',
-};
-
 function withOverlayLabel(primary: string, overlay: string | undefined, language: UiLanguage): string {
   if (!overlay) return primary;
-  return language === 'ko' ? `${overlay} (${primary})` : primary;
+  return language === 'ko' ? overlay : primary;
 }
 
 function createEmptyEdits(): LocalEdits {
@@ -819,15 +803,66 @@ function App() {
 
   const selectedGlossaryTerm = selectedGlossaryId ? glossaryById.get(selectedGlossaryId) ?? null : null;
 
+  const getGlossaryOverlay = useCallback(
+    (termId: string) => {
+      if (uiLanguage !== 'ko') return null;
+      return KO_GLOSSARY[termId] ?? null;
+    },
+    [uiLanguage],
+  );
+
+  const getGlossaryTermText = useCallback(
+    (termId: string, fallback: string) => {
+      const overlay = getGlossaryOverlay(termId);
+      return overlay?.term ?? fallback;
+    },
+    [getGlossaryOverlay],
+  );
+
+  const getGlossaryDefinitionText = useCallback(
+    (termId: string, fallback: string) => {
+      const overlay = getGlossaryOverlay(termId);
+      return overlay?.definition ?? fallback;
+    },
+    [getGlossaryOverlay],
+  );
+
+  const getGlossaryAliases = useCallback(
+    (termId: string, fallback: string[] | undefined) => {
+      const overlay = getGlossaryOverlay(termId);
+      if (overlay?.aliases?.length) return overlay.aliases;
+      return fallback ?? [];
+    },
+    [getGlossaryOverlay],
+  );
+
+  const getGlossaryCategoryText = useCallback(
+    (termId: string, fallback: string) => {
+      const overlay = getGlossaryOverlay(termId);
+      return overlay?.category ?? fallback;
+    },
+    [getGlossaryOverlay],
+  );
+
   const glossaryVisibleTerms = useMemo(() => {
     const query = glossarySearch.trim().toLowerCase();
     if (!query) return GLOSSARY_TERMS;
     return GLOSSARY_TERMS.filter((term) => {
+      const termText = getGlossaryTermText(term.id, term.term).toLowerCase();
+      const definitionText = getGlossaryDefinitionText(term.id, term.definition).toLowerCase();
       if (term.term.toLowerCase().includes(query)) return true;
       if (term.definition.toLowerCase().includes(query)) return true;
-      return (term.aliases ?? []).some((alias) => alias.toLowerCase().includes(query));
+      if (termText.includes(query)) return true;
+      if (definitionText.includes(query)) return true;
+      const aliases = new Set<string>([...(term.aliases ?? []), ...getGlossaryAliases(term.id, term.aliases)]);
+      return Array.from(aliases).some((alias) => alias.toLowerCase().includes(query));
     });
-  }, [glossarySearch]);
+  }, [
+    getGlossaryAliases,
+    getGlossaryDefinitionText,
+    getGlossaryTermText,
+    glossarySearch,
+  ]);
 
   const linkPatterns = useMemo(() => {
     const patterns: LinkPattern[] = [];
@@ -871,9 +906,21 @@ function App() {
           priority: alias.type === 'cross-reference' ? 4 : 2,
         });
       }
+      const koName = KO_PERSON[person.id]?.name;
+      if (koName && koName.trim().length >= 2) {
+        addPattern({
+          kind: 'person',
+          id: person.id,
+          display: koName,
+          needle: koName,
+          needleLower: koName.toLowerCase(),
+          priority: 4,
+        });
+      }
     }
 
     for (const term of GLOSSARY_TERMS) {
+      const koOverlay = KO_GLOSSARY[term.id];
       addPattern({
         kind: 'glossary',
         id: term.id,
@@ -891,6 +938,27 @@ function App() {
           needle: alias,
           needleLower: alias.toLowerCase(),
           priority: 1,
+        });
+      }
+      if (koOverlay?.term && koOverlay.term.trim().length >= 2) {
+        addPattern({
+          kind: 'glossary',
+          id: term.id,
+          display: koOverlay.term,
+          needle: koOverlay.term,
+          needleLower: koOverlay.term.toLowerCase(),
+          priority: 2,
+        });
+      }
+      for (const alias of koOverlay?.aliases ?? []) {
+        if (alias.trim().length < 2) continue;
+        addPattern({
+          kind: 'glossary',
+          id: term.id,
+          display: koOverlay?.term ?? term.term,
+          needle: alias,
+          needleLower: alias.toLowerCase(),
+          priority: 2,
         });
       }
     }
@@ -1244,6 +1312,7 @@ function App() {
         if (!personSearch.trim()) return true;
         const query = personSearch.toLowerCase();
         if (person.canonicalName.toLowerCase().includes(query)) return true;
+        if ((KO_PERSON[person.id]?.name ?? '').toLowerCase().includes(query)) return true;
         return person.aliases.some((alias) => alias.text.toLowerCase().includes(query));
       });
   }, [people, tierFilter, personGroupFilter, personActivityFilter, selectedYear, personHasOpenDispute, personSearch]);
@@ -1474,10 +1543,44 @@ function App() {
   const selectedClaimSourceMeta = getSourceMetaBySegmentId(selectedClaim?.sourceSegmentId);
   const selectedPersonSourceMeta = getSourceMetaBySegmentId(selectedPerson?.sourceSegmentIds?.[0] ?? null);
 
+  const getGroupLabel = useCallback(
+    (group: string) => {
+      if (uiLanguage !== 'ko') return group;
+      return KO_GROUP_LABELS[group] ?? group;
+    },
+    [uiLanguage],
+  );
+
   const getPersonDisplay = useCallback(
     (person: Person | null | undefined): string => {
       if (!person) return '';
-      return withOverlayLabel(person.canonicalName, PERSON_NAME_OVERLAY_KO[person.id], uiLanguage);
+      return withOverlayLabel(person.canonicalName, KO_PERSON[person.id]?.name, uiLanguage);
+    },
+    [uiLanguage],
+  );
+
+  const getGraphPersonLabel = useCallback(
+    (person: Person): string => {
+      if (uiLanguage === 'ko') return KO_PERSON[person.id]?.name ?? person.canonicalName;
+      return person.canonicalName.replace(/^KING\\s+|^QUEEN\\s+|^PRINCESS\\s+|^PRINCE\\s+|^LADY\\s+/, '');
+    },
+    [uiLanguage],
+  );
+
+  const getPersonBiographyText = useCallback(
+    (person: Person | null | undefined): string => {
+      if (!person) return '';
+      if (uiLanguage !== 'ko') return person.biography;
+      return KO_PERSON[person.id]?.biography ?? person.biography;
+    },
+    [uiLanguage],
+  );
+
+  const getPersonRelationText = useCallback(
+    (person: Person | null | undefined): string | null => {
+      if (!person) return null;
+      if (uiLanguage !== 'ko') return person.relationToHyegyong ?? null;
+      return KO_PERSON[person.id]?.relationToHyegyong ?? person.relationToHyegyong ?? null;
     },
     [uiLanguage],
   );
@@ -1485,9 +1588,107 @@ function App() {
   const getEventDisplay = useCallback(
     (event: Event | null | undefined): string => {
       if (!event) return '';
-      return withOverlayLabel(event.title, EVENT_TITLE_OVERLAY_KO[event.id], uiLanguage);
+      return withOverlayLabel(event.title, KO_EVENT[event.id]?.title, uiLanguage);
     },
     [uiLanguage],
+  );
+
+  const getEventSummaryText = useCallback(
+    (event: Event | null | undefined): string => {
+      if (!event) return '';
+      if (uiLanguage !== 'ko') return event.summary;
+      return KO_EVENT[event.id]?.summary ?? event.summary;
+    },
+    [uiLanguage],
+  );
+
+  const getEventTypeLabel = useCallback(
+    (eventType: string): string => {
+      if (uiLanguage !== 'ko') return eventType;
+      return KO_EVENT_TYPE_LABELS[eventType] ?? eventType;
+    },
+    [uiLanguage],
+  );
+
+  const getOfficeTitleLabel = useCallback(
+    (officeTitle: string): string => {
+      if (uiLanguage !== 'ko') return officeTitle;
+      return KO_OFFICE_TITLE_LABELS[officeTitle] ?? officeTitle;
+    },
+    [uiLanguage],
+  );
+
+  const getRelationTypeLabel = useCallback(
+    (relationType: string): string => {
+      if (uiLanguage !== 'ko') return relationType;
+      return KO_RELATION_TYPE_LABELS[relationType] ?? relationType;
+    },
+    [uiLanguage],
+  );
+
+  const getRelationshipSummaryText = useCallback(
+    (relationship: Relationship): string => {
+      if (uiLanguage !== 'ko') return relationship.summary;
+      const baseId = relationship.id.split('::')[0];
+      return KO_RELATION_SUMMARY[baseId] ?? relationship.summary;
+    },
+    [uiLanguage],
+  );
+
+  const getPredicateLabel = useCallback(
+    (predicate: string): string => {
+      if (uiLanguage !== 'ko') return predicate;
+      return KO_PREDICATE_LABELS[predicate] ?? getRelationTypeLabel(predicate);
+    },
+    [getRelationTypeLabel, uiLanguage],
+  );
+
+  const getPlaceDisplay = useCallback(
+    (place: Place | null | undefined): string => {
+      if (!place) return '';
+      return withOverlayLabel(place.name, KO_PLACE[place.id]?.name, uiLanguage);
+    },
+    [uiLanguage],
+  );
+
+  const getPlaceSummaryText = useCallback(
+    (place: Place | null | undefined): string => {
+      if (!place) return '';
+      if (uiLanguage !== 'ko') return place.summary;
+      return KO_PLACE[place.id]?.summary ?? place.summary;
+    },
+    [uiLanguage],
+  );
+
+  const getSourceLabel = useCallback(
+    (source: Source | null | undefined): string => {
+      if (!source) return '';
+      if (uiLanguage !== 'ko') return source.label;
+      return KO_SOURCE_LABELS[source.id] ?? source.label;
+    },
+    [uiLanguage],
+  );
+
+  const getWorkLabelLocalized = useCallback(
+    (source?: Source | null): string => {
+      if (uiLanguage !== 'ko') return getWorkLabel(source);
+      if (!source) return '알 수 없는 출처 저작';
+      return `${KO_WORK_TITLE} - ${KO_WORK_CONTRIBUTOR}`;
+    },
+    [uiLanguage],
+  );
+
+  const formatClaimValueLocalized = useCallback(
+    (value: unknown): string => {
+      if (!value || typeof value !== 'object') return formatClaimValue(value);
+      if ('title' in value && typeof (value as { title?: unknown }).title === 'string') {
+        const office = value as { title: string; startYear?: number | null; endYear?: number | null };
+        const localizedTitle = getOfficeTitleLabel(office.title);
+        return `${localizedTitle} (${office.startYear ?? '?'}-${office.endYear ?? '?'})`;
+      }
+      return formatClaimValue(value);
+    },
+    [getOfficeTitleLabel],
   );
 
   const getPersonLabel = (personId: string): string => {
@@ -2236,7 +2437,7 @@ function App() {
   const yearMin = dataset.yearRange.startYear;
   const yearMax = dataset.yearRange.endYear;
   const primaryWorkSource = dataset.sources[0];
-  const primaryWorkLabel = primaryWorkSource ? getWorkLabel(primaryWorkSource) : dataset.meta.sourceEdition;
+  const primaryWorkLabel = primaryWorkSource ? getWorkLabelLocalized(primaryWorkSource) : dataset.meta.sourceEdition;
   const tierLabel =
     dataset.meta.dataset === 'hyegyong-tier-c'
       ? 'Tier C reference workspace'
@@ -2255,7 +2456,9 @@ function App() {
         </div>
         <div className="topbar-side">
           <div className="topbar-meta">
-            <span title={primaryWorkSource?.workCitation ?? dataset.meta.sourceEdition}>Source Work: {primaryWorkLabel}</span>
+            <span title={primaryWorkSource?.workCitation ?? dataset.meta.sourceEdition}>
+              {uiLanguage === 'ko' ? '출처 저작' : 'Source Work'}: {primaryWorkLabel}
+            </span>
             <span>Dataset: {dataset.meta.dataset}</span>
             <span>Snapshot: {new Date(dataset.meta.generatedAt).toLocaleString()}</span>
             <span>Network: {isOnline ? 'online' : 'offline'}</span>
@@ -2398,7 +2601,7 @@ function App() {
             <select value={eventTypeFilter} onChange={(event) => setEventTypeFilter(event.target.value as EventTypeFilter)}>
               {eventTypeOptions.map((type) => (
                 <option key={type} value={type}>
-                  {type === 'all' ? 'All event types' : type}
+                  {type === 'all' ? (uiLanguage === 'ko' ? '모든 사건 유형' : 'All event types') : getEventTypeLabel(type)}
                 </option>
               ))}
             </select>
@@ -2459,17 +2662,19 @@ function App() {
                             </span>
                           </div>
                         </button>
-                        <p className="linked-block">{renderLinkedText(event.summary, 140)}</p>
+                        <p className="linked-block">{renderLinkedText(getEventSummaryText(event), 140)}</p>
                         <SourceReference
                           source={eventMeta?.source}
-                          sectionLabel={eventMeta?.source?.label}
+                          sectionLabel={getSourceLabel(eventMeta?.source)}
+                          language={uiLanguage}
+                          workLabel={getWorkLabelLocalized(eventMeta?.source)}
                         />
                         {showDeepReference && (
                           <ProvenanceTags
                             items={[
                               { label: 'Event', value: event.id },
-                              { label: 'Work', value: getWorkLabel(eventMeta?.source) },
-                              { label: 'Section', value: eventMeta?.source?.label ?? 'unknown' },
+                              { label: 'Work', value: getWorkLabelLocalized(eventMeta?.source) },
+                              { label: 'Section', value: getSourceLabel(eventMeta?.source) || 'unknown' },
                               { label: 'Path', value: eventMeta?.source?.path ?? 'n/a' },
                               { label: 'Segment', value: eventMeta?.segment?.id ?? 'n/a' },
                               { label: 'Method', value: 'seeded-event' },
@@ -2522,7 +2727,7 @@ function App() {
                   <select value={personGroupFilter} onChange={(event) => setPersonGroupFilter(event.target.value)}>
                     {personGroupOptions.map((group) => (
                       <option key={group} value={group}>
-                        {group === 'all' ? 'All groups' : group}
+                        {group === 'all' ? (uiLanguage === 'ko' ? '모든 집단' : 'All groups') : getGroupLabel(group)}
                       </option>
                     ))}
                   </select>
@@ -2552,7 +2757,7 @@ function App() {
                         <span>{person.lifeLabel}</span>
                       </div>
                       <small>
-                        Tier {person.tier} · {person.group}
+                        Tier {person.tier} · {getGroupLabel(person.group)}
                       </small>
                     </button>
                   ))}
@@ -2563,17 +2768,20 @@ function App() {
                 {selectedPerson ? (
                   <>
                     <h2>{getPersonDisplay(selectedPerson)}</h2>
-                    <p>{renderLinkedText(selectedPerson.biography)}</p>
+                    <p>{renderLinkedText(getPersonBiographyText(selectedPerson))}</p>
                     <SourceReference
                       source={selectedPersonSourceMeta?.source}
-                      sectionLabel={selectedPersonSourceMeta?.source?.label}
+                      sectionLabel={getSourceLabel(selectedPersonSourceMeta?.source)}
+                      language={uiLanguage}
+                      workLabel={getWorkLabelLocalized(selectedPersonSourceMeta?.source)}
                     />
                     <p>
                       <strong>Life:</strong> {selectedPerson.lifeLabel}
                     </p>
-                    {selectedPerson.relationToHyegyong && (
+                    {getPersonRelationText(selectedPerson) && (
                       <p>
-                        <strong>Relation to Hyegyŏng:</strong> {renderLinkedText(selectedPerson.relationToHyegyong)}
+                        <strong>{uiLanguage === 'ko' ? '혜경궁과의 관계:' : 'Relation to Hyegyŏng:'}</strong>{' '}
+                        {renderLinkedText(getPersonRelationText(selectedPerson) ?? '')}
                       </p>
                     )}
 
@@ -2598,7 +2806,7 @@ function App() {
                         {selectedPerson.officeTerms.length ? (
                           selectedPerson.officeTerms.map((office, index) => (
                             <div key={`${office.title}-${index}`} className="office-row">
-                              <strong>{office.title}</strong>
+                              <strong>{getOfficeTitleLabel(office.title)}</strong>
                               <span>
                                 {office.startYear ?? '?'} - {office.endYear ?? '?'}
                               </span>
@@ -2621,7 +2829,7 @@ function App() {
                               <button key={rel.id} className="relation-item">
                                 <strong>{getPersonLabel(counterpartId)}</strong>
                                 <span>
-                                  {rel.relationType} · {rel.startYear}-{rel.endYear}
+                                  {getRelationTypeLabel(rel.relationType)} · {rel.startYear}-{rel.endYear}
                                 </span>
                               </button>
                             );
@@ -2647,6 +2855,7 @@ function App() {
                   people={networkPeople}
                   relationships={networkRelations}
                   selectedPersonId={selectedPersonId}
+                  getNodeLabel={getGraphPersonLabel}
                   onSelectPerson={(personId) => {
                     setSelectedPersonId(personId);
                     setActiveTab('people');
@@ -2665,19 +2874,21 @@ function App() {
                           {getPersonLabel(rel.sourcePersonId)} ↔ {getPersonLabel(rel.targetPersonId)}
                         </strong>
                         <span>
-                          {rel.relationType} · {rel.startYear}-{rel.endYear}
+                          {getRelationTypeLabel(rel.relationType)} · {rel.startYear}-{rel.endYear}
                         </span>
-                        <p>{renderLinkedText(rel.summary, 140)}</p>
+                        <p>{renderLinkedText(getRelationshipSummaryText(rel), 140)}</p>
                         <SourceReference
                           source={relMeta?.source}
-                          sectionLabel={relMeta?.source?.label}
+                          sectionLabel={getSourceLabel(relMeta?.source)}
+                          language={uiLanguage}
+                          workLabel={getWorkLabelLocalized(relMeta?.source)}
                         />
                         {showDeepReference && (
                           <ProvenanceTags
                             items={[
                               { label: 'Relationship', value: rel.id },
-                              { label: 'Work', value: getWorkLabel(relMeta?.source) },
-                              { label: 'Section', value: relMeta?.source?.label ?? 'unknown' },
+                              { label: 'Work', value: getWorkLabelLocalized(relMeta?.source) },
+                              { label: 'Section', value: getSourceLabel(relMeta?.source) || 'unknown' },
                               { label: 'Path', value: relMeta?.source?.path ?? 'n/a' },
                               { label: 'Segment', value: relMeta?.segment?.id ?? 'n/a' },
                               { label: 'Method', value: 'seeded-relationship' },
@@ -2720,6 +2931,7 @@ function App() {
                     root={familyRoot}
                     edges={familyEdges}
                     getPersonLabel={getPersonLabel}
+                    getRelationLabel={getRelationTypeLabel}
                     onSelectPerson={(id) => {
                       setSelectedPersonId(id);
                       setActiveTab('people');
@@ -2744,6 +2956,8 @@ function App() {
                   rows={officeRows}
                   yearRange={dataset.yearRange}
                   selectedYear={selectedYear}
+                  getPersonLabel={getPersonLabel}
+                  getOfficeTitleLabel={getOfficeTitleLabel}
                   onSelectPerson={(personId) => {
                     setSelectedPersonId(personId);
                     setActiveTab('people');
@@ -2767,7 +2981,7 @@ function App() {
                       >
                         <strong>{getPersonLabel(row.personId)}</strong>
                         <span>
-                          {row.title} · {row.startYear ?? '?'}-{row.endYear ?? '?'}
+                          {getOfficeTitleLabel(row.title)} · {row.startYear ?? '?'}-{row.endYear ?? '?'}
                         </span>
                       </button>
                     ))
@@ -2817,6 +3031,7 @@ function App() {
                   selectedYear={selectedYear}
                   selectedEventId={selectedEventId}
                   getEventLabel={getEventDisplay}
+                  getPlaceLabel={getPlaceDisplay}
                   onSelectEvent={(eventId) => {
                     setSelectedEventId(eventId);
                     setSelectedClaimId(`clm-event-${eventId}`);
@@ -2843,12 +3058,17 @@ function App() {
                   {sourceCoverageRows.length ? (
                     sourceCoverageRows.map((row) => (
                       <article key={row.source.id} className="table-row source-coverage-row">
-                        <strong>{row.source.label}</strong>
+                        <strong>{getSourceLabel(row.source)}</strong>
                         <span>
                           Claims {row.claimCount} · Events {row.eventCount} · Relationships {row.relationshipCount}
                         </span>
                         <span>Years: {row.yearSpan}</span>
-                        <SourceReference source={row.source} sectionLabel={row.source.label} />
+                        <SourceReference
+                          source={row.source}
+                          sectionLabel={getSourceLabel(row.source)}
+                          language={uiLanguage}
+                          workLabel={getWorkLabelLocalized(row.source)}
+                        />
                         <p>{renderLinkedText(row.excerpt, 180)}</p>
                       </article>
                     ))
@@ -2879,10 +3099,10 @@ function App() {
                       onClick={() => setSelectedGlossaryId(term.id)}
                     >
                       <div>
-                        <strong>{term.term}</strong>
-                        <span>{term.category}</span>
+                        <strong>{getGlossaryTermText(term.id, term.term)}</strong>
+                        <span>{getGlossaryCategoryText(term.id, term.category)}</span>
                       </div>
-                      <small>{(term.aliases ?? []).slice(0, 2).join(', ')}</small>
+                      <small>{getGlossaryAliases(term.id, term.aliases).slice(0, 2).join(', ')}</small>
                     </button>
                   ))}
                 </div>
@@ -2891,13 +3111,13 @@ function App() {
               <div className="subpanel detail">
                 {selectedGlossaryTerm ? (
                   <>
-                    <h2>{selectedGlossaryTerm.term}</h2>
-                    <p>{renderLinkedText(selectedGlossaryTerm.definition)}</p>
-                    {!!selectedGlossaryTerm.aliases?.length && (
+                    <h2>{getGlossaryTermText(selectedGlossaryTerm.id, selectedGlossaryTerm.term)}</h2>
+                    <p>{renderLinkedText(getGlossaryDefinitionText(selectedGlossaryTerm.id, selectedGlossaryTerm.definition))}</p>
+                    {!!getGlossaryAliases(selectedGlossaryTerm.id, selectedGlossaryTerm.aliases).length && (
                       <section>
-                        <h3>Aliases</h3>
+                        <h3>{uiLanguage === 'ko' ? '별칭' : 'Aliases'}</h3>
                         <div className="inline-list">
-                          {selectedGlossaryTerm.aliases.map((alias) => (
+                          {getGlossaryAliases(selectedGlossaryTerm.id, selectedGlossaryTerm.aliases).map((alias) => (
                             <span key={alias} className="pill">
                               {alias}
                             </span>
@@ -2906,8 +3126,8 @@ function App() {
                       </section>
                     )}
                     <section>
-                      <h3>Category</h3>
-                      <p className="muted">{selectedGlossaryTerm.category}</p>
+                      <h3>{uiLanguage === 'ko' ? '분류' : 'Category'}</h3>
+                      <p className="muted">{getGlossaryCategoryText(selectedGlossaryTerm.id, selectedGlossaryTerm.category)}</p>
                     </section>
                   </>
                 ) : (
@@ -3151,7 +3371,12 @@ function App() {
                           Severity {dispute.severity} · status {dispute.effectiveStatus}
                         </p>
                         <p>{renderLinkedText(dispute.summary)}</p>
-                        <SourceReference source={sourceMeta?.source} sectionLabel={sourceMeta?.source?.label} />
+                        <SourceReference
+                          source={sourceMeta?.source}
+                          sectionLabel={getSourceLabel(sourceMeta?.source)}
+                          language={uiLanguage}
+                          workLabel={getWorkLabelLocalized(sourceMeta?.source)}
+                        />
                         <p className="muted">{dispute.suggestedAction}</p>
                       </article>
                     );
@@ -3196,7 +3421,7 @@ function App() {
                     <option value="all">All source sections</option>
                     {dataset.sources.map((source) => (
                       <option key={source.id} value={source.id}>
-                        {source.label}
+                        {getSourceLabel(source)}
                       </option>
                     ))}
                   </select>
@@ -3211,7 +3436,7 @@ function App() {
                       <article key={claim.id} className={`claim-item status-${claim.effectiveStatus}`}>
                         <header>
                           <strong>{claimSubjectLabel(claim)}</strong>
-                          <span>{claim.predicate}</span>
+                          <span>{getPredicateLabel(claim.predicate)}</span>
                         </header>
                         <div className="action-row action-row-top">
                           <button onClick={() => setClaimStatus(claim.id, 'approved')}>Approve</button>
@@ -3230,13 +3455,18 @@ function App() {
                           {claim.startYear ?? '?'} - {claim.endYear ?? '?'} · extraction {claim.confidence.extraction.toFixed(2)}
                           {claim.mergedFrom ? ` · merged from ${claim.mergedFrom}` : ''}
                         </p>
-                        <SourceReference source={source} sectionLabel={source?.label} />
+                        <SourceReference
+                          source={source}
+                          sectionLabel={getSourceLabel(source)}
+                          language={uiLanguage}
+                          workLabel={getWorkLabelLocalized(source)}
+                        />
                         {showDeepReference && (
                           <ProvenanceTags
                             items={[
                               { label: 'Claim', value: claim.id },
-                              { label: 'Work', value: getWorkLabel(source) },
-                              { label: 'Section', value: source?.label ?? 'unknown' },
+                              { label: 'Work', value: getWorkLabelLocalized(source) },
+                              { label: 'Section', value: getSourceLabel(source) || 'unknown' },
                               { label: 'Path', value: source?.path ?? 'n/a' },
                               { label: 'Segment', value: segment?.id ?? 'n/a' },
                               { label: 'Method', value: method },
@@ -3246,7 +3476,7 @@ function App() {
                             ]}
                           />
                         )}
-                        <p>{renderLinkedText(formatClaimValue(claim.value), 200)}</p>
+                        <p>{renderLinkedText(formatClaimValueLocalized(claim.value), 200)}</p>
                         {segment && (
                           <details>
                             <summary>Evidence</summary>
@@ -3444,7 +3674,9 @@ function App() {
           {selectedClaim && (
             <SourceReference
               source={selectedClaimSourceMeta?.source}
-              sectionLabel={selectedClaimSourceMeta?.source?.label}
+              sectionLabel={getSourceLabel(selectedClaimSourceMeta?.source)}
+              language={uiLanguage}
+              workLabel={getWorkLabelLocalized(selectedClaimSourceMeta?.source)}
             />
           )}
           {selectedClaim && (
@@ -3472,14 +3704,19 @@ function App() {
                   <article key={segment.id} className="evidence-item">
                     <header>
                       <strong>{segment.label}</strong>
-                      <span>{source?.label ?? segment.sourceId}</span>
+                      <span>{getSourceLabel(source) || segment.sourceId}</span>
                     </header>
-                    <SourceReference source={source} sectionLabel={source?.label} />
+                    <SourceReference
+                      source={source}
+                      sectionLabel={getSourceLabel(source)}
+                      language={uiLanguage}
+                      workLabel={getWorkLabelLocalized(source)}
+                    />
                     {showDeepReference && (
                       <ProvenanceTags
                         items={[
-                          { label: 'Work', value: getWorkLabel(source) },
-                          { label: 'Section', value: source?.label ?? 'unknown' },
+                          { label: 'Work', value: getWorkLabelLocalized(source) },
+                          { label: 'Section', value: getSourceLabel(source) || 'unknown' },
                           { label: 'Path', value: source?.path ?? 'n/a' },
                           { label: 'Segment', value: segment.id },
                         ]}
@@ -3529,9 +3766,14 @@ function App() {
                 .slice(0, 6)
                 .map((place) => (
                   <article key={place.id}>
-                    <strong>{place.name}</strong>
-                    <p>{renderLinkedText(place.summary, 120)}</p>
-                    <SourceReference source={primaryWorkSource} sectionLabel="Tier A memoir-derived seed model" />
+                    <strong>{getPlaceDisplay(place)}</strong>
+                    <p>{renderLinkedText(getPlaceSummaryText(place), 120)}</p>
+                    <SourceReference
+                      source={primaryWorkSource}
+                      sectionLabel={uiLanguage === 'ko' ? 'Tier A 회고록 기반 초기 모델' : 'Tier A memoir-derived seed model'}
+                      language={uiLanguage}
+                      workLabel={getWorkLabelLocalized(primaryWorkSource)}
+                    />
                   </article>
                 ))}
             </div>
@@ -3541,14 +3783,16 @@ function App() {
             <h4>Glossary Focus</h4>
             {selectedGlossaryTerm ? (
               <article className="glossary-focus">
-                <strong>{selectedGlossaryTerm.term}</strong>
-                <p>{renderLinkedText(selectedGlossaryTerm.definition, 170)}</p>
+                <strong>{getGlossaryTermText(selectedGlossaryTerm.id, selectedGlossaryTerm.term)}</strong>
+                <p>{renderLinkedText(getGlossaryDefinitionText(selectedGlossaryTerm.id, selectedGlossaryTerm.definition), 170)}</p>
                 <button type="button" className="event-mini" onClick={() => setActiveTab('glossary')}>
-                  Open glossary
+                  {uiLanguage === 'ko' ? '용어집 열기' : 'Open glossary'}
                 </button>
               </article>
             ) : (
-              <p className="muted">Click a linked term to focus glossary context.</p>
+              <p className="muted">
+                {uiLanguage === 'ko' ? '링크된 용어를 누르면 용어집 맥락이 표시됩니다.' : 'Click a linked term to focus glossary context.'}
+              </p>
             )}
           </section>
         </aside>
@@ -3561,6 +3805,7 @@ function RelationshipGraph(props: {
   people: Person[];
   relationships: Relationship[];
   selectedPersonId: string;
+  getNodeLabel: (person: Person) => string;
   onSelectPerson: (personId: string) => void;
 }) {
   const size = 520;
@@ -3598,7 +3843,7 @@ function RelationshipGraph(props: {
             className={props.selectedPersonId === node.person.id ? 'selected' : ''}
           />
           <text x={node.x} y={node.y + 30} textAnchor="middle">
-            {node.person.canonicalName.replace(/^KING\s+|^QUEEN\s+|^PRINCESS\s+|^PRINCE\s+|^LADY\s+/, '')}
+            {props.getNodeLabel(node.person)}
           </text>
         </g>
       ))}
@@ -3610,6 +3855,7 @@ function FamilyCards(props: {
   root: Person;
   edges: Relationship[];
   getPersonLabel: (id: string) => string;
+  getRelationLabel: (relationType: string) => string;
   onSelectPerson: (id: string) => void;
 }) {
   const parents = props.edges.filter((edge) => /mother|father|son-mother|daughter|grand/.test(edge.relationType));
@@ -3622,7 +3868,7 @@ function FamilyCards(props: {
     return (
       <button key={edge.id} className="family-item" onClick={() => props.onSelectPerson(counterpart)}>
         <strong>{props.getPersonLabel(counterpart)}</strong>
-        <span>{edge.relationType}</span>
+        <span>{props.getRelationLabel(edge.relationType)}</span>
         <small>
           {edge.startYear}-{edge.endYear}
         </small>
@@ -3656,6 +3902,8 @@ function OfficeTimeline(props: {
   rows: OfficeRow[];
   yearRange: Dataset['yearRange'];
   selectedYear: number;
+  getPersonLabel: (personId: string) => string;
+  getOfficeTitleLabel: (officeTitle: string) => string;
   onSelectPerson: (personId: string) => void;
 }) {
   const minYear = props.yearRange.startYear;
@@ -3678,11 +3926,11 @@ function OfficeTimeline(props: {
             className={`office-timeline-row ${active ? 'active' : ''}`}
             onClick={() => props.onSelectPerson(row.personId)}
           >
-            <span className="office-person-label">{row.personName}</span>
+            <span className="office-person-label">{props.getPersonLabel(row.personId)}</span>
             <div className="office-track">
               <span className="office-bar" style={{ left: `${left}%`, width: `${width}%` }} />
               <small className="office-title">
-                {row.title} ({row.startYear ?? '?'}-{row.endYear ?? '?'})
+                {props.getOfficeTitleLabel(row.title)} ({row.startYear ?? '?'}-{row.endYear ?? '?'})
               </small>
             </div>
           </button>
@@ -3768,6 +4016,7 @@ function PalaceMap(props: {
   selectedYear: number;
   selectedEventId: string;
   getEventLabel: (event: Event) => string;
+  getPlaceLabel: (place: Place) => string;
   onSelectEvent: (eventId: string) => void;
 }) {
   const mapPlaces = props.places.filter(
@@ -3804,7 +4053,7 @@ function PalaceMap(props: {
             <g key={place.id} className={`map-node ${hasSelectedEvent ? 'selected' : ''}`}>
               <circle cx={place.mapX} cy={place.mapY} r={count ? 2.5 + Math.min(2.5, count * 0.6) : 2.2} />
               <text x={place.mapX + 1.6} y={place.mapY - 1.4}>
-                {place.name}
+                {props.getPlaceLabel(place)}
               </text>
               {count > 0 && (
                 <text x={place.mapX} y={place.mapY + 0.9} textAnchor="middle" className="map-count">
@@ -3843,15 +4092,19 @@ export default App;
 function SourceReference(props: {
   source?: Source | null;
   sectionLabel?: string;
+  language?: UiLanguage;
+  workLabel?: string;
 }) {
-  const workLabel = getWorkLabel(props.source);
+  const workLabel = props.workLabel ?? getWorkLabel(props.source);
   const section = props.sectionLabel ?? props.source?.label;
   const citation = props.source?.workCitation;
+  const prefix = props.language === 'ko' ? '출처 저작' : 'Source Work';
+  const sectionPrefix = props.language === 'ko' ? '섹션' : 'Section';
 
   return (
     <p className="source-reference" title={citation ?? workLabel}>
-      <strong>Source Work:</strong> {workLabel}
-      {section ? <span> · Section: {section}</span> : null}
+      <strong>{prefix}:</strong> {workLabel}
+      {section ? <span> · {sectionPrefix}: {section}</span> : null}
     </p>
   );
 }
