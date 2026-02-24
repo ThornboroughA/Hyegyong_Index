@@ -1,0 +1,19 @@
+{
+  "createdAt": "2026-02-24T09:53:53.478481+00:00",
+  "sourcePath": "public/data/tier-c.json",
+  "snapshotPath": "baselines/tier-c-baseline-20260224T095353Z.json",
+  "latestPath": "baselines/tier-c-baseline.latest.json",
+  "sha256": "25bf7375b5b675b62777f8ef1582712e67148b2f68110c208c229e8fc1b75544",
+  "dataset": "hyegyong-tier-c",
+  "datasetGeneratedAt": "2026-02-24T09:53:53.429853+00:00",
+  "counts": {
+    "people": 46,
+    "events": 20,
+    "relationships": 21,
+    "claims": 104,
+    "disputes": 34,
+    "places": 9,
+    "sources": 7,
+    "segments": 57
+  }
+}

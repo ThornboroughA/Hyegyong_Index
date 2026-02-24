@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": "0.1.0",
     "dataset": "hyegyong-tier-a",
-    "generatedAt": "2026-02-24T10:12:53.807123+00:00",
+    "generatedAt": "2026-02-24T08:15:35.929402+00:00",
     "generator": "scripts/build_tier_a_data.py",
-    "sourceEdition": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013).",
+    "sourceEdition": "The Memoirs of Lady Hyegyong (UC Press translation)",
     "languageCanonical": "en",
     "languageOverlays": [
       "ko"
@@ -565,92 +565,43 @@
       "id": "src_principal_people",
       "label": "Principal Persons",
       "path": "references/principal-persons.md",
-      "edition": "The Memoirs of Lady Hyegyong (UC Press, 2013 ebook)",
-      "workType": "derived-reference",
-      "workId": "wrk-memoirs-lady-hyegyong-haboush",
-      "workTitle": "The Memoirs of Lady Hyegyong",
-      "workContributors": "Translated by JaHyun Kim Haboush",
-      "workPublisher": "University of California Press",
-      "workYear": "1996; reissued 2013 (ebook)",
-      "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
+      "edition": "The Memoirs of Lady Hyegyong (UC Press, 2013 ebook)"
     },
     {
       "id": "src_year_index",
       "label": "Year Index",
       "path": "references/year-index.md",
-      "edition": "Generated from memoir chapters",
-      "workType": "derived-reference",
-      "workId": "wrk-memoirs-lady-hyegyong-haboush",
-      "workTitle": "The Memoirs of Lady Hyegyong",
-      "workContributors": "Translated by JaHyun Kim Haboush",
-      "workPublisher": "University of California Press",
-      "workYear": "1996; reissued 2013 (ebook)",
-      "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
+      "edition": "Generated from memoir chapters"
     },
     {
       "id": "src_memoir_flow",
       "label": "Memoir Flow Guide",
       "path": "references/memoir-flow.md",
-      "edition": "Generated from memoir chapters",
-      "workType": "derived-reference",
-      "workId": "wrk-memoirs-lady-hyegyong-haboush",
-      "workTitle": "The Memoirs of Lady Hyegyong",
-      "workContributors": "Translated by JaHyun Kim Haboush",
-      "workPublisher": "University of California Press",
-      "workYear": "1996; reissued 2013 (ebook)",
-      "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
+      "edition": "Generated from memoir chapters"
     },
     {
       "id": "src_1795",
       "label": "The Memoir of 1795",
       "path": "OEBPS/chapter_04.xhtml",
-      "edition": "Memoir chapter",
-      "workType": "book",
-      "workId": "wrk-memoirs-lady-hyegyong-haboush",
-      "workTitle": "The Memoirs of Lady Hyegyong",
-      "workContributors": "Translated by JaHyun Kim Haboush",
-      "workPublisher": "University of California Press",
-      "workYear": "1996; reissued 2013 (ebook)",
-      "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
+      "edition": "Memoir chapter"
     },
     {
       "id": "src_1801",
       "label": "The Memoir of 1801",
       "path": "OEBPS/chapter_05.xhtml",
-      "edition": "Memoir chapter",
-      "workType": "book",
-      "workId": "wrk-memoirs-lady-hyegyong-haboush",
-      "workTitle": "The Memoirs of Lady Hyegyong",
-      "workContributors": "Translated by JaHyun Kim Haboush",
-      "workPublisher": "University of California Press",
-      "workYear": "1996; reissued 2013 (ebook)",
-      "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
+      "edition": "Memoir chapter"
     },
     {
       "id": "src_1802",
       "label": "The Memoir of 1802",
       "path": "OEBPS/chapter_07.xhtml",
-      "edition": "Memoir chapter",
-      "workType": "book",
-      "workId": "wrk-memoirs-lady-hyegyong-haboush",
-      "workTitle": "The Memoirs of Lady Hyegyong",
-      "workContributors": "Translated by JaHyun Kim Haboush",
-      "workPublisher": "University of California Press",
-      "workYear": "1996; reissued 2013 (ebook)",
-      "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
+      "edition": "Memoir chapter"
     },
     {
       "id": "src_1805",
       "label": "The Memoir of 1805",
       "path": "OEBPS/chapter_08.xhtml",
-      "edition": "Memoir chapter",
-      "workType": "book",
-      "workId": "wrk-memoirs-lady-hyegyong-haboush",
-      "workTitle": "The Memoirs of Lady Hyegyong",
-      "workContributors": "Translated by JaHyun Kim Haboush",
-      "workPublisher": "University of California Press",
-      "workYear": "1996; reissued 2013 (ebook)",
-      "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
+      "edition": "Memoir chapter"
     }
   ],
   "sourceSegments": [

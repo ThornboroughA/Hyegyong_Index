@@ -1,9 +1,9 @@
 {
   "meta": {
-    "schemaVersion": "0.1.0",
-    "dataset": "hyegyong-tier-a",
-    "generatedAt": "2026-02-24T10:12:53.807123+00:00",
-    "generator": "scripts/build_tier_a_data.py",
+    "schemaVersion": "0.2.0",
+    "dataset": "hyegyong-tier-b",
+    "generatedAt": "2026-02-24T09:21:18.810833+00:00",
+    "generator": "scripts/build_tier_b_data.py",
     "sourceEdition": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013).",
     "languageCanonical": "en",
     "languageOverlays": [
@@ -1003,6 +1003,55 @@
       "label": "Memoir of 1805 finalized",
       "excerpt": "... resisting death and weeping blood, I wrote this record.",
       "yearHint": 1805
+    },
+    {
+      "id": "seg-evt-1759-queen-chongsun-marriage-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Royal wedding of Queen Chŏngsun",
+      "excerpt": "The royal wedding took place in 1759.",
+      "yearHint": 1759
+    },
+    {
+      "id": "seg-evt-1775-regency-opposition-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Opposition to Chŏngjo's regency",
+      "excerpt": "He opposed Chŏngjo’s regency in 1775.",
+      "yearHint": 1775
+    },
+    {
+      "id": "seg-evt-1778-hwawan-banishment-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Princess Hwawan stripped and banished",
+      "excerpt": "In 1778, under official pressure, Chŏngjo stripped her of her royal title ... and banished her to Kanghwa Island.",
+      "yearHint": 1778
+    },
+    {
+      "id": "seg-evt-1781-hong-kugyeong-fall-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Fall of Hong Kugyŏng",
+      "excerpt": "Though he helped Chŏngjo to consolidate his power, he became too powerful ... and he died in banishment.",
+      "yearHint": 1781
+    },
+    {
+      "id": "seg-evt-1784-kim-kwiju-relocation-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Kim Kwiju permitted relocation to Naju",
+      "excerpt": "In 1784 he was allowed to settle in Naju, where he died of illness.",
+      "yearHint": 1784
+    },
+    {
+      "id": "seg-evt-1800-1804-dowager-regency-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Dowager regency under Queen Chŏngsun",
+      "excerpt": "For four years from 1800 to 1804, she was the dowager regent to the minor king, Sunjo.",
+      "yearHint": 1800
+    },
+    {
+      "id": "seg-evt-1801-catholic-persecutions-evidence",
+      "sourceId": "src_principal_people",
+      "label": "1801 executions tied to Catholic persecutions",
+      "excerpt": "In 1801, he was accused of having converted to Catholicism, and executed.",
+      "yearHint": 1801
     }
   ],
   "people": [
@@ -1019,7 +1068,15 @@
       "relationToHyegyong": null,
       "tier": "A",
       "aliases": [],
-      "officeTerms": [],
+      "officeTerms": [
+        {
+          "title": "Palace power broker",
+          "startYear": 1766,
+          "endYear": 1776,
+          "confidence": 0.78,
+          "source": "src_principal_people"
+        }
+      ],
       "sourceSegmentIds": [
         "seg-person-001-principal"
       ],
@@ -1105,7 +1162,22 @@
       "relationToHyegyong": null,
       "tier": "B",
       "aliases": [],
-      "officeTerms": [],
+      "officeTerms": [
+        {
+          "title": "Minister of the Right",
+          "startYear": 1774,
+          "endYear": 1774,
+          "confidence": 0.9,
+          "source": "src_principal_people"
+        },
+        {
+          "title": "Minister of the Left",
+          "startYear": 1775,
+          "endYear": 1775,
+          "confidence": 0.9,
+          "source": "src_principal_people"
+        }
+      ],
       "sourceSegmentIds": [
         "seg-person-005-principal"
       ],
@@ -1127,7 +1199,15 @@
       "relationToHyegyong": null,
       "tier": "A",
       "aliases": [],
-      "officeTerms": [],
+      "officeTerms": [
+        {
+          "title": "Royal confidant",
+          "startYear": 1776,
+          "endYear": 1781,
+          "confidence": 0.86,
+          "source": "src_principal_people"
+        }
+      ],
       "sourceSegmentIds": [
         "seg-person-006-principal"
       ],
@@ -1375,7 +1455,15 @@
       "relationToHyegyong": null,
       "tier": "A",
       "aliases": [],
-      "officeTerms": [],
+      "officeTerms": [
+        {
+          "title": "Kyŏngju Kim faction leader",
+          "startYear": 1760,
+          "endYear": 1786,
+          "confidence": 0.74,
+          "source": "src_principal_people"
+        }
+      ],
       "sourceSegmentIds": [],
       "activeRange": {
         "startYear": null,
@@ -1630,7 +1718,15 @@
       "relationToHyegyong": null,
       "tier": "A",
       "aliases": [],
-      "officeTerms": [],
+      "officeTerms": [
+        {
+          "title": "Royal secondary consort",
+          "startYear": 1787,
+          "endYear": 1805,
+          "confidence": 0.82,
+          "source": "src_principal_people"
+        }
+      ],
       "sourceSegmentIds": [
         "seg-person-023-principal"
       ],
@@ -2201,7 +2297,10 @@
       "type": "palace",
       "summary": "Primary Joseon palace setting for many inner-court events in the memoir narrative.",
       "modern": "Seoul",
-      "confidence": 0.8
+      "confidence": 0.8,
+      "mapX": 43,
+      "mapY": 44,
+      "mapGroup": "Seoul Core"
     },
     {
       "id": "pl-changgyeong",
@@ -2209,7 +2308,10 @@
       "type": "palace",
       "summary": "Frequent setting for royal residences, mourning spaces, and political tensions.",
       "modern": "Seoul",
-      "confidence": 0.8
+      "confidence": 0.8,
+      "mapX": 50,
+      "mapY": 40,
+      "mapGroup": "Seoul Core"
     },
     {
       "id": "pl-choseung-pavilion",
@@ -2217,7 +2319,10 @@
       "type": "palace-building",
       "summary": "Prince Sado's early residence, presented as formative in the 1805 memoir.",
       "modern": "Palace precinct (historic)",
-      "confidence": 0.9
+      "confidence": 0.9,
+      "mapX": 48,
+      "mapY": 36,
+      "mapGroup": "Seoul Core"
     },
     {
       "id": "pl-hyeollyung",
@@ -2225,7 +2330,10 @@
       "type": "tomb",
       "summary": "Reinterment site for Prince Sado, central to Jeongjo's filial statecraft.",
       "modern": "Suwon",
-      "confidence": 0.9
+      "confidence": 0.9,
+      "mapX": 71,
+      "mapY": 70,
+      "mapGroup": "Suwon Axis"
     },
     {
       "id": "pl-hwaseong",
@@ -2233,7 +2341,10 @@
       "type": "fortress-city",
       "summary": "Jeongjo's monumental urban and memorial project linked to Sado's tomb.",
       "modern": "Suwon",
-      "confidence": 0.9
+      "confidence": 0.9,
+      "mapX": 76,
+      "mapY": 64,
+      "mapGroup": "Suwon Axis"
     },
     {
       "id": "pl-kopyeong",
@@ -2241,7 +2352,43 @@
       "type": "residence",
       "summary": "Hyegyong's stated birthplace in the 1795 memoir opening.",
       "modern": "Seoul (historic district)",
-      "confidence": 0.92
+      "confidence": 0.92,
+      "mapX": 38,
+      "mapY": 48,
+      "mapGroup": "Seoul Core"
+    },
+    {
+      "id": "pl-kanghwa",
+      "name": "Kanghwa Island",
+      "type": "island-exile-site",
+      "summary": "Place of banishment in late-eighteenth-century court punishment politics.",
+      "modern": "Incheon region",
+      "confidence": 0.88,
+      "mapX": 16,
+      "mapY": 20,
+      "mapGroup": "Exile Sites"
+    },
+    {
+      "id": "pl-naju",
+      "name": "Naju",
+      "type": "provincial-settlement",
+      "summary": "Southwestern relocation site used in elite punishment and containment.",
+      "modern": "South Jeolla",
+      "confidence": 0.85,
+      "mapX": 26,
+      "mapY": 84,
+      "mapGroup": "Exile Sites"
+    },
+    {
+      "id": "pl-huksan",
+      "name": "Hŭksan Island",
+      "type": "island-exile-site",
+      "summary": "Remote banishment destination for politically disgraced elites.",
+      "modern": "Southwestern coast",
+      "confidence": 0.85,
+      "mapX": 11,
+      "mapY": 91,
+      "mapGroup": "Exile Sites"
     }
   ],
   "events": [
@@ -2468,6 +2615,119 @@
       "sourceSegmentId": "seg-evt-1805-memoir-evidence",
       "confidence": 0.94,
       "tier": "A"
+    },
+    {
+      "id": "evt-1759-queen-chongsun-marriage",
+      "title": "Royal wedding of Queen Chŏngsun",
+      "startYear": 1759,
+      "endYear": 1759,
+      "eventType": "court",
+      "summary": "King Yŏngjo's marriage to Queen Chŏngsun restructures late-court family blocs.",
+      "participantIds": [
+        "person-043",
+        "person-021"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1759-queen-chongsun-marriage-evidence",
+      "confidence": 0.9,
+      "tier": "B"
+    },
+    {
+      "id": "evt-1775-regency-opposition",
+      "title": "Opposition to Chŏngjo's regency",
+      "startYear": 1775,
+      "endYear": 1775,
+      "eventType": "factional",
+      "summary": "Hong Inhan's opposition signals high-risk conflict in the transition before accession.",
+      "participantIds": [
+        "person-005",
+        "person-019"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1775-regency-opposition-evidence",
+      "confidence": 0.88,
+      "tier": "B"
+    },
+    {
+      "id": "evt-1778-hwawan-banishment",
+      "title": "Princess Hwawan stripped and banished",
+      "startYear": 1778,
+      "endYear": 1778,
+      "eventType": "factional-punishment",
+      "summary": "Chŏngjo strips Princess Hwawan's title and sends her to Kanghwa Island.",
+      "participantIds": [
+        "person-041",
+        "person-019"
+      ],
+      "placeId": "pl-kanghwa",
+      "sourceSegmentId": "seg-evt-1778-hwawan-banishment-evidence",
+      "confidence": 0.9,
+      "tier": "B"
+    },
+    {
+      "id": "evt-1781-hong-kugyeong-fall",
+      "title": "Fall of Hong Kugyŏng",
+      "startYear": 1781,
+      "endYear": 1781,
+      "eventType": "factional-punishment",
+      "summary": "Hong Kugyŏng loses influence and ends in banishment after his political ascent.",
+      "participantIds": [
+        "person-006",
+        "person-019"
+      ],
+      "placeId": null,
+      "sourceSegmentId": "seg-evt-1781-hong-kugyeong-fall-evidence",
+      "confidence": 0.86,
+      "tier": "B"
+    },
+    {
+      "id": "evt-1784-kim-kwiju-relocation",
+      "title": "Kim Kwiju permitted relocation to Naju",
+      "startYear": 1784,
+      "endYear": 1784,
+      "eventType": "factional-punishment",
+      "summary": "After banishment, Kim Kwiju is allowed to settle in Naju where he later dies.",
+      "participantIds": [
+        "person-017"
+      ],
+      "placeId": "pl-naju",
+      "sourceSegmentId": "seg-evt-1784-kim-kwiju-relocation-evidence",
+      "confidence": 0.86,
+      "tier": "B"
+    },
+    {
+      "id": "evt-1800-1804-dowager-regency",
+      "title": "Dowager regency under Queen Chŏngsun",
+      "startYear": 1800,
+      "endYear": 1804,
+      "eventType": "regency",
+      "summary": "Queen Chŏngsun governs during Sunjo's minority; late memoir grievances intensify.",
+      "participantIds": [
+        "person-043",
+        "person-020",
+        "person-022"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1800-1804-dowager-regency-evidence",
+      "confidence": 0.92,
+      "tier": "B"
+    },
+    {
+      "id": "evt-1801-catholic-persecutions",
+      "title": "1801 executions tied to Catholic persecutions",
+      "startYear": 1801,
+      "endYear": 1801,
+      "eventType": "political-persecution",
+      "summary": "Hong Nagim and Prince Ŭnŏn are executed in overlapping persecution campaigns.",
+      "participantIds": [
+        "person-007",
+        "person-034",
+        "person-020"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1801-catholic-persecutions-evidence",
+      "confidence": 0.89,
+      "tier": "B"
     }
   ],
   "relationships": [
@@ -4337,6 +4597,771 @@
       "status": "pending",
       "sourceSegmentId": "seg-evt-1805-memoir-evidence",
       "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-office-person-001-tb-palace-power-broker-1766-1776",
+      "subjectType": "person",
+      "subjectId": "person-001",
+      "predicate": "office-term",
+      "value": {
+        "title": "Palace power broker",
+        "startYear": 1766,
+        "endYear": 1776,
+        "confidence": 0.78,
+        "source": "src_principal_people"
+      },
+      "startYear": 1766,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.78,
+        "resolution": 0.86,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-001-principal",
+      "notes": "Tier B office-depth expansion from memoir person gloss."
+    },
+    {
+      "id": "clm-office-person-005-tb-minister-of-the-right-1774-1774",
+      "subjectType": "person",
+      "subjectId": "person-005",
+      "predicate": "office-term",
+      "value": {
+        "title": "Minister of the Right",
+        "startYear": 1774,
+        "endYear": 1774,
+        "confidence": 0.9,
+        "source": "src_principal_people"
+      },
+      "startYear": 1774,
+      "endYear": 1774,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.86,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-005-principal",
+      "notes": "Tier B office-depth expansion from memoir person gloss."
+    },
+    {
+      "id": "clm-office-person-005-tb-minister-of-the-left-1775-1775",
+      "subjectType": "person",
+      "subjectId": "person-005",
+      "predicate": "office-term",
+      "value": {
+        "title": "Minister of the Left",
+        "startYear": 1775,
+        "endYear": 1775,
+        "confidence": 0.9,
+        "source": "src_principal_people"
+      },
+      "startYear": 1775,
+      "endYear": 1775,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.86,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-005-principal",
+      "notes": "Tier B office-depth expansion from memoir person gloss."
+    },
+    {
+      "id": "clm-office-person-006-tb-royal-confidant-1776-1781",
+      "subjectType": "person",
+      "subjectId": "person-006",
+      "predicate": "office-term",
+      "value": {
+        "title": "Royal confidant",
+        "startYear": 1776,
+        "endYear": 1781,
+        "confidence": 0.86,
+        "source": "src_principal_people"
+      },
+      "startYear": 1776,
+      "endYear": 1781,
+      "confidence": {
+        "extraction": 0.86,
+        "resolution": 0.86,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-006-principal",
+      "notes": "Tier B office-depth expansion from memoir person gloss."
+    },
+    {
+      "id": "clm-office-person-017-tb-kyongju-kim-faction-leader-1760-1786",
+      "subjectType": "person",
+      "subjectId": "person-017",
+      "predicate": "office-term",
+      "value": {
+        "title": "Kyŏngju Kim faction leader",
+        "startYear": 1760,
+        "endYear": 1786,
+        "confidence": 0.74,
+        "source": "src_principal_people"
+      },
+      "startYear": 1760,
+      "endYear": 1786,
+      "confidence": {
+        "extraction": 0.74,
+        "resolution": 0.86,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": null,
+      "notes": "Tier B office-depth expansion from memoir person gloss."
+    },
+    {
+      "id": "clm-office-person-023-tb-royal-secondary-consort-1787-1805",
+      "subjectType": "person",
+      "subjectId": "person-023",
+      "predicate": "office-term",
+      "value": {
+        "title": "Royal secondary consort",
+        "startYear": 1787,
+        "endYear": 1805,
+        "confidence": 0.82,
+        "source": "src_principal_people"
+      },
+      "startYear": 1787,
+      "endYear": 1805,
+      "confidence": {
+        "extraction": 0.82,
+        "resolution": 0.86,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-023-principal",
+      "notes": "Tier B office-depth expansion from memoir person gloss."
+    },
+    {
+      "id": "clm-event-evt-1759-queen-chongsun-marriage",
+      "subjectType": "event",
+      "subjectId": "evt-1759-queen-chongsun-marriage",
+      "predicate": "event-summary",
+      "value": "King Yŏngjo's marriage to Queen Chŏngsun restructures late-court family blocs.",
+      "startYear": 1759,
+      "endYear": 1759,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.88,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1759-queen-chongsun-marriage-evidence",
+      "notes": "Tier B chronology expansion (memoir-derived)."
+    },
+    {
+      "id": "clm-event-evt-1775-regency-opposition",
+      "subjectType": "event",
+      "subjectId": "evt-1775-regency-opposition",
+      "predicate": "event-summary",
+      "value": "Hong Inhan's opposition signals high-risk conflict in the transition before accession.",
+      "startYear": 1775,
+      "endYear": 1775,
+      "confidence": {
+        "extraction": 0.88,
+        "resolution": 0.88,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1775-regency-opposition-evidence",
+      "notes": "Tier B chronology expansion (memoir-derived)."
+    },
+    {
+      "id": "clm-event-evt-1778-hwawan-banishment",
+      "subjectType": "event",
+      "subjectId": "evt-1778-hwawan-banishment",
+      "predicate": "event-summary",
+      "value": "Chŏngjo strips Princess Hwawan's title and sends her to Kanghwa Island.",
+      "startYear": 1778,
+      "endYear": 1778,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.88,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1778-hwawan-banishment-evidence",
+      "notes": "Tier B chronology expansion (memoir-derived)."
+    },
+    {
+      "id": "clm-event-evt-1781-hong-kugyeong-fall",
+      "subjectType": "event",
+      "subjectId": "evt-1781-hong-kugyeong-fall",
+      "predicate": "event-summary",
+      "value": "Hong Kugyŏng loses influence and ends in banishment after his political ascent.",
+      "startYear": 1781,
+      "endYear": 1781,
+      "confidence": {
+        "extraction": 0.86,
+        "resolution": 0.88,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1781-hong-kugyeong-fall-evidence",
+      "notes": "Tier B chronology expansion (memoir-derived)."
+    },
+    {
+      "id": "clm-event-evt-1784-kim-kwiju-relocation",
+      "subjectType": "event",
+      "subjectId": "evt-1784-kim-kwiju-relocation",
+      "predicate": "event-summary",
+      "value": "After banishment, Kim Kwiju is allowed to settle in Naju where he later dies.",
+      "startYear": 1784,
+      "endYear": 1784,
+      "confidence": {
+        "extraction": 0.86,
+        "resolution": 0.88,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1784-kim-kwiju-relocation-evidence",
+      "notes": "Tier B chronology expansion (memoir-derived)."
+    },
+    {
+      "id": "clm-event-evt-1800-1804-dowager-regency",
+      "subjectType": "event",
+      "subjectId": "evt-1800-1804-dowager-regency",
+      "predicate": "event-summary",
+      "value": "Queen Chŏngsun governs during Sunjo's minority; late memoir grievances intensify.",
+      "startYear": 1800,
+      "endYear": 1804,
+      "confidence": {
+        "extraction": 0.92,
+        "resolution": 0.88,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1800-1804-dowager-regency-evidence",
+      "notes": "Tier B chronology expansion (memoir-derived)."
+    },
+    {
+      "id": "clm-event-evt-1801-catholic-persecutions",
+      "subjectType": "event",
+      "subjectId": "evt-1801-catholic-persecutions",
+      "predicate": "event-summary",
+      "value": "Hong Nagim and Prince Ŭnŏn are executed in overlapping persecution campaigns.",
+      "startYear": 1801,
+      "endYear": 1801,
+      "confidence": {
+        "extraction": 0.89,
+        "resolution": 0.88,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1801-catholic-persecutions-evidence",
+      "notes": "Tier B chronology expansion (memoir-derived)."
+    }
+  ],
+  "disputes": [
+    {
+      "id": "dsp-clm-office-person-001-tb-palace-power-broker-1766-1776-low-confidence",
+      "claimId": "clm-office-person-001-tb-palace-power-broker-1766-1776",
+      "subjectType": "person",
+      "subjectId": "person-001",
+      "reasonType": "low-confidence",
+      "severity": "high",
+      "summary": "Claim extraction confidence is below 0.86 and should be reviewed against passage context.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-001-principal",
+      "status": "open",
+      "suggestedAction": "Verify wording against source segment and adjust confidence or claim scope."
+    },
+    {
+      "id": "dsp-clm-office-person-011-1-low-confidence",
+      "claimId": "clm-office-person-011-1",
+      "subjectType": "person",
+      "subjectId": "person-011",
+      "reasonType": "low-confidence",
+      "severity": "high",
+      "summary": "Claim extraction confidence is below 0.86 and should be reviewed against passage context.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-011-principal",
+      "status": "open",
+      "suggestedAction": "Verify wording against source segment and adjust confidence or claim scope."
+    },
+    {
+      "id": "dsp-clm-office-person-017-tb-kyongju-kim-faction-leader-1760-1786-low-confidence",
+      "claimId": "clm-office-person-017-tb-kyongju-kim-faction-leader-1760-1786",
+      "subjectType": "person",
+      "subjectId": "person-017",
+      "reasonType": "low-confidence",
+      "severity": "high",
+      "summary": "Claim extraction confidence is below 0.86 and should be reviewed against passage context.",
+      "sourceIds": [],
+      "sourceSegmentId": null,
+      "status": "open",
+      "suggestedAction": "Verify wording against source segment and adjust confidence or claim scope."
+    },
+    {
+      "id": "dsp-clm-office-person-023-tb-royal-secondary-consort-1787-1805-low-confidence",
+      "claimId": "clm-office-person-023-tb-royal-secondary-consort-1787-1805",
+      "subjectType": "person",
+      "subjectId": "person-023",
+      "reasonType": "low-confidence",
+      "severity": "high",
+      "summary": "Claim extraction confidence is below 0.86 and should be reviewed against passage context.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-023-principal",
+      "status": "open",
+      "suggestedAction": "Verify wording against source segment and adjust confidence or claim scope."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-017-person-011-political-rivals-contested-framing",
+      "claimId": "clm-relationship-rel-person-017-person-011-political-rivals",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-017-person-011-political-rivals",
+      "reasonType": "contested-framing",
+      "severity": "high",
+      "summary": "Political relationship framing may be perspective-bound within memoir rhetoric.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-011-principal",
+      "status": "open",
+      "suggestedAction": "Compare adjacent memoir chapters and mark as resolved only with stable wording."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-020-person-043-regency-contested-framing",
+      "claimId": "clm-relationship-rel-person-020-person-043-regency",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-020-person-043-regency",
+      "reasonType": "contested-framing",
+      "severity": "high",
+      "summary": "Political relationship framing may be perspective-bound within memoir rhetoric.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-043-principal",
+      "status": "open",
+      "suggestedAction": "Compare adjacent memoir chapters and mark as resolved only with stable wording."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-022-person-043-political-rivals-contested-framing",
+      "claimId": "clm-relationship-rel-person-022-person-043-political-rivals",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-043-political-rivals",
+      "reasonType": "contested-framing",
+      "severity": "high",
+      "summary": "Political relationship framing may be perspective-bound within memoir rhetoric.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Compare adjacent memoir chapters and mark as resolved only with stable wording."
+    },
+    {
+      "id": "dsp-clm-event-evt-1757-double-loss-evidence-gap",
+      "claimId": "clm-event-evt-1757-double-loss",
+      "subjectType": "event",
+      "subjectId": "evt-1757-double-loss",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_1805"
+      ],
+      "sourceSegmentId": "seg-evt-1757-double-loss-evidence",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-event-evt-1759-queen-chongsun-marriage-evidence-gap",
+      "claimId": "clm-event-evt-1759-queen-chongsun-marriage",
+      "subjectType": "event",
+      "subjectId": "evt-1759-queen-chongsun-marriage",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-evt-1759-queen-chongsun-marriage-evidence",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-event-evt-1775-regency-opposition-evidence-gap",
+      "claimId": "clm-event-evt-1775-regency-opposition",
+      "subjectType": "event",
+      "subjectId": "evt-1775-regency-opposition",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-evt-1775-regency-opposition-evidence",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-event-evt-1778-hwawan-banishment-evidence-gap",
+      "claimId": "clm-event-evt-1778-hwawan-banishment",
+      "subjectType": "event",
+      "subjectId": "evt-1778-hwawan-banishment",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-evt-1778-hwawan-banishment-evidence",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-event-evt-1781-hong-kugyeong-fall-evidence-gap",
+      "claimId": "clm-event-evt-1781-hong-kugyeong-fall",
+      "subjectType": "event",
+      "subjectId": "evt-1781-hong-kugyeong-fall",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-evt-1781-hong-kugyeong-fall-evidence",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-event-evt-1784-kim-kwiju-relocation-evidence-gap",
+      "claimId": "clm-event-evt-1784-kim-kwiju-relocation",
+      "subjectType": "event",
+      "subjectId": "evt-1784-kim-kwiju-relocation",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-evt-1784-kim-kwiju-relocation-evidence",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-event-evt-1800-1804-dowager-regency-evidence-gap",
+      "claimId": "clm-event-evt-1800-1804-dowager-regency",
+      "subjectType": "event",
+      "subjectId": "evt-1800-1804-dowager-regency",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-evt-1800-1804-dowager-regency-evidence",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-event-evt-1801-catholic-persecutions-evidence-gap",
+      "claimId": "clm-event-evt-1801-catholic-persecutions",
+      "subjectType": "event",
+      "subjectId": "evt-1801-catholic-persecutions",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-evt-1801-catholic-persecutions-evidence",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-office-person-006-tb-royal-confidant-1776-1781-low-confidence",
+      "claimId": "clm-office-person-006-tb-royal-confidant-1776-1781",
+      "subjectType": "person",
+      "subjectId": "person-006",
+      "reasonType": "low-confidence",
+      "severity": "medium",
+      "summary": "Claim extraction confidence is below Tier B threshold (0.90) for a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-006-principal",
+      "status": "open",
+      "suggestedAction": "Check whether claim should remain pending or be narrowed to a tighter statement."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-006-person-019-confidant-contested-framing",
+      "claimId": "clm-relationship-rel-person-006-person-019-confidant",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-006-person-019-confidant",
+      "reasonType": "contested-framing",
+      "severity": "medium",
+      "summary": "Political relationship framing may be perspective-bound within memoir rhetoric.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-006-principal",
+      "status": "open",
+      "suggestedAction": "Compare adjacent memoir chapters and mark as resolved only with stable wording."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-011-person-007-father-son-evidence-gap",
+      "claimId": "clm-relationship-rel-person-011-person-007-father-son",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-011-person-007-father-son",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-011-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-011-person-019-protector-contested-framing",
+      "claimId": "clm-relationship-rel-person-011-person-019-protector",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-011-person-019-protector",
+      "reasonType": "contested-framing",
+      "severity": "medium",
+      "summary": "Political relationship framing may be perspective-bound within memoir rhetoric.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-011-principal",
+      "status": "open",
+      "suggestedAction": "Compare adjacent memoir chapters and mark as resolved only with stable wording."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-013-person-006-political-collaborators-contested-framing",
+      "claimId": "clm-relationship-rel-person-013-person-006-political-collaborators",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-013-person-006-political-collaborators",
+      "reasonType": "contested-framing",
+      "severity": "medium",
+      "summary": "Political relationship framing may be perspective-bound within memoir rhetoric.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-013-principal",
+      "status": "open",
+      "suggestedAction": "Compare adjacent memoir chapters and mark as resolved only with stable wording."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-019-person-021-grandson-grandfather-evidence-gap",
+      "claimId": "clm-relationship-rel-person-019-person-021-grandson-grandfather",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-021-grandson-grandfather",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [],
+      "sourceSegmentId": null,
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-019-person-023-consort-evidence-gap",
+      "claimId": "clm-relationship-rel-person-019-person-023-consort",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-023-consort",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-023-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-019-person-046-spouse-evidence-gap",
+      "claimId": "clm-relationship-rel-person-019-person-046-spouse",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-046-spouse",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-046-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-020-person-023-son-mother-evidence-gap",
+      "claimId": "clm-relationship-rel-person-020-person-023-son-mother",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-020-person-023-son-mother",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-023-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-022-person-007-siblings-evidence-gap",
+      "claimId": "clm-relationship-rel-person-022-person-007-siblings",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-007-siblings",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-022-person-011-daughter-father-evidence-gap",
+      "claimId": "clm-relationship-rel-person-022-person-011-daughter-father",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-011-daughter-father",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-022-person-019-mother-son-evidence-gap",
+      "claimId": "clm-relationship-rel-person-022-person-019-mother-son",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-019-mother-son",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-022-person-020-grandmother-grandson-evidence-gap",
+      "claimId": "clm-relationship-rel-person-022-person-020-grandmother-grandson",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-020-grandmother-grandson",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-022-person-030-daughter-mother-evidence-gap",
+      "claimId": "clm-relationship-rel-person-022-person-030-daughter-mother",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-030-daughter-mother",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-022-person-033-spouse-evidence-gap",
+      "claimId": "clm-relationship-rel-person-022-person-033-spouse",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-033-spouse",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-033-person-021-son-father-evidence-gap",
+      "claimId": "clm-relationship-rel-person-033-person-021-son-father",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-033-person-021-son-father",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-033-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-033-person-025-son-mother-evidence-gap",
+      "claimId": "clm-relationship-rel-person-033-person-025-son-mother",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-033-person-025-son-mother",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-033-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-041-person-001-adoptive-mother-son-evidence-gap",
+      "claimId": "clm-relationship-rel-person-041-person-001-adoptive-mother-son",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-041-person-001-adoptive-mother-son",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-041-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-043-person-017-siblings-evidence-gap",
+      "claimId": "clm-relationship-rel-person-043-person-017-siblings",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-043-person-017-siblings",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-043-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
     }
   ]
 }

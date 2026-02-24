@@ -18,6 +18,15 @@ PRINCIPAL_PATH = REFERENCES_DIR / "principal-persons.md"
 MEMOIR_FLOW_PATH = REFERENCES_DIR / "memoir-flow.md"
 YEAR_INDEX_PATH = REFERENCES_DIR / "year-index.md"
 
+WORK_META = {
+    "workId": "wrk-memoirs-lady-hyegyong-haboush",
+    "workTitle": "The Memoirs of Lady Hyegyong",
+    "workContributors": "Translated by JaHyun Kim Haboush",
+    "workPublisher": "University of California Press",
+    "workYear": "1996; reissued 2013 (ebook)",
+    "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013).",
+}
+
 TIER_A_NAMES = {
     "LADY HYEGYŎNG",
     "PRINCE SADO",
@@ -754,18 +763,24 @@ def make_sources(memoir_flow: Dict[str, Dict[str, Any]]) -> List[Dict[str, Any]]
             "label": "Principal Persons",
             "path": "references/principal-persons.md",
             "edition": "The Memoirs of Lady Hyegyong (UC Press, 2013 ebook)",
+            "workType": "derived-reference",
+            **WORK_META,
         },
         {
             "id": "src_year_index",
             "label": "Year Index",
             "path": "references/year-index.md",
             "edition": "Generated from memoir chapters",
+            "workType": "derived-reference",
+            **WORK_META,
         },
         {
             "id": "src_memoir_flow",
             "label": "Memoir Flow Guide",
             "path": "references/memoir-flow.md",
             "edition": "Generated from memoir chapters",
+            "workType": "derived-reference",
+            **WORK_META,
         },
     ]
 
@@ -784,6 +799,8 @@ def make_sources(memoir_flow: Dict[str, Dict[str, Any]]) -> List[Dict[str, Any]]
                 "label": title,
                 "path": chapter_path or "",
                 "edition": "Memoir chapter",
+                "workType": "book",
+                **WORK_META,
             }
         )
 
@@ -1151,7 +1168,7 @@ def main() -> None:
             "dataset": "hyegyong-tier-a",
             "generatedAt": datetime.now(timezone.utc).isoformat(),
             "generator": "scripts/build_tier_a_data.py",
-            "sourceEdition": "The Memoirs of Lady Hyegyong (UC Press translation)",
+            "sourceEdition": WORK_META["workCitation"],
             "languageCanonical": "en",
             "languageOverlays": ["ko"],
         },

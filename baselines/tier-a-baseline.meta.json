@@ -1,0 +1,15 @@
+{
+  "createdAt": "2026-02-24T08:35:35.891237+00:00",
+  "sourcePath": "public/data/tier-a.json",
+  "snapshotPath": "baselines/tier-a-baseline-20260224T083535Z.json",
+  "latestPath": "baselines/tier-a-baseline.latest.json",
+  "sha256": "d5bb49d9b2ddd43723b27200313c0917803fc909f1343f24ebea68b87c1cc0c1",
+  "dataset": "hyegyong-tier-a",
+  "datasetGeneratedAt": "2026-02-24T08:35:35.848473+00:00",
+  "counts": {
+    "people": 46,
+    "events": 13,
+    "relationships": 21,
+    "claims": 91
+  }
+}

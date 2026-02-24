@@ -1,6 +1,8 @@
 export type Tier = 'A' | 'B' | 'C';
 
 export type ClaimStatus = 'pending' | 'approved' | 'rejected';
+export type DisputeStatus = 'open' | 'resolved' | 'dismissed';
+export type ReviewerRole = 'viewer' | 'editor' | 'lead';
 
 export interface Alias {
   id: string;
@@ -47,6 +49,13 @@ export interface Source {
   label: string;
   path: string;
   edition: string;
+  workId: string;
+  workTitle: string;
+  workContributors: string;
+  workPublisher: string;
+  workYear: string;
+  workType: 'book' | 'journal' | 'derived-reference' | 'other';
+  workCitation: string;
 }
 
 export interface SourceSegment {
@@ -64,6 +73,9 @@ export interface Place {
   summary: string;
   modern: string;
   confidence: number;
+  mapX?: number;
+  mapY?: number;
+  mapGroup?: string;
 }
 
 export interface Event {
@@ -111,6 +123,39 @@ export interface Claim {
   notes: string;
 }
 
+export interface Dispute {
+  id: string;
+  claimId: string;
+  subjectType: 'person' | 'relationship' | 'event';
+  subjectId: string;
+  reasonType: 'low-confidence' | 'evidence-gap' | 'contested-framing';
+  severity: 'low' | 'medium' | 'high';
+  summary: string;
+  sourceIds: string[];
+  sourceSegmentId: string | null;
+  status: DisputeStatus;
+  suggestedAction: string;
+}
+
+export interface SplitRecord {
+  id: string;
+  sourcePersonId: string;
+  newPersonId: string;
+  rationale: string;
+  createdAt: string;
+}
+
+export interface ReviewerAction {
+  id: string;
+  targetType: 'claim' | 'dispute' | 'entity';
+  targetId: string;
+  action: string;
+  by: string;
+  role: ReviewerRole;
+  at: string;
+  note?: string;
+}
+
 export interface YearDensityRow {
   year: number;
   count: number;
@@ -141,12 +186,16 @@ export interface Dataset {
   events: Event[];
   relationships: Relationship[];
   claims: Claim[];
+  disputes?: Dispute[];
 }
 
 export interface LocalEdits {
   claimStatusOverrides: Record<string, ClaimStatus>;
+  conflictStatusOverrides: Record<string, DisputeStatus>;
   mergeMap: Record<string, string>;
   addedAliases: Record<string, Alias[]>;
   addedPeople: Person[];
   addedClaims: Claim[];
+  splitRecords: SplitRecord[];
+  reviewerActions: ReviewerAction[];
 }
