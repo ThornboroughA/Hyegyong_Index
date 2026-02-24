@@ -3,15 +3,28 @@ const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
-const SHELL_URLS = ['/', '/index.html', '/manifest.webmanifest', '/vite.svg', '/icons/hyegyong-atlas-icon.svg'];
-const DATA_URLS = [
-  '/data/tier-a.json',
-  '/data/tier-b.json',
-  '/data/tier-c.json',
-  '/data/tier-a-baseline.meta.json',
-  '/data/tier-b-baseline.meta.json',
-  '/data/tier-c-baseline.meta.json',
+const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '');
+const ROOT_PATH = BASE_PATH ? `${BASE_PATH}/` : '/';
+const withBase = (path) => `${BASE_PATH}${path.startsWith('/') ? path : `/${path}`}`;
+
+const SHELL_URLS = [
+  ROOT_PATH,
+  withBase('/index.html'),
+  withBase('/manifest.webmanifest'),
+  withBase('/vite.svg'),
+  withBase('/icons/hyegyong-atlas-icon.svg'),
 ];
+const DATA_URLS = [
+  withBase('/data/tier-a.json'),
+  withBase('/data/tier-b.json'),
+  withBase('/data/tier-c.json'),
+  withBase('/data/tier-a-baseline.meta.json'),
+  withBase('/data/tier-b-baseline.meta.json'),
+  withBase('/data/tier-c-baseline.meta.json'),
+];
+const DATA_PREFIX = withBase('/data/');
+const ASSETS_PREFIX = withBase('/assets/');
+const ICONS_PREFIX = withBase('/icons/');
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -68,7 +81,7 @@ async function staleWhileRevalidate(request, cacheName) {
   return fetch(request);
 }
 
-async function networkFirst(request, fallbackPath = '/index.html') {
+async function networkFirst(request, fallbackPath = withBase('/index.html')) {
   try {
     const response = await fetch(request);
     const cache = await caches.open(RUNTIME_CACHE);
@@ -81,7 +94,7 @@ async function networkFirst(request, fallbackPath = '/index.html') {
     const shell = await caches.open(SHELL_CACHE);
     const fallback = await shell.match(fallbackPath);
     if (fallback) return fallback;
-    return shell.match('/') || Response.error();
+    return shell.match(ROOT_PATH) || Response.error();
   }
 }
 
@@ -97,12 +110,12 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (url.pathname.startsWith('/data/')) {
+  if (url.pathname.startsWith(DATA_PREFIX)) {
     event.respondWith(staleWhileRevalidate(request, DATA_CACHE));
     return;
   }
 
-  if (url.pathname.startsWith('/assets/') || url.pathname.startsWith('/icons/') || url.pathname.endsWith('.svg')) {
+  if (url.pathname.startsWith(ASSETS_PREFIX) || url.pathname.startsWith(ICONS_PREFIX) || url.pathname.endsWith('.svg')) {
     event.respondWith(staleWhileRevalidate(request, RUNTIME_CACHE));
     return;
   }

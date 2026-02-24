@@ -189,6 +189,11 @@ const APP_MODE =
   ((import.meta.env.VITE_APP_MODE as string | undefined)?.toLowerCase() ?? 'editorial') === 'public'
     ? 'public'
     : 'editorial';
+const BASE_URL = import.meta.env.BASE_URL;
+
+function toBaseUrl(path: string): string {
+  return `${BASE_URL}${path.replace(/^\/+/, '')}`;
+}
 
 const UI_COPY: Record<UiLanguage, Record<string, string>> = {
   en: {
@@ -655,7 +660,7 @@ function App() {
       setLoading(true);
       setError(null);
       try {
-        const candidates = ['/data/tier-c.json', '/data/tier-b.json', '/data/tier-a.json'];
+        const candidates = ['data/tier-c.json', 'data/tier-b.json', 'data/tier-a.json'].map(toBaseUrl);
         let next: Dataset | null = null;
         let lastStatus: number | null = null;
         for (const path of candidates) {
@@ -694,12 +699,13 @@ function App() {
         const datasetId = dataset?.meta.dataset ?? '';
         const candidates =
           datasetId === 'hyegyong-tier-c'
-            ? ['/data/tier-c-baseline.meta.json', '/data/tier-b-baseline.meta.json', '/data/tier-a-baseline.meta.json']
+            ? ['data/tier-c-baseline.meta.json', 'data/tier-b-baseline.meta.json', 'data/tier-a-baseline.meta.json']
             : datasetId === 'hyegyong-tier-b'
-              ? ['/data/tier-b-baseline.meta.json', '/data/tier-a-baseline.meta.json']
-              : ['/data/tier-a-baseline.meta.json', '/data/tier-b-baseline.meta.json'];
+              ? ['data/tier-b-baseline.meta.json', 'data/tier-a-baseline.meta.json']
+              : ['data/tier-a-baseline.meta.json', 'data/tier-b-baseline.meta.json'];
+        const baseCandidates = candidates.map(toBaseUrl);
         let payload: BaselineMeta | null = null;
-        for (const path of candidates) {
+        for (const path of baseCandidates) {
           const response = await fetch(path);
           if (!response.ok) continue;
           payload = (await response.json()) as BaselineMeta;
