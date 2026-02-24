@@ -175,6 +175,24 @@ MANUAL_RELATIONSHIPS = [
     },
     {
         "source": "LADY HYEGYŎNG",
+        "target": "PRINCESS CH’ŎNGYŎN",
+        "type": "mother-daughter",
+        "startYear": 1754,
+        "endYear": 1815,
+        "summary": "Hyegyong records her first daughter Ch’ŏngyŏn as part of her core household and dynastic obligations.",
+        "confidence": 0.9,
+    },
+    {
+        "source": "LADY HYEGYŎNG",
+        "target": "PRINCESS CH’ŎNGSŎN",
+        "type": "mother-daughter",
+        "startYear": 1756,
+        "endYear": 1802,
+        "summary": "Hyegyong's memoirs repeatedly include Princess Ch’ŏngsŏn in family and court transition episodes.",
+        "confidence": 0.9,
+    },
+    {
+        "source": "LADY HYEGYŎNG",
         "target": "KING SUNJO",
         "type": "grandmother-grandson",
         "startYear": 1790,
@@ -219,6 +237,24 @@ MANUAL_RELATIONSHIPS = [
         "confidence": 0.9,
     },
     {
+        "source": "PRINCE SADO",
+        "target": "PRINCESS CH’ŎNGYŎN",
+        "type": "father-daughter",
+        "startYear": 1754,
+        "endYear": 1762,
+        "summary": "Ch’ŏngyŏn is one of Prince Sado's daughters by Lady Hyegyong.",
+        "confidence": 0.9,
+    },
+    {
+        "source": "PRINCE SADO",
+        "target": "PRINCESS CH’ŎNGSŎN",
+        "type": "father-daughter",
+        "startYear": 1756,
+        "endYear": 1762,
+        "summary": "Ch’ŏngsŏn is one of Prince Sado's daughters by Lady Hyegyong.",
+        "confidence": 0.9,
+    },
+    {
         "source": "KING CHŎNGJO",
         "target": "KING YŎNGJO",
         "type": "grandson-grandfather",
@@ -226,6 +262,24 @@ MANUAL_RELATIONSHIPS = [
         "endYear": 1776,
         "summary": "Jeongjo's succession is shaped by his grandfather's court and decisions.",
         "confidence": 0.92,
+    },
+    {
+        "source": "KING CHŎNGJO",
+        "target": "PRINCESS CH’ŎNGYŎN",
+        "type": "siblings",
+        "startYear": 1754,
+        "endYear": 1800,
+        "summary": "Jeongjo and Princess Ch’ŏngyŏn were siblings in the Sado-Hyegyong line.",
+        "confidence": 0.88,
+    },
+    {
+        "source": "KING CHŎNGJO",
+        "target": "PRINCESS CH’ŎNGSŎN",
+        "type": "siblings",
+        "startYear": 1756,
+        "endYear": 1800,
+        "summary": "Jeongjo and Princess Ch’ŏngsŏn were siblings in the Sado-Hyegyong line.",
+        "confidence": 0.88,
     },
     {
         "source": "KING CHŎNGJO",
@@ -570,6 +624,412 @@ MANUAL_EVENTS = [
 ]
 
 
+SUPPLEMENTAL_PEOPLE = [
+    {
+        "canonicalName": "PALACE MATRON CH’OE",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Head governess in Prince Sado's establishment. She supervised Hyegyŏng's early palace transition and later defended Sado during a major accusation.",
+        "relationToHyegyong": "senior palace matron and disciplinarian in Hyegyŏng's early court life",
+        "tier": "C",
+        "aliases": ["Ch’oe, Palace Matron", "Prince's governess"],
+        "references": [
+            {
+                "label": "Bridal preparation visit",
+                "excerpt": "Palace Matron Ch’oe came with Kim Hyodŏk to measure Hyegyŏng for ceremonial costumes during marriage preparations.",
+                "yearHint": 1744,
+            },
+            {
+                "label": "Strict rule enforcement",
+                "excerpt": "She strictly enforced palace rules and would not allow Hyegyŏng to sleep in the same room as her mother.",
+                "yearHint": 1744,
+            },
+            {
+                "label": "Defense of Prince Sado",
+                "excerpt": "She defended Sado in a drinking accusation, stating that no alcohol had entered his residence.",
+                "yearHint": 1756,
+            },
+        ],
+    },
+    {
+        "canonicalName": "KIM HYODŎK",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Lady-in-waiting in charge of ritual matters who participated in Hyegyŏng's pre-marriage palace ceremonies.",
+        "relationToHyegyong": "ritual lady-in-waiting assisting Hyegyŏng's bridal transition",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Ritual fitting visit",
+                "excerpt": "Kim Hyodŏk was identified as a lady-in-waiting handling ritual matters during Hyegyŏng's ceremonial preparations.",
+                "yearHint": 1744,
+            }
+        ],
+    },
+    {
+        "canonicalName": "MUN TAEBOK",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Lady-in-waiting who delivered Queen Chŏngsŏng's clothing package for Hyegyŏng's final presentation.",
+        "relationToHyegyong": "lady-in-waiting involved in Hyegyŏng's wedding attire preparations",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Delivery of ceremonial clothing",
+                "excerpt": "Mun Taebok arrived with Palace Matron Ch’oe carrying ceremonial garments sent by Queen Chŏngsŏng.",
+                "yearHint": 1744,
+            }
+        ],
+    },
+    {
+        "canonicalName": "CHIEF LADY-IN-WAITING TO QUEEN DOWAGER INWŎN",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Senior attendant in Queen Dowager Inwŏn's household who relayed court greetings and set a promotion precedent later invoked for Pongnyŏ.",
+        "relationToHyegyong": "senior palace intermediary in early marriage and rank protocol",
+        "tier": "C",
+        "aliases": ["Inwŏn's chief lady-in-waiting"],
+        "references": [
+            {
+                "label": "Marriage-era greeting relay",
+                "excerpt": "Queen Dowager Inwŏn sent warm greetings to Madame Yi through her chief lady-in-waiting.",
+                "yearHint": 1744,
+            },
+            {
+                "label": "Promotion precedent",
+                "excerpt": "A lady-in-waiting brought by Queen Dowager Inwŏn at marriage later received official rank, cited as a precedent.",
+                "yearHint": 1757,
+            },
+        ],
+    },
+    {
+        "canonicalName": "HAENYŎ",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "A family slave brought into the palace as part of Hyegyŏng's natal household attendants.",
+        "relationToHyegyong": "natal-house attendant brought with Hyegyŏng",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Transferred into palace service",
+                "excerpt": "Haenyŏ was listed among the servants Hyegyŏng brought with her when selected as Crown Princess Consort.",
+                "yearHint": 1744,
+            }
+        ],
+    },
+    {
+        "canonicalName": "AJI",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Wet nurse who breast-fed Hyegyŏng, accompanied her to the palace, and later assisted repeatedly with childbirth care for multiple generations.",
+        "relationToHyegyong": "wet nurse and long-term childbirth attendant",
+        "tier": "C",
+        "aliases": ["Hyegyŏng's wet nurse"],
+        "references": [
+            {
+                "label": "Wet nurse appointment and service",
+                "excerpt": "Aji became Hyegyŏng's wet nurse, accompanied her to the palace, and assisted during many pregnancies and births.",
+                "yearHint": 1735,
+            },
+            {
+                "label": "Royal reward for service",
+                "excerpt": "The King rewarded Aji's descendants with annuities and sent generous funeral support in recognition of her care.",
+                "yearHint": 1782,
+            },
+        ],
+    },
+    {
+        "canonicalName": "PONGNYŎ",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Hyegyŏng's lifelong attendant who rose from natal-house slave status to lady-in-waiting and eventually Palace Matron through sustained service.",
+        "relationToHyegyong": "core personal attendant and later Palace Matron",
+        "tier": "C",
+        "aliases": ["Pongnyŏ, Palace Matron"],
+        "references": [
+            {
+                "label": "Early and continuous attendance",
+                "excerpt": "Pongnyŏ carried Hyegyŏng in youth, accompanied her into the palace, and remained at her side through repeated crises.",
+                "yearHint": 1743,
+            },
+            {
+                "label": "Rank elevation",
+                "excerpt": "After notable childbirth service, Pongnyŏ received official rank and was elevated to Palace Matron.",
+                "yearHint": 1790,
+            },
+        ],
+    },
+    {
+        "canonicalName": "ELDERLY LADY-IN-WAITING (MEASLES CARE)",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Unidentified elder attendant who helped nurse the newborn prince during a severe measles outbreak.",
+        "relationToHyegyong": "emergency childcare support during epidemic",
+        "tier": "C",
+        "aliases": ["Unnamed elderly lady-in-waiting"],
+        "references": [
+            {
+                "label": "Infant care during epidemic",
+                "excerpt": "When staff illness spread, Hyegyŏng relied on her own nurse and one elderly lady-in-waiting to care for the newborn prince.",
+                "yearHint": 1752,
+            }
+        ],
+    },
+    {
+        "canonicalName": "UNNAMED LADY-IN-WAITING DISGUISED AS PINGAE",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "A lady-in-waiting selected as a decoy to impersonate Pingae during a high-risk interrogation crisis.",
+        "relationToHyegyong": "decoy attendant in the Pingae affair",
+        "tier": "C",
+        "aliases": ["Pingae decoy lady-in-waiting"],
+        "references": [
+            {
+                "label": "Pingae decoy operation",
+                "excerpt": "Hyegyŏng sent a lady-in-waiting from her sewing department out as Pingae because the King did not know Pingae's appearance.",
+                "yearHint": 1760,
+            }
+        ],
+    },
+    {
+        "canonicalName": "PALACE MATRON YI",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Palace Matron in royal favor who mediated between King Yŏngjo and Prince Sado and protested Kim Kwiju's maneuvering.",
+        "relationToHyegyong": "court intermediary linked to Sado-era factional communications",
+        "tier": "C",
+        "aliases": ["Yi, Palace Matron"],
+        "references": [
+            {
+                "label": "Intervention in Kwiju letter affair",
+                "excerpt": "Palace Matron Yi, sister of Yi Kyehŭng, reportedly saw Kwiju's letter and urged the Queen to reject it.",
+                "yearHint": 1761,
+            }
+        ],
+    },
+    {
+        "canonicalName": "PALACE MATRON HAN",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Second-ranking matron in Sado's establishment, depicted as envious and manipulative; she encouraged martial play patterns later linked to Sado's instability.",
+        "relationToHyegyong": "influential but adversarial figure in Sado's childhood environment",
+        "tier": "C",
+        "aliases": ["Han, Palace Matron"],
+        "references": [
+            {
+                "label": "Characterization in household hierarchy",
+                "excerpt": "She was described as capable but deceitful, lacking full devotion while serving in the Crown Prince establishment.",
+                "yearHint": 1740,
+            },
+            {
+                "label": "Martial play conditioning",
+                "excerpt": "Palace Matron Han made toy weapons and staged games that deepened Sado's fixation on martial behavior.",
+                "yearHint": 1740,
+            },
+            {
+                "label": "Dismissal from service",
+                "excerpt": "When Sado's behavior deteriorated, the King discovered Han's influence and had her removed from the establishment.",
+                "yearHint": 1741,
+            },
+        ],
+    },
+    {
+        "canonicalName": "HŬIJŎNG",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Lady-in-waiting in charge of the outer kitchen; falsely implicated in Prince Sado's alleged drinking and banished.",
+        "relationToHyegyong": "lady-in-waiting caught in Sado-Yŏngjo disciplinary conflict",
+        "tier": "C",
+        "aliases": ["Hŭijŏng (lady-in-waiting)"],
+        "references": [
+            {
+                "label": "Named in accusation",
+                "excerpt": "Under pressure, Sado said Hŭijŏng supplied wine, though Palace Matron Ch’oe contested the accusation.",
+                "yearHint": 1756,
+            },
+            {
+                "label": "Punitive banishment",
+                "excerpt": "The King banished Hŭijŏng to a distant place for the alleged offense of giving wine to the Prince.",
+                "yearHint": 1756,
+            },
+        ],
+    },
+    {
+        "canonicalName": "MUN SŎNGGUK",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "High-ranking palace servant and brother of Lady Mun; used intelligence and proximity to report Prince Sado's movements to King Yŏngjo.",
+        "relationToHyegyong": "palace intelligence actor in Sado-era surveillance conflicts",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Rise through Lady Mun connection",
+                "excerpt": "Mun Sŏngguk was introduced as Lady Mun's brother and gained favor as her status rose.",
+                "yearHint": 1751,
+            },
+            {
+                "label": "Surveillance and reporting",
+                "excerpt": "He was said to spy on Prince Sado and report detailed comings and goings directly to King Yŏngjo.",
+                "yearHint": 1753,
+            },
+        ],
+    },
+    {
+        "canonicalName": "CHŎN SŏNGHAE",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Eunuch placed in charge of administration for Lady Mun's establishment near Chungjŏng Gate.",
+        "relationToHyegyong": "eunuch administrator in the Lady Mun power network",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Administrative appointment",
+                "excerpt": "A eunuch named Chŏn Sŏnghae was assigned to oversee the office managing Lady Mun's residence.",
+                "yearHint": 1753,
+            }
+        ],
+    },
+    {
+        "canonicalName": "KIM HANCH’AE",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Eunuch on duty identified as Prince Sado's first known killing victim during the period of escalating palace violence.",
+        "relationToHyegyong": "victim in the violence surrounding Sado's decline",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "First named killing victim",
+                "excerpt": "Kim Hanch’ae, the eunuch on duty, was identified as the first person killed when Sado's lethal violence intensified.",
+                "yearHint": 1760,
+            }
+        ],
+    },
+    {
+        "canonicalName": "YU INSIK",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Head eunuch who participated in the cover operation masking Prince Sado's secret absence from court.",
+        "relationToHyegyong": "eunuch collaborator in emergency concealment of Sado's movements",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Impersonation during P’yŏngyang absence",
+                "excerpt": "Head eunuch Yu Insik lay in the inner room speaking as though he were Prince Sado while the Prince was away.",
+                "yearHint": 1761,
+            }
+        ],
+    },
+    {
+        "canonicalName": "PAK MUNHŬNG",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Eunuch who supported the impersonation scheme used to conceal Prince Sado's absence.",
+        "relationToHyegyong": "eunuch operative in the Sado absence cover-up",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Support role in concealment",
+                "excerpt": "Pak Munhŭng attended the impersonating head eunuch exactly as if he were caring for Prince Sado himself.",
+                "yearHint": 1761,
+            }
+        ],
+    },
+    {
+        "canonicalName": "SŎ KYŎNGDAL",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Supply officer listed among conspicuous victims killed by Prince Sado during late-phase court violence.",
+        "relationToHyegyong": "named victim in palace-service killings",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Named among conspicuous deaths",
+                "excerpt": "Sŏ Kyŏngdal, in charge of supply, was killed by Sado for delivering something late.",
+                "yearHint": 1760,
+            }
+        ],
+    },
+    {
+        "canonicalName": "EUNUCH IN CHARGE OF LECTURE COPY REDACTIONS",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Unidentified eunuch whose daily copy duties were used in attempts to protect the Grand Heir from dangerous passages.",
+        "relationToHyegyong": "key operational contact in efforts to shield the Grand Heir",
+        "tier": "C",
+        "aliases": ["Unnamed eunuch copy clerk"],
+        "references": [
+            {
+                "label": "Protective redaction workflow",
+                "excerpt": "Hyegyŏng and allied eunuchs deleted dangerous lecture-session passages before copies were submitted to Sado.",
+                "yearHint": 1761,
+            }
+        ],
+    },
+    {
+        "canonicalName": "EUNUCH MESSENGER DURING RICE-CHEST CRISIS",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Unidentified eunuch who carried Hyegyŏng's urgent written plea to King Yŏngjo during the 1762 crisis.",
+        "relationToHyegyong": "messenger in the immediate aftermath of Sado's removal",
+        "tier": "C",
+        "aliases": ["Unnamed Imo-year eunuch messenger"],
+        "references": [
+            {
+                "label": "Delivery of emergency petition",
+                "excerpt": "After Sado was stripped of position, Hyegyŏng found a eunuch and asked him to deliver her plea to the King.",
+                "yearHint": 1762,
+            }
+        ],
+    },
+    {
+        "canonicalName": "LADY-IN-WAITING YUN",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "dates unknown",
+        "biography": "Lady-in-waiting who accompanied Hyegyŏng during the forced departure from Chŏsŭng Pavilion and helped revive her in transit.",
+        "relationToHyegyong": "direct aide during the Imo-year evacuation sequence",
+        "tier": "C",
+        "aliases": ["Yun (lady-in-waiting)"],
+        "references": [
+            {
+                "label": "Accompaniment in evacuation",
+                "excerpt": "A lady-in-waiting named Yun rode with Hyegyŏng while eunuchs carried the palanquin and attendants wailed.",
+                "yearHint": 1762,
+            },
+            {
+                "label": "Immediate physical aid",
+                "excerpt": "When Hyegyŏng lost consciousness in the palanquin, lady-in-waiting Yun massaged her until she recovered.",
+                "yearHint": 1762,
+            },
+        ],
+    },
+    {
+        "canonicalName": "PAK P’ILSU",
+        "group": "Palace Women and Eunuchs",
+        "lifeLabel": "d. 1762",
+        "biography": "Eunuch listed among Prince Sado's cronies executed in the purge following the 1762 catastrophe.",
+        "relationToHyegyong": "named target in the post-Imo executions",
+        "tier": "C",
+        "aliases": [],
+        "references": [
+            {
+                "label": "Post-crisis execution",
+                "excerpt": "After Sado's removal, the King executed several cronies, including the eunuch Pak P’ilsu.",
+                "yearHint": 1762,
+            }
+        ],
+    },
+]
+
+
 def normalize_text(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
     stripped = "".join(ch for ch in normalized if not unicodedata.combining(ch))
@@ -698,6 +1158,59 @@ def parse_principal_people() -> Tuple[List[Dict[str, Any]], Dict[str, str]]:
     return people, alias_redirects
 
 
+def append_supplemental_people(people: List[Dict[str, Any]]) -> None:
+    by_name = {normalize_text(person["canonicalName"]): person for person in people}
+
+    for row in SUPPLEMENTAL_PEOPLE:
+        canonical_name = str(row["canonicalName"]).strip()
+        if not canonical_name:
+            continue
+        key = normalize_text(canonical_name)
+        if key in by_name:
+            continue
+
+        person_id = f"person-ft-{slug(canonical_name)}"
+        aliases: List[Dict[str, Any]] = []
+        for alias_text in row.get("aliases", []):
+            alias_value = str(alias_text).strip()
+            if not alias_value:
+                continue
+            aliases.append(
+                {
+                    "id": f"alias-{person_id}-{slug(alias_value)}",
+                    "text": alias_value,
+                    "language": "en",
+                    "script": "latin",
+                    "type": "supplemental-reference",
+                    "startYear": None,
+                    "endYear": None,
+                    "confidence": 0.9,
+                }
+            )
+
+        life_label = str(row.get("lifeLabel") or "dates unknown")
+        life_parts = parse_life(life_label)
+
+        person = {
+            "id": person_id,
+            "canonicalName": canonical_name,
+            "group": str(row.get("group") or "Palace Women and Eunuchs"),
+            "lifeLabel": life_label,
+            "birthYear": life_parts["birthYear"],
+            "deathYear": life_parts["deathYear"],
+            "reignStartYear": life_parts["reignStartYear"],
+            "reignEndYear": life_parts["reignEndYear"],
+            "biography": str(row.get("biography") or ""),
+            "relationToHyegyong": row.get("relationToHyegyong"),
+            "tier": str(row.get("tier") or "C"),
+            "aliases": aliases,
+            "officeTerms": [],
+            "sourceSegmentIds": [],
+        }
+        people.append(person)
+        by_name[key] = person
+
+
 def parse_year_index() -> List[Dict[str, Any]]:
     lines = YEAR_INDEX_PATH.read_text(encoding="utf-8").splitlines()
     rows: List[Dict[str, Any]] = []
@@ -778,6 +1291,14 @@ def make_sources(memoir_flow: Dict[str, Dict[str, Any]]) -> List[Dict[str, Any]]
             "id": "src_memoir_flow",
             "label": "Memoir Flow Guide",
             "path": "references/memoir-flow.md",
+            "edition": "Generated from memoir chapters",
+            "workType": "derived-reference",
+            **WORK_META,
+        },
+        {
+            "id": "src_full_text",
+            "label": "Full Text Reference",
+            "path": "references/full-text.md",
             "edition": "Generated from memoir chapters",
             "workType": "derived-reference",
             **WORK_META,
@@ -864,7 +1385,7 @@ def attach_offices(people: List[Dict[str, Any]]) -> None:
 
 def build_source_segments(
     people: List[Dict[str, Any]], memoir_flow: Dict[str, Dict[str, Any]]
-) -> Tuple[List[Dict[str, Any]], Dict[str, str]]:
+) -> Tuple[List[Dict[str, Any]], Dict[str, List[str]]]:
     segments: List[Dict[str, Any]] = []
     principal_lines = PRINCIPAL_PATH.read_text(encoding="utf-8").splitlines()
     raw_by_name: Dict[str, str] = {}
@@ -882,7 +1403,7 @@ def build_source_segments(
         name = re.sub(r"\s*\([^\)]+\)$", "", name).strip()
         raw_by_name[normalize_text(name)] = content
 
-    segment_map: Dict[str, str] = {}
+    segment_map: Dict[str, List[str]] = {}
     for person in people:
         key = normalize_text(person["canonicalName"])
         raw_line = raw_by_name.get(key)
@@ -898,7 +1419,51 @@ def build_source_segments(
             "yearHint": person["birthYear"] or person["reignStartYear"],
         }
         segments.append(segment)
-        segment_map[person["id"]] = segment_id
+        segment_map.setdefault(person["id"], []).append(segment_id)
+
+    # Some principal names in the source list use punctuation variants that can evade
+    # direct matching. Emit deterministic fallback segments so every principal person
+    # still has a resolvable evidence anchor.
+    for person in people:
+        person_id = str(person.get("id", ""))
+        if person_id.startswith("person-ft-"):
+            continue
+        if person_id in segment_map:
+            continue
+        segment_id = f"seg-{person_id}-principal-fallback"
+        segments.append(
+            {
+                "id": segment_id,
+                "sourceId": "src_principal_people",
+                "label": f"Principal Persons (fallback): {person['canonicalName']}",
+                "excerpt": f"{person['canonicalName']} ({person['lifeLabel']}). {person['biography']}",
+                "yearHint": person.get("birthYear") or person.get("reignStartYear"),
+            }
+        )
+        segment_map.setdefault(person_id, []).append(segment_id)
+
+    people_by_name = {normalize_text(person["canonicalName"]): person for person in people}
+    for row in SUPPLEMENTAL_PEOPLE:
+        canonical_name = str(row.get("canonicalName", "")).strip()
+        if not canonical_name:
+            continue
+        person = people_by_name.get(normalize_text(canonical_name))
+        if not person:
+            continue
+        references = row.get("references", [])
+        for index, reference in enumerate(references, start=1):
+            label = str(reference.get("label") or f"Reference {index}")
+            segment_id = f"seg-{person['id']}-fulltext-{index:02d}"
+            segments.append(
+                {
+                    "id": segment_id,
+                    "sourceId": str(reference.get("sourceId") or "src_full_text"),
+                    "label": f"Full Text: {person['canonicalName']} ({label})",
+                    "excerpt": str(reference.get("excerpt") or ""),
+                    "yearHint": reference.get("yearHint"),
+                }
+            )
+            segment_map.setdefault(person["id"], []).append(segment_id)
 
     for title, details in memoir_flow.items():
         segment_id = f"seg-{slug(title)}-opening"
@@ -985,11 +1550,15 @@ def build_relationships(
     people: List[Dict[str, Any]], source_segments: List[Dict[str, Any]]
 ) -> List[Dict[str, Any]]:
     lookup = person_lookup(people)
-    segment_by_person = {
-        person["id"]: f"seg-{person['id']}-principal"
-        for person in people
-        if any(seg["id"] == f"seg-{person['id']}-principal" for seg in source_segments)
-    }
+    available_segments = {str(segment.get("id", "")) for segment in source_segments}
+    segment_by_person: Dict[str, str] = {}
+    for person in people:
+        person_id = str(person.get("id", ""))
+        for segment_id in person.get("sourceSegmentIds", []):
+            segment_id_text = str(segment_id)
+            if segment_id_text in available_segments:
+                segment_by_person[person_id] = segment_id_text
+                break
     relationships: List[Dict[str, Any]] = []
 
     for rel in MANUAL_RELATIONSHIPS:
@@ -1080,7 +1649,13 @@ def build_claims(
     claims: List[Dict[str, Any]] = []
 
     for person in people:
-        seg_id = f"seg-{person['id']}-principal"
+        source_segment_ids = person.get("sourceSegmentIds", [])
+        seg_id = source_segment_ids[0] if source_segment_ids else f"seg-{person['id']}-principal"
+        notes = (
+            "Auto-extracted from Principal Persons list."
+            if str(seg_id).endswith("-principal")
+            else "Seeded from full-text reference extraction."
+        )
         claims.append(
             {
                 "id": f"clm-person-biography-{person['id']}",
@@ -1097,7 +1672,7 @@ def build_claims(
                 },
                 "status": "pending",
                 "sourceSegmentId": seg_id,
-                "notes": "Auto-extracted from Principal Persons list.",
+                "notes": notes,
             }
         )
 
@@ -1169,6 +1744,7 @@ def build_claims(
 
 def main() -> None:
     people, alias_redirects = parse_principal_people()
+    append_supplemental_people(people)
     year_density = parse_year_index()
     memoir_flow = parse_memoir_flow()
 
@@ -1180,8 +1756,9 @@ def main() -> None:
     source_segments, person_segment_map = build_source_segments(people, memoir_flow)
 
     for person in people:
-        if person["id"] in person_segment_map:
-            person["sourceSegmentIds"].append(person_segment_map[person["id"]])
+        for segment_id in person_segment_map.get(person["id"], []):
+            if segment_id not in person["sourceSegmentIds"]:
+                person["sourceSegmentIds"].append(segment_id)
         person["activeRange"] = compute_active_range(person)
 
     places = MANUAL_PLACES

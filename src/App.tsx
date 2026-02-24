@@ -2583,7 +2583,8 @@ function App() {
 
   const yearMin = dataset.yearRange.startYear;
   const yearMax = dataset.yearRange.endYear;
-  const timelineDensityMax = Math.max(1, ...dataset.yearDensity.map((item) => item.count));
+  const timelineYearDensity = dataset.yearDensity.filter((item) => item.year >= yearMin && item.year <= yearMax);
+  const timelineDensityMax = Math.max(1, ...timelineYearDensity.map((item) => item.count));
   const primaryWorkSource = dataset.sources[0];
   const primaryWorkLabel = primaryWorkSource ? getWorkLabelLocalized(primaryWorkSource) : dataset.meta.sourceEdition;
   const workspaceLabel = uiLanguage === 'ko' ? '연구용 기준 워크스페이스' : 'Reference workspace';
@@ -2690,7 +2691,7 @@ function App() {
           <span>{yearMax}</span>
         </div>
         <div className="year-density">
-          {dataset.yearDensity.map((row) => {
+          {timelineYearDensity.map((row) => {
             const active = row.year === selectedYear;
             return (
               <button

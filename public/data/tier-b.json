@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "0.2.0",
     "dataset": "hyegyong-tier-b",
-    "generatedAt": "2026-02-24T12:24:59.845634+00:00",
+    "generatedAt": "2026-02-24T15:33:17.717288+00:00",
     "generator": "scripts/build_tier_b_data.py",
     "sourceEdition": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013).",
     "languageCanonical": "en",
@@ -601,6 +601,19 @@
       "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
     },
     {
+      "id": "src_full_text",
+      "label": "Full Text Reference",
+      "path": "references/full-text.md",
+      "edition": "Generated from memoir chapters",
+      "workType": "derived-reference",
+      "workId": "wrk-memoirs-lady-hyegyong-haboush",
+      "workTitle": "The Memoirs of Lady Hyegyong",
+      "workContributors": "Translated by JaHyun Kim Haboush",
+      "workPublisher": "University of California Press",
+      "workYear": "1996; reissued 2013 (ebook)",
+      "workCitation": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013)."
+    },
+    {
       "id": "src_1795",
       "label": "The Memoir of 1795",
       "path": "OEBPS/chapter_04.xhtml",
@@ -886,6 +899,321 @@
       "yearHint": 1753
     },
     {
+      "id": "seg-person-003-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): HAN YU",
+      "excerpt": "HAN YU (d. 1770). A country scholar. He sent memorials viciously attacking Hong Ponghan, which led to Hong’s dismissal. He was executed.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-015-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): KIM HAN’GU",
+      "excerpt": "KIM HAN’GU (d. 1769). Queen Chŏngsun’s father, thus Yŏngjo’s father-in-law. He was given the title Lord Ohŭng. The Kim family were archrivals of the Hong family.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-017-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): KIM KWIJU",
+      "excerpt": "KIM KWIJU (d. 1786). Queen Chŏngsun’s brother. The most politically active member of the Kyŏngju Kim family, who were in contention with the Hong family. Upon Chŏngjo’s accession in 1776, he was banished to Hŭksan Island. In 1784 he was allowed to settle in Naju, where he died of illness.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-019-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): KING CHŎNGJO",
+      "excerpt": "KING CHŎNGJO (r. 1776–1800). Prince Sado’s son born of Lady Hyegyŏng in 1752. Referred to as the Grand Heir, the King, and the late King. Appointed Crown Prince in 1762 after his father’s death, he was appointed Regent in 1775 and succeeded to the throne in 1776 upon the death of Yŏngjo, his grandfather. He died in 1800.",
+      "yearHint": 1776
+    },
+    {
+      "id": "seg-person-020-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): KING SUNJO",
+      "excerpt": "KING SUNJO (r. 1800–1834). Lady Hyegyŏng’s grandson and King Chŏngjo’s son born of Lady Kasun in 1790. Three of Lady Hyegyŏng’s memoirs, The Memoir of 1801, The Memoir of 1802, and The Memoir of 1805 were written for him. Referred to as the young King or the present King.",
+      "yearHint": 1800
+    },
+    {
+      "id": "seg-person-021-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): KING YŎNGJO",
+      "excerpt": "KING YŎNGJO (r. 1724–1776). Sukchong’s son born of Lady Ch’oe Sukpin in 1694. Referred to as His Majesty. Appointed heir apparent in 1721, he succeeded his brother to the throne in 1724. A brilliant but tempestuous ruler. Sado’s father.",
+      "yearHint": 1724
+    },
+    {
+      "id": "seg-person-024-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): LADY MUN",
+      "excerpt": "LADY MUN (d. 1776). Yŏngjo’s secondary consort. She gave birth to the Princesses Hwanyŏng and Hwagil in 1753 and 1754. She was thought to have engaged in schemes to eliminate the heir apparent, Chŏngjo, and thus, upon Chŏngjo’s accession in 1776, she was executed.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-025-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): LADY SŎNHŬI",
+      "excerpt": "LADY SŎNHŬI (d. 1764). Yŏngjo’s secondary consort. She bore Prince Sado and several princesses. She is reported to have urged Yŏngjo to kill Sado when Sado became very violent.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-027-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): LORD ILSŎNG",
+      "excerpt": "LORD ILSŎNG (d. 1757). Chŏng Ch’idal. Princess Hwawan’s husband.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-031-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): PINGAE",
+      "excerpt": "PINGAE (d. 1761). Sado’s secondary consort. Née Pak, she was given the title Kyŏngbin. She had been a lady-in-waiting to Queen Dowager Inwŏn, and so there was a taboo on Sado’s taking her in. Sado was fond of her and took her in despite the taboo and stern paternal disapproval. She bore him two children, Prince Ŭnjŏn and Princess Ch’ŏnggŭn. In 1761 Sado, in madness, beat her to death.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-039-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): PRINCESS HWAP’YŎNG",
+      "excerpt": "PRINCESS HWAP’YŎNG (d. 1748). Yongjo’s third daughter, born of Lady Sŏnhŭi. Beloved by her father, she died in childbirth.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-040-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): PRINCESS HWASUN",
+      "excerpt": "PRINCESS HWASUN (d. 1758). Yŏngjo’s second daughter, born of Lady Yi Chŏngbin. She starved herself to death upon her husband’s death.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-045-principal-fallback",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons (fallback): QUEEN HYOSUN",
+      "excerpt": "QUEEN HYOSUN (d. 1751). Prince Hyojang’s widow and the daughter of Cho Munmyŏng. She was posthumously given the title of queen in 1776 when her adopted son, Chŏngjo, ascended the throne.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-ft-palace-matron-ch-oe-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PALACE MATRON CH’OE (Bridal preparation visit)",
+      "excerpt": "Palace Matron Ch’oe came with Kim Hyodŏk to measure Hyegyŏng for ceremonial costumes during marriage preparations.",
+      "yearHint": 1744
+    },
+    {
+      "id": "seg-person-ft-palace-matron-ch-oe-fulltext-02",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PALACE MATRON CH’OE (Strict rule enforcement)",
+      "excerpt": "She strictly enforced palace rules and would not allow Hyegyŏng to sleep in the same room as her mother.",
+      "yearHint": 1744
+    },
+    {
+      "id": "seg-person-ft-palace-matron-ch-oe-fulltext-03",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PALACE MATRON CH’OE (Defense of Prince Sado)",
+      "excerpt": "She defended Sado in a drinking accusation, stating that no alcohol had entered his residence.",
+      "yearHint": 1756
+    },
+    {
+      "id": "seg-person-ft-kim-hyodok-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: KIM HYODŎK (Ritual fitting visit)",
+      "excerpt": "Kim Hyodŏk was identified as a lady-in-waiting handling ritual matters during Hyegyŏng's ceremonial preparations.",
+      "yearHint": 1744
+    },
+    {
+      "id": "seg-person-ft-mun-taebok-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: MUN TAEBOK (Delivery of ceremonial clothing)",
+      "excerpt": "Mun Taebok arrived with Palace Matron Ch’oe carrying ceremonial garments sent by Queen Chŏngsŏng.",
+      "yearHint": 1744
+    },
+    {
+      "id": "seg-person-ft-chief-lady-in-waiting-to-queen-dowager-inwon-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: CHIEF LADY-IN-WAITING TO QUEEN DOWAGER INWŎN (Marriage-era greeting relay)",
+      "excerpt": "Queen Dowager Inwŏn sent warm greetings to Madame Yi through her chief lady-in-waiting.",
+      "yearHint": 1744
+    },
+    {
+      "id": "seg-person-ft-chief-lady-in-waiting-to-queen-dowager-inwon-fulltext-02",
+      "sourceId": "src_full_text",
+      "label": "Full Text: CHIEF LADY-IN-WAITING TO QUEEN DOWAGER INWŎN (Promotion precedent)",
+      "excerpt": "A lady-in-waiting brought by Queen Dowager Inwŏn at marriage later received official rank, cited as a precedent.",
+      "yearHint": 1757
+    },
+    {
+      "id": "seg-person-ft-haenyo-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: HAENYŎ (Transferred into palace service)",
+      "excerpt": "Haenyŏ was listed among the servants Hyegyŏng brought with her when selected as Crown Princess Consort.",
+      "yearHint": 1744
+    },
+    {
+      "id": "seg-person-ft-aji-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: AJI (Wet nurse appointment and service)",
+      "excerpt": "Aji became Hyegyŏng's wet nurse, accompanied her to the palace, and assisted during many pregnancies and births.",
+      "yearHint": 1735
+    },
+    {
+      "id": "seg-person-ft-aji-fulltext-02",
+      "sourceId": "src_full_text",
+      "label": "Full Text: AJI (Royal reward for service)",
+      "excerpt": "The King rewarded Aji's descendants with annuities and sent generous funeral support in recognition of her care.",
+      "yearHint": 1782
+    },
+    {
+      "id": "seg-person-ft-pongnyo-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PONGNYŎ (Early and continuous attendance)",
+      "excerpt": "Pongnyŏ carried Hyegyŏng in youth, accompanied her into the palace, and remained at her side through repeated crises.",
+      "yearHint": 1743
+    },
+    {
+      "id": "seg-person-ft-pongnyo-fulltext-02",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PONGNYŎ (Rank elevation)",
+      "excerpt": "After notable childbirth service, Pongnyŏ received official rank and was elevated to Palace Matron.",
+      "yearHint": 1790
+    },
+    {
+      "id": "seg-person-ft-elderly-lady-in-waiting-measles-care-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: ELDERLY LADY-IN-WAITING (MEASLES CARE) (Infant care during epidemic)",
+      "excerpt": "When staff illness spread, Hyegyŏng relied on her own nurse and one elderly lady-in-waiting to care for the newborn prince.",
+      "yearHint": 1752
+    },
+    {
+      "id": "seg-person-ft-unnamed-lady-in-waiting-disguised-as-pingae-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: UNNAMED LADY-IN-WAITING DISGUISED AS PINGAE (Pingae decoy operation)",
+      "excerpt": "Hyegyŏng sent a lady-in-waiting from her sewing department out as Pingae because the King did not know Pingae's appearance.",
+      "yearHint": 1760
+    },
+    {
+      "id": "seg-person-ft-palace-matron-yi-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PALACE MATRON YI (Intervention in Kwiju letter affair)",
+      "excerpt": "Palace Matron Yi, sister of Yi Kyehŭng, reportedly saw Kwiju's letter and urged the Queen to reject it.",
+      "yearHint": 1761
+    },
+    {
+      "id": "seg-person-ft-palace-matron-han-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PALACE MATRON HAN (Characterization in household hierarchy)",
+      "excerpt": "She was described as capable but deceitful, lacking full devotion while serving in the Crown Prince establishment.",
+      "yearHint": 1740
+    },
+    {
+      "id": "seg-person-ft-palace-matron-han-fulltext-02",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PALACE MATRON HAN (Martial play conditioning)",
+      "excerpt": "Palace Matron Han made toy weapons and staged games that deepened Sado's fixation on martial behavior.",
+      "yearHint": 1740
+    },
+    {
+      "id": "seg-person-ft-palace-matron-han-fulltext-03",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PALACE MATRON HAN (Dismissal from service)",
+      "excerpt": "When Sado's behavior deteriorated, the King discovered Han's influence and had her removed from the establishment.",
+      "yearHint": 1741
+    },
+    {
+      "id": "seg-person-ft-huijong-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: HŬIJŎNG (Named in accusation)",
+      "excerpt": "Under pressure, Sado said Hŭijŏng supplied wine, though Palace Matron Ch’oe contested the accusation.",
+      "yearHint": 1756
+    },
+    {
+      "id": "seg-person-ft-huijong-fulltext-02",
+      "sourceId": "src_full_text",
+      "label": "Full Text: HŬIJŎNG (Punitive banishment)",
+      "excerpt": "The King banished Hŭijŏng to a distant place for the alleged offense of giving wine to the Prince.",
+      "yearHint": 1756
+    },
+    {
+      "id": "seg-person-ft-mun-songguk-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: MUN SŎNGGUK (Rise through Lady Mun connection)",
+      "excerpt": "Mun Sŏngguk was introduced as Lady Mun's brother and gained favor as her status rose.",
+      "yearHint": 1751
+    },
+    {
+      "id": "seg-person-ft-mun-songguk-fulltext-02",
+      "sourceId": "src_full_text",
+      "label": "Full Text: MUN SŎNGGUK (Surveillance and reporting)",
+      "excerpt": "He was said to spy on Prince Sado and report detailed comings and goings directly to King Yŏngjo.",
+      "yearHint": 1753
+    },
+    {
+      "id": "seg-person-ft-chon-songhae-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: CHŎN SŏNGHAE (Administrative appointment)",
+      "excerpt": "A eunuch named Chŏn Sŏnghae was assigned to oversee the office managing Lady Mun's residence.",
+      "yearHint": 1753
+    },
+    {
+      "id": "seg-person-ft-kim-hanch-ae-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: KIM HANCH’AE (First named killing victim)",
+      "excerpt": "Kim Hanch’ae, the eunuch on duty, was identified as the first person killed when Sado's lethal violence intensified.",
+      "yearHint": 1760
+    },
+    {
+      "id": "seg-person-ft-yu-insik-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: YU INSIK (Impersonation during P’yŏngyang absence)",
+      "excerpt": "Head eunuch Yu Insik lay in the inner room speaking as though he were Prince Sado while the Prince was away.",
+      "yearHint": 1761
+    },
+    {
+      "id": "seg-person-ft-pak-munhung-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PAK MUNHŬNG (Support role in concealment)",
+      "excerpt": "Pak Munhŭng attended the impersonating head eunuch exactly as if he were caring for Prince Sado himself.",
+      "yearHint": 1761
+    },
+    {
+      "id": "seg-person-ft-so-kyongdal-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: SŎ KYŎNGDAL (Named among conspicuous deaths)",
+      "excerpt": "Sŏ Kyŏngdal, in charge of supply, was killed by Sado for delivering something late.",
+      "yearHint": 1760
+    },
+    {
+      "id": "seg-person-ft-eunuch-in-charge-of-lecture-copy-redactions-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: EUNUCH IN CHARGE OF LECTURE COPY REDACTIONS (Protective redaction workflow)",
+      "excerpt": "Hyegyŏng and allied eunuchs deleted dangerous lecture-session passages before copies were submitted to Sado.",
+      "yearHint": 1761
+    },
+    {
+      "id": "seg-person-ft-eunuch-messenger-during-rice-chest-crisis-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: EUNUCH MESSENGER DURING RICE-CHEST CRISIS (Delivery of emergency petition)",
+      "excerpt": "After Sado was stripped of position, Hyegyŏng found a eunuch and asked him to deliver her plea to the King.",
+      "yearHint": 1762
+    },
+    {
+      "id": "seg-person-ft-lady-in-waiting-yun-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: LADY-IN-WAITING YUN (Accompaniment in evacuation)",
+      "excerpt": "A lady-in-waiting named Yun rode with Hyegyŏng while eunuchs carried the palanquin and attendants wailed.",
+      "yearHint": 1762
+    },
+    {
+      "id": "seg-person-ft-lady-in-waiting-yun-fulltext-02",
+      "sourceId": "src_full_text",
+      "label": "Full Text: LADY-IN-WAITING YUN (Immediate physical aid)",
+      "excerpt": "When Hyegyŏng lost consciousness in the palanquin, lady-in-waiting Yun massaged her until she recovered.",
+      "yearHint": 1762
+    },
+    {
+      "id": "seg-person-ft-pak-p-ilsu-fulltext-01",
+      "sourceId": "src_full_text",
+      "label": "Full Text: PAK P’ILSU (Post-crisis execution)",
+      "excerpt": "After Sado's removal, the King executed several cronies, including the eunuch Pak P’ilsu.",
+      "yearHint": 1762
+    },
+    {
       "id": "seg-the-memoir-of-1795-opening",
       "sourceId": "src_1795",
       "label": "The Memoir of 1795: Opening movement",
@@ -1121,7 +1449,9 @@
       "tier": "B",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-003-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1770
@@ -1414,7 +1744,9 @@
       "tier": "B",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-015-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1769
@@ -1464,7 +1796,9 @@
           "source": "src_principal_people"
         }
       ],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-017-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1786
@@ -1570,7 +1904,9 @@
           "source": "src_principal_people"
         }
       ],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-019-principal-fallback"
+      ],
       "activeRange": {
         "startYear": 1762,
         "endYear": 1800
@@ -1619,7 +1955,9 @@
           "source": "src_principal_people"
         }
       ],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-020-principal-fallback"
+      ],
       "activeRange": {
         "startYear": 1800,
         "endYear": 1834
@@ -1658,7 +1996,9 @@
           "source": "src_principal_people"
         }
       ],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-021-principal-fallback"
+      ],
       "activeRange": {
         "startYear": 1724,
         "endYear": 1776
@@ -1749,7 +2089,9 @@
       "tier": "B",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-024-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1776
@@ -1769,7 +2111,9 @@
       "tier": "A",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-025-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1764
@@ -1811,7 +2155,9 @@
       "tier": "B",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-027-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1757
@@ -1897,7 +2243,9 @@
       "tier": "A",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-031-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1761
@@ -2097,7 +2445,9 @@
       "tier": "A",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-039-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1748
@@ -2117,7 +2467,9 @@
       "tier": "B",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-040-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1758
@@ -2261,7 +2613,9 @@
       "tier": "B",
       "aliases": [],
       "officeTerms": [],
-      "sourceSegmentIds": [],
+      "sourceSegmentIds": [
+        "seg-person-045-principal-fallback"
+      ],
       "activeRange": {
         "startYear": null,
         "endYear": 1751
@@ -2287,6 +2641,642 @@
       "activeRange": {
         "startYear": 1753,
         "endYear": 1821
+      }
+    },
+    {
+      "id": "person-ft-palace-matron-ch-oe",
+      "canonicalName": "PALACE MATRON CH’OE",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Head governess in Prince Sado's establishment. She supervised Hyegyŏng's early palace transition and later defended Sado during a major accusation.",
+      "relationToHyegyong": "senior palace matron and disciplinarian in Hyegyŏng's early court life",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-palace-matron-ch-oe-ch-oe-palace-matron",
+          "text": "Ch’oe, Palace Matron",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        },
+        {
+          "id": "alias-person-ft-palace-matron-ch-oe-prince-s-governess",
+          "text": "Prince's governess",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-palace-matron-ch-oe-fulltext-01",
+        "seg-person-ft-palace-matron-ch-oe-fulltext-02",
+        "seg-person-ft-palace-matron-ch-oe-fulltext-03"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-kim-hyodok",
+      "canonicalName": "KIM HYODŎK",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Lady-in-waiting in charge of ritual matters who participated in Hyegyŏng's pre-marriage palace ceremonies.",
+      "relationToHyegyong": "ritual lady-in-waiting assisting Hyegyŏng's bridal transition",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-kim-hyodok-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-mun-taebok",
+      "canonicalName": "MUN TAEBOK",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Lady-in-waiting who delivered Queen Chŏngsŏng's clothing package for Hyegyŏng's final presentation.",
+      "relationToHyegyong": "lady-in-waiting involved in Hyegyŏng's wedding attire preparations",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-mun-taebok-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-chief-lady-in-waiting-to-queen-dowager-inwon",
+      "canonicalName": "CHIEF LADY-IN-WAITING TO QUEEN DOWAGER INWŎN",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Senior attendant in Queen Dowager Inwŏn's household who relayed court greetings and set a promotion precedent later invoked for Pongnyŏ.",
+      "relationToHyegyong": "senior palace intermediary in early marriage and rank protocol",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-chief-lady-in-waiting-to-queen-dowager-inwon-inwon-s-chief-lady-in-waiting",
+          "text": "Inwŏn's chief lady-in-waiting",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-chief-lady-in-waiting-to-queen-dowager-inwon-fulltext-01",
+        "seg-person-ft-chief-lady-in-waiting-to-queen-dowager-inwon-fulltext-02"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-haenyo",
+      "canonicalName": "HAENYŎ",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "A family slave brought into the palace as part of Hyegyŏng's natal household attendants.",
+      "relationToHyegyong": "natal-house attendant brought with Hyegyŏng",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-haenyo-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-aji",
+      "canonicalName": "AJI",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Wet nurse who breast-fed Hyegyŏng, accompanied her to the palace, and later assisted repeatedly with childbirth care for multiple generations.",
+      "relationToHyegyong": "wet nurse and long-term childbirth attendant",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-aji-hyegyong-s-wet-nurse",
+          "text": "Hyegyŏng's wet nurse",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-aji-fulltext-01",
+        "seg-person-ft-aji-fulltext-02"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-pongnyo",
+      "canonicalName": "PONGNYŎ",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hyegyŏng's lifelong attendant who rose from natal-house slave status to lady-in-waiting and eventually Palace Matron through sustained service.",
+      "relationToHyegyong": "core personal attendant and later Palace Matron",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-pongnyo-pongnyo-palace-matron",
+          "text": "Pongnyŏ, Palace Matron",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-pongnyo-fulltext-01",
+        "seg-person-ft-pongnyo-fulltext-02"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-elderly-lady-in-waiting-measles-care",
+      "canonicalName": "ELDERLY LADY-IN-WAITING (MEASLES CARE)",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Unidentified elder attendant who helped nurse the newborn prince during a severe measles outbreak.",
+      "relationToHyegyong": "emergency childcare support during epidemic",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-elderly-lady-in-waiting-measles-care-unnamed-elderly-lady-in-waiting",
+          "text": "Unnamed elderly lady-in-waiting",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-elderly-lady-in-waiting-measles-care-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-unnamed-lady-in-waiting-disguised-as-pingae",
+      "canonicalName": "UNNAMED LADY-IN-WAITING DISGUISED AS PINGAE",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "A lady-in-waiting selected as a decoy to impersonate Pingae during a high-risk interrogation crisis.",
+      "relationToHyegyong": "decoy attendant in the Pingae affair",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-unnamed-lady-in-waiting-disguised-as-pingae-pingae-decoy-lady-in-waiting",
+          "text": "Pingae decoy lady-in-waiting",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-unnamed-lady-in-waiting-disguised-as-pingae-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-palace-matron-yi",
+      "canonicalName": "PALACE MATRON YI",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Palace Matron in royal favor who mediated between King Yŏngjo and Prince Sado and protested Kim Kwiju's maneuvering.",
+      "relationToHyegyong": "court intermediary linked to Sado-era factional communications",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-palace-matron-yi-yi-palace-matron",
+          "text": "Yi, Palace Matron",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-palace-matron-yi-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-palace-matron-han",
+      "canonicalName": "PALACE MATRON HAN",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Second-ranking matron in Sado's establishment, depicted as envious and manipulative; she encouraged martial play patterns later linked to Sado's instability.",
+      "relationToHyegyong": "influential but adversarial figure in Sado's childhood environment",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-palace-matron-han-han-palace-matron",
+          "text": "Han, Palace Matron",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-palace-matron-han-fulltext-01",
+        "seg-person-ft-palace-matron-han-fulltext-02",
+        "seg-person-ft-palace-matron-han-fulltext-03"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-huijong",
+      "canonicalName": "HŬIJŎNG",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Lady-in-waiting in charge of the outer kitchen; falsely implicated in Prince Sado's alleged drinking and banished.",
+      "relationToHyegyong": "lady-in-waiting caught in Sado-Yŏngjo disciplinary conflict",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-huijong-huijong-lady-in-waiting",
+          "text": "Hŭijŏng (lady-in-waiting)",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-huijong-fulltext-01",
+        "seg-person-ft-huijong-fulltext-02"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-mun-songguk",
+      "canonicalName": "MUN SŎNGGUK",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "High-ranking palace servant and brother of Lady Mun; used intelligence and proximity to report Prince Sado's movements to King Yŏngjo.",
+      "relationToHyegyong": "palace intelligence actor in Sado-era surveillance conflicts",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-mun-songguk-fulltext-01",
+        "seg-person-ft-mun-songguk-fulltext-02"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-chon-songhae",
+      "canonicalName": "CHŎN SŏNGHAE",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Eunuch placed in charge of administration for Lady Mun's establishment near Chungjŏng Gate.",
+      "relationToHyegyong": "eunuch administrator in the Lady Mun power network",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-chon-songhae-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-kim-hanch-ae",
+      "canonicalName": "KIM HANCH’AE",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Eunuch on duty identified as Prince Sado's first known killing victim during the period of escalating palace violence.",
+      "relationToHyegyong": "victim in the violence surrounding Sado's decline",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-kim-hanch-ae-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-yu-insik",
+      "canonicalName": "YU INSIK",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Head eunuch who participated in the cover operation masking Prince Sado's secret absence from court.",
+      "relationToHyegyong": "eunuch collaborator in emergency concealment of Sado's movements",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-yu-insik-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-pak-munhung",
+      "canonicalName": "PAK MUNHŬNG",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Eunuch who supported the impersonation scheme used to conceal Prince Sado's absence.",
+      "relationToHyegyong": "eunuch operative in the Sado absence cover-up",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-pak-munhung-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-so-kyongdal",
+      "canonicalName": "SŎ KYŎNGDAL",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Supply officer listed among conspicuous victims killed by Prince Sado during late-phase court violence.",
+      "relationToHyegyong": "named victim in palace-service killings",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-so-kyongdal-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-eunuch-in-charge-of-lecture-copy-redactions",
+      "canonicalName": "EUNUCH IN CHARGE OF LECTURE COPY REDACTIONS",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Unidentified eunuch whose daily copy duties were used in attempts to protect the Grand Heir from dangerous passages.",
+      "relationToHyegyong": "key operational contact in efforts to shield the Grand Heir",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-eunuch-in-charge-of-lecture-copy-redactions-unnamed-eunuch-copy-clerk",
+          "text": "Unnamed eunuch copy clerk",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-eunuch-in-charge-of-lecture-copy-redactions-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-eunuch-messenger-during-rice-chest-crisis",
+      "canonicalName": "EUNUCH MESSENGER DURING RICE-CHEST CRISIS",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Unidentified eunuch who carried Hyegyŏng's urgent written plea to King Yŏngjo during the 1762 crisis.",
+      "relationToHyegyong": "messenger in the immediate aftermath of Sado's removal",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-eunuch-messenger-during-rice-chest-crisis-unnamed-imo-year-eunuch-messenger",
+          "text": "Unnamed Imo-year eunuch messenger",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-eunuch-messenger-during-rice-chest-crisis-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-lady-in-waiting-yun",
+      "canonicalName": "LADY-IN-WAITING YUN",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Lady-in-waiting who accompanied Hyegyŏng during the forced departure from Chŏsŭng Pavilion and helped revive her in transit.",
+      "relationToHyegyong": "direct aide during the Imo-year evacuation sequence",
+      "tier": "C",
+      "aliases": [
+        {
+          "id": "alias-person-ft-lady-in-waiting-yun-yun-lady-in-waiting",
+          "text": "Yun (lady-in-waiting)",
+          "language": "en",
+          "script": "latin",
+          "type": "supplemental-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.9
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-lady-in-waiting-yun-fulltext-01",
+        "seg-person-ft-lady-in-waiting-yun-fulltext-02"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-ft-pak-p-ilsu",
+      "canonicalName": "PAK P’ILSU",
+      "group": "Palace Women and Eunuchs",
+      "lifeLabel": "d. 1762",
+      "birthYear": null,
+      "deathYear": 1762,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Eunuch listed among Prince Sado's cronies executed in the purge following the 1762 catastrophe.",
+      "relationToHyegyong": "named target in the post-Imo executions",
+      "tier": "C",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-ft-pak-p-ilsu-fulltext-01"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1762
       }
     }
   ],
@@ -2756,6 +3746,30 @@
       "tier": "A"
     },
     {
+      "id": "rel-person-022-person-037-mother-daughter",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-037",
+      "relationType": "mother-daughter",
+      "startYear": 1754,
+      "endYear": 1815,
+      "summary": "Hyegyong records her first daughter Ch’ŏngyŏn as part of her core household and dynastic obligations.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "B"
+    },
+    {
+      "id": "rel-person-022-person-036-mother-daughter",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-036",
+      "relationType": "mother-daughter",
+      "startYear": 1756,
+      "endYear": 1802,
+      "summary": "Hyegyong's memoirs repeatedly include Princess Ch’ŏngsŏn in family and court transition episodes.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "B"
+    },
+    {
       "id": "rel-person-022-person-020-grandmother-grandson",
       "sourcePersonId": "person-022",
       "targetPersonId": "person-020",
@@ -2816,6 +3830,30 @@
       "tier": "A"
     },
     {
+      "id": "rel-person-033-person-037-father-daughter",
+      "sourcePersonId": "person-033",
+      "targetPersonId": "person-037",
+      "relationType": "father-daughter",
+      "startYear": 1754,
+      "endYear": 1762,
+      "summary": "Ch’ŏngyŏn is one of Prince Sado's daughters by Lady Hyegyong.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-033-principal",
+      "tier": "B"
+    },
+    {
+      "id": "rel-person-033-person-036-father-daughter",
+      "sourcePersonId": "person-033",
+      "targetPersonId": "person-036",
+      "relationType": "father-daughter",
+      "startYear": 1756,
+      "endYear": 1762,
+      "summary": "Ch’ŏngsŏn is one of Prince Sado's daughters by Lady Hyegyong.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-033-principal",
+      "tier": "B"
+    },
+    {
       "id": "rel-person-019-person-021-grandson-grandfather",
       "sourcePersonId": "person-019",
       "targetPersonId": "person-021",
@@ -2824,8 +3862,32 @@
       "endYear": 1776,
       "summary": "Jeongjo's succession is shaped by his grandfather's court and decisions.",
       "confidence": 0.92,
-      "sourceSegmentId": null,
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "tier": "A"
+    },
+    {
+      "id": "rel-person-019-person-037-siblings",
+      "sourcePersonId": "person-019",
+      "targetPersonId": "person-037",
+      "relationType": "siblings",
+      "startYear": 1754,
+      "endYear": 1800,
+      "summary": "Jeongjo and Princess Ch’ŏngyŏn were siblings in the Sado-Hyegyong line.",
+      "confidence": 0.88,
+      "sourceSegmentId": "seg-person-019-principal-fallback",
+      "tier": "B"
+    },
+    {
+      "id": "rel-person-019-person-036-siblings",
+      "sourcePersonId": "person-019",
+      "targetPersonId": "person-036",
+      "relationType": "siblings",
+      "startYear": 1756,
+      "endYear": 1800,
+      "summary": "Jeongjo and Princess Ch’ŏngsŏn were siblings in the Sado-Hyegyong line.",
+      "confidence": 0.88,
+      "sourceSegmentId": "seg-person-019-principal-fallback",
+      "tier": "B"
     },
     {
       "id": "rel-person-019-person-046-spouse",
@@ -2836,7 +3898,7 @@
       "endYear": 1800,
       "summary": "Jeongjo's queen from the Kim lineage appears in succession and court context.",
       "confidence": 0.9,
-      "sourceSegmentId": "seg-person-046-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "tier": "A"
     },
     {
@@ -2848,7 +3910,7 @@
       "endYear": 1800,
       "summary": "Lady Kasun bears Sunjo and becomes central in late-dynastic continuity.",
       "confidence": 0.92,
-      "sourceSegmentId": "seg-person-023-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "tier": "A"
     },
     {
@@ -2860,7 +3922,7 @@
       "endYear": 1834,
       "summary": "Sunjo's maternal line becomes key during minority rule and regency politics.",
       "confidence": 0.93,
-      "sourceSegmentId": "seg-person-023-principal",
+      "sourceSegmentId": "seg-person-020-principal-fallback",
       "tier": "A"
     },
     {
@@ -2872,7 +3934,7 @@
       "endYear": 1804,
       "summary": "Queen Chŏngsun ruled as dowager regent during Sunjo's minority.",
       "confidence": 0.96,
-      "sourceSegmentId": "seg-person-043-principal",
+      "sourceSegmentId": "seg-person-020-principal-fallback",
       "tier": "A"
     },
     {
@@ -2980,7 +4042,7 @@
       "endYear": 1778,
       "summary": "The Kim-Hong rivalry is a recurrent political axis in the memoirs.",
       "confidence": 0.86,
-      "sourceSegmentId": "seg-person-011-principal",
+      "sourceSegmentId": "seg-person-017-principal-fallback",
       "tier": "A"
     }
   ],
@@ -3033,8 +4095,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-003-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-003-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-004",
@@ -3260,8 +4322,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-015-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-015-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-016",
@@ -3294,8 +4356,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-017-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-017-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-018",
@@ -3328,8 +4390,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-019-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-019-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-office-person-019-1",
@@ -3351,7 +4413,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-019-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "notes": "Seed office term for timeline exploration."
     },
     {
@@ -3374,7 +4436,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-019-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "notes": "Seed office term for timeline exploration."
     },
     {
@@ -3397,7 +4459,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-019-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "notes": "Seed office term for timeline exploration."
     },
     {
@@ -3414,8 +4476,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-020-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-020-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-office-person-020-1",
@@ -3437,7 +4499,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-020-principal",
+      "sourceSegmentId": "seg-person-020-principal-fallback",
       "notes": "Seed office term for timeline exploration."
     },
     {
@@ -3454,8 +4516,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-021-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-021-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-office-person-021-1",
@@ -3477,7 +4539,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-021-principal",
+      "sourceSegmentId": "seg-person-021-principal-fallback",
       "notes": "Seed office term for timeline exploration."
     },
     {
@@ -3551,8 +4613,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-024-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-024-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-025",
@@ -3568,8 +4630,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-025-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-025-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-026",
@@ -3602,8 +4664,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-027-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-027-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-028",
@@ -3670,8 +4732,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-031-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-031-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-032",
@@ -3852,8 +4914,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-039-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-039-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-040",
@@ -3869,8 +4931,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-040-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-040-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-041",
@@ -4000,8 +5062,8 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-045-principal",
-      "notes": "Auto-extracted from Principal Persons list."
+      "sourceSegmentId": "seg-person-045-principal-fallback",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-person-biography-person-046",
@@ -4019,6 +5081,380 @@
       "status": "pending",
       "sourceSegmentId": "seg-person-046-principal",
       "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-ft-palace-matron-ch-oe",
+      "subjectType": "person",
+      "subjectId": "person-ft-palace-matron-ch-oe",
+      "predicate": "biography",
+      "value": "Head governess in Prince Sado's establishment. She supervised Hyegyŏng's early palace transition and later defended Sado during a major accusation.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-palace-matron-ch-oe-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-kim-hyodok",
+      "subjectType": "person",
+      "subjectId": "person-ft-kim-hyodok",
+      "predicate": "biography",
+      "value": "Lady-in-waiting in charge of ritual matters who participated in Hyegyŏng's pre-marriage palace ceremonies.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-kim-hyodok-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-mun-taebok",
+      "subjectType": "person",
+      "subjectId": "person-ft-mun-taebok",
+      "predicate": "biography",
+      "value": "Lady-in-waiting who delivered Queen Chŏngsŏng's clothing package for Hyegyŏng's final presentation.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-mun-taebok-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-chief-lady-in-waiting-to-queen-dowager-inwon",
+      "subjectType": "person",
+      "subjectId": "person-ft-chief-lady-in-waiting-to-queen-dowager-inwon",
+      "predicate": "biography",
+      "value": "Senior attendant in Queen Dowager Inwŏn's household who relayed court greetings and set a promotion precedent later invoked for Pongnyŏ.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-chief-lady-in-waiting-to-queen-dowager-inwon-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-haenyo",
+      "subjectType": "person",
+      "subjectId": "person-ft-haenyo",
+      "predicate": "biography",
+      "value": "A family slave brought into the palace as part of Hyegyŏng's natal household attendants.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-haenyo-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-aji",
+      "subjectType": "person",
+      "subjectId": "person-ft-aji",
+      "predicate": "biography",
+      "value": "Wet nurse who breast-fed Hyegyŏng, accompanied her to the palace, and later assisted repeatedly with childbirth care for multiple generations.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-aji-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-pongnyo",
+      "subjectType": "person",
+      "subjectId": "person-ft-pongnyo",
+      "predicate": "biography",
+      "value": "Hyegyŏng's lifelong attendant who rose from natal-house slave status to lady-in-waiting and eventually Palace Matron through sustained service.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-pongnyo-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-elderly-lady-in-waiting-measles-care",
+      "subjectType": "person",
+      "subjectId": "person-ft-elderly-lady-in-waiting-measles-care",
+      "predicate": "biography",
+      "value": "Unidentified elder attendant who helped nurse the newborn prince during a severe measles outbreak.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-elderly-lady-in-waiting-measles-care-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-unnamed-lady-in-waiting-disguised-as-pingae",
+      "subjectType": "person",
+      "subjectId": "person-ft-unnamed-lady-in-waiting-disguised-as-pingae",
+      "predicate": "biography",
+      "value": "A lady-in-waiting selected as a decoy to impersonate Pingae during a high-risk interrogation crisis.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-unnamed-lady-in-waiting-disguised-as-pingae-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-palace-matron-yi",
+      "subjectType": "person",
+      "subjectId": "person-ft-palace-matron-yi",
+      "predicate": "biography",
+      "value": "Palace Matron in royal favor who mediated between King Yŏngjo and Prince Sado and protested Kim Kwiju's maneuvering.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-palace-matron-yi-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-palace-matron-han",
+      "subjectType": "person",
+      "subjectId": "person-ft-palace-matron-han",
+      "predicate": "biography",
+      "value": "Second-ranking matron in Sado's establishment, depicted as envious and manipulative; she encouraged martial play patterns later linked to Sado's instability.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-palace-matron-han-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-huijong",
+      "subjectType": "person",
+      "subjectId": "person-ft-huijong",
+      "predicate": "biography",
+      "value": "Lady-in-waiting in charge of the outer kitchen; falsely implicated in Prince Sado's alleged drinking and banished.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-huijong-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-mun-songguk",
+      "subjectType": "person",
+      "subjectId": "person-ft-mun-songguk",
+      "predicate": "biography",
+      "value": "High-ranking palace servant and brother of Lady Mun; used intelligence and proximity to report Prince Sado's movements to King Yŏngjo.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-mun-songguk-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-chon-songhae",
+      "subjectType": "person",
+      "subjectId": "person-ft-chon-songhae",
+      "predicate": "biography",
+      "value": "Eunuch placed in charge of administration for Lady Mun's establishment near Chungjŏng Gate.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-chon-songhae-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-kim-hanch-ae",
+      "subjectType": "person",
+      "subjectId": "person-ft-kim-hanch-ae",
+      "predicate": "biography",
+      "value": "Eunuch on duty identified as Prince Sado's first known killing victim during the period of escalating palace violence.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-kim-hanch-ae-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-yu-insik",
+      "subjectType": "person",
+      "subjectId": "person-ft-yu-insik",
+      "predicate": "biography",
+      "value": "Head eunuch who participated in the cover operation masking Prince Sado's secret absence from court.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-yu-insik-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-pak-munhung",
+      "subjectType": "person",
+      "subjectId": "person-ft-pak-munhung",
+      "predicate": "biography",
+      "value": "Eunuch who supported the impersonation scheme used to conceal Prince Sado's absence.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-pak-munhung-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-so-kyongdal",
+      "subjectType": "person",
+      "subjectId": "person-ft-so-kyongdal",
+      "predicate": "biography",
+      "value": "Supply officer listed among conspicuous victims killed by Prince Sado during late-phase court violence.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-so-kyongdal-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-eunuch-in-charge-of-lecture-copy-redactions",
+      "subjectType": "person",
+      "subjectId": "person-ft-eunuch-in-charge-of-lecture-copy-redactions",
+      "predicate": "biography",
+      "value": "Unidentified eunuch whose daily copy duties were used in attempts to protect the Grand Heir from dangerous passages.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-eunuch-in-charge-of-lecture-copy-redactions-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-eunuch-messenger-during-rice-chest-crisis",
+      "subjectType": "person",
+      "subjectId": "person-ft-eunuch-messenger-during-rice-chest-crisis",
+      "predicate": "biography",
+      "value": "Unidentified eunuch who carried Hyegyŏng's urgent written plea to King Yŏngjo during the 1762 crisis.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-eunuch-messenger-during-rice-chest-crisis-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-lady-in-waiting-yun",
+      "subjectType": "person",
+      "subjectId": "person-ft-lady-in-waiting-yun",
+      "predicate": "biography",
+      "value": "Lady-in-waiting who accompanied Hyegyŏng during the forced departure from Chŏsŭng Pavilion and helped revive her in transit.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-lady-in-waiting-yun-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
+    },
+    {
+      "id": "clm-person-biography-person-ft-pak-p-ilsu",
+      "subjectType": "person",
+      "subjectId": "person-ft-pak-p-ilsu",
+      "predicate": "biography",
+      "value": "Eunuch listed among Prince Sado's cronies executed in the purge following the 1762 catastrophe.",
+      "startYear": null,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-ft-pak-p-ilsu-fulltext-01",
+      "notes": "Seeded from full-text reference extraction."
     },
     {
       "id": "clm-relationship-rel-person-022-person-033-spouse",
@@ -4047,6 +5483,40 @@
       "endYear": 1800,
       "confidence": {
         "extraction": 0.97,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-037-mother-daughter",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-037-mother-daughter",
+      "predicate": "mother-daughter",
+      "value": "Hyegyong records her first daughter Ch’ŏngyŏn as part of her core household and dynastic obligations.",
+      "startYear": 1754,
+      "endYear": 1815,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-036-mother-daughter",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-036-mother-daughter",
+      "predicate": "mother-daughter",
+      "value": "Hyegyong's memoirs repeatedly include Princess Ch’ŏngsŏn in family and court transition episodes.",
+      "startYear": 1756,
+      "endYear": 1802,
+      "confidence": {
+        "extraction": 0.9,
         "resolution": 0.9,
         "historical": "memoir-edition"
       },
@@ -4140,6 +5610,40 @@
       "notes": "Manual seed relation; validate with chapter evidence during review."
     },
     {
+      "id": "clm-relationship-rel-person-033-person-037-father-daughter",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-033-person-037-father-daughter",
+      "predicate": "father-daughter",
+      "value": "Ch’ŏngyŏn is one of Prince Sado's daughters by Lady Hyegyong.",
+      "startYear": 1754,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-033-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-033-person-036-father-daughter",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-033-person-036-father-daughter",
+      "predicate": "father-daughter",
+      "value": "Ch’ŏngsŏn is one of Prince Sado's daughters by Lady Hyegyong.",
+      "startYear": 1756,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-033-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
       "id": "clm-relationship-rel-person-019-person-021-grandson-grandfather",
       "subjectType": "relationship",
       "subjectId": "rel-person-019-person-021-grandson-grandfather",
@@ -4153,7 +5657,41 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": null,
+      "sourceSegmentId": "seg-person-019-principal-fallback",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-019-person-037-siblings",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-037-siblings",
+      "predicate": "siblings",
+      "value": "Jeongjo and Princess Ch’ŏngyŏn were siblings in the Sado-Hyegyong line.",
+      "startYear": 1754,
+      "endYear": 1800,
+      "confidence": {
+        "extraction": 0.88,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-019-person-036-siblings",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-036-siblings",
+      "predicate": "siblings",
+      "value": "Jeongjo and Princess Ch’ŏngsŏn were siblings in the Sado-Hyegyong line.",
+      "startYear": 1756,
+      "endYear": 1800,
+      "confidence": {
+        "extraction": 0.88,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "notes": "Manual seed relation; validate with chapter evidence during review."
     },
     {
@@ -4170,7 +5708,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-046-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "notes": "Manual seed relation; validate with chapter evidence during review."
     },
     {
@@ -4187,7 +5725,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-023-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "notes": "Manual seed relation; validate with chapter evidence during review."
     },
     {
@@ -4204,7 +5742,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-023-principal",
+      "sourceSegmentId": "seg-person-020-principal-fallback",
       "notes": "Manual seed relation; validate with chapter evidence during review."
     },
     {
@@ -4221,7 +5759,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-043-principal",
+      "sourceSegmentId": "seg-person-020-principal-fallback",
       "notes": "Manual seed relation; validate with chapter evidence during review."
     },
     {
@@ -4374,7 +5912,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": "seg-person-011-principal",
+      "sourceSegmentId": "seg-person-017-principal-fallback",
       "notes": "Manual seed relation; validate with chapter evidence during review."
     },
     {
@@ -4710,7 +6248,7 @@
         "historical": "memoir-edition"
       },
       "status": "pending",
-      "sourceSegmentId": null,
+      "sourceSegmentId": "seg-person-017-principal-fallback",
       "notes": "Tier B office-depth expansion from memoir person gloss."
     },
     {
@@ -4895,8 +6433,10 @@
       "reasonType": "low-confidence",
       "severity": "high",
       "summary": "Claim extraction confidence is below 0.86 and should be reviewed against passage context.",
-      "sourceIds": [],
-      "sourceSegmentId": null,
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-017-principal-fallback",
       "status": "open",
       "suggestedAction": "Verify wording against source segment and adjust confidence or claim scope."
     },
@@ -4926,7 +6466,7 @@
       "sourceIds": [
         "src_principal_people"
       ],
-      "sourceSegmentId": "seg-person-011-principal",
+      "sourceSegmentId": "seg-person-017-principal-fallback",
       "status": "open",
       "suggestedAction": "Compare adjacent memoir chapters and mark as resolved only with stable wording."
     },
@@ -4941,7 +6481,7 @@
       "sourceIds": [
         "src_principal_people"
       ],
-      "sourceSegmentId": "seg-person-043-principal",
+      "sourceSegmentId": "seg-person-020-principal-fallback",
       "status": "open",
       "suggestedAction": "Compare adjacent memoir chapters and mark as resolved only with stable wording."
     },
@@ -5163,8 +6703,10 @@
       "reasonType": "evidence-gap",
       "severity": "medium",
       "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
-      "sourceIds": [],
-      "sourceSegmentId": null,
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "status": "open",
       "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
     },
@@ -5179,7 +6721,37 @@
       "sourceIds": [
         "src_principal_people"
       ],
-      "sourceSegmentId": "seg-person-023-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-019-person-036-siblings-evidence-gap",
+      "claimId": "clm-relationship-rel-person-019-person-036-siblings",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-036-siblings",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-019-principal-fallback",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-019-person-037-siblings-evidence-gap",
+      "claimId": "clm-relationship-rel-person-019-person-037-siblings",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-037-siblings",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "status": "open",
       "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
     },
@@ -5194,7 +6766,7 @@
       "sourceIds": [
         "src_principal_people"
       ],
-      "sourceSegmentId": "seg-person-046-principal",
+      "sourceSegmentId": "seg-person-019-principal-fallback",
       "status": "open",
       "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
     },
@@ -5209,7 +6781,7 @@
       "sourceIds": [
         "src_principal_people"
       ],
-      "sourceSegmentId": "seg-person-023-principal",
+      "sourceSegmentId": "seg-person-020-principal-fallback",
       "status": "open",
       "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
     },
@@ -5304,6 +6876,36 @@
       "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
     },
     {
+      "id": "dsp-clm-relationship-rel-person-022-person-036-mother-daughter-evidence-gap",
+      "claimId": "clm-relationship-rel-person-022-person-036-mother-daughter",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-036-mother-daughter",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-022-person-037-mother-daughter-evidence-gap",
+      "claimId": "clm-relationship-rel-person-022-person-037-mother-daughter",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-037-mother-daughter",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-022-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
       "id": "dsp-clm-relationship-rel-person-033-person-021-son-father-evidence-gap",
       "claimId": "clm-relationship-rel-person-033-person-021-son-father",
       "subjectType": "relationship",
@@ -5323,6 +6925,36 @@
       "claimId": "clm-relationship-rel-person-033-person-025-son-mother",
       "subjectType": "relationship",
       "subjectId": "rel-person-033-person-025-son-mother",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-033-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-033-person-036-father-daughter-evidence-gap",
+      "claimId": "clm-relationship-rel-person-033-person-036-father-daughter",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-033-person-036-father-daughter",
+      "reasonType": "evidence-gap",
+      "severity": "medium",
+      "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
+      "sourceIds": [
+        "src_principal_people"
+      ],
+      "sourceSegmentId": "seg-person-033-principal",
+      "status": "open",
+      "suggestedAction": "Open the evidence passage and confirm citation fidelity before approval."
+    },
+    {
+      "id": "dsp-clm-relationship-rel-person-033-person-037-father-daughter-evidence-gap",
+      "claimId": "clm-relationship-rel-person-033-person-037-father-daughter",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-033-person-037-father-daughter",
       "reasonType": "evidence-gap",
       "severity": "medium",
       "summary": "Claim notes indicate manual seeding or explicit validation requirement on a high-impact claim.",
