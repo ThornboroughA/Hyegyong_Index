@@ -4,6 +4,24 @@ export type ClaimStatus = 'pending' | 'approved' | 'rejected';
 export type DisputeStatus = 'open' | 'resolved' | 'dismissed';
 export type ReviewerRole = 'viewer' | 'editor' | 'lead';
 
+export interface MediaAsset {
+  src: string;
+  alt?: string;
+  caption?: string;
+  credit?: string;
+  focalPoint?: string;
+}
+
+export interface MediaIndex {
+  people?: Record<string, MediaAsset>;
+  events?: Record<string, MediaAsset>;
+  places?: Record<string, MediaAsset>;
+  relationships?: Record<string, MediaAsset>;
+  sources?: Record<string, MediaAsset>;
+  sourceSegments?: Record<string, MediaAsset>;
+  claims?: Record<string, MediaAsset>;
+}
+
 export interface Alias {
   id: string;
   text: string;
@@ -42,6 +60,7 @@ export interface Person {
     startYear: number | null;
     endYear: number | null;
   };
+  image?: MediaAsset;
 }
 
 export interface Source {
@@ -56,6 +75,7 @@ export interface Source {
   workYear: string;
   workType: 'book' | 'journal' | 'derived-reference' | 'other';
   workCitation: string;
+  image?: MediaAsset;
 }
 
 export interface SourceSegment {
@@ -64,6 +84,7 @@ export interface SourceSegment {
   label: string;
   excerpt: string;
   yearHint: number | null;
+  image?: MediaAsset;
 }
 
 export interface Place {
@@ -76,6 +97,7 @@ export interface Place {
   mapX?: number;
   mapY?: number;
   mapGroup?: string;
+  image?: MediaAsset;
 }
 
 export interface Event {
@@ -90,6 +112,7 @@ export interface Event {
   sourceSegmentId: string;
   confidence: number;
   tier: Tier;
+  image?: MediaAsset;
 }
 
 export interface Relationship {
@@ -103,6 +126,7 @@ export interface Relationship {
   confidence: number;
   sourceSegmentId: string | null;
   tier: Tier;
+  image?: MediaAsset;
 }
 
 export interface Claim {
@@ -121,6 +145,7 @@ export interface Claim {
   status: ClaimStatus;
   sourceSegmentId: string | null;
   notes: string;
+  image?: MediaAsset;
 }
 
 export interface Dispute {

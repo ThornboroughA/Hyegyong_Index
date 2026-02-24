@@ -1,77 +1,82 @@
-# Hyegyong Atlas (Tier A + Tier B + Tier C)
+# Hyegyong Atlas
 
-Interactive reference web app for exploring *The Memoirs of Lady Hyegyong* with a shared timeline, people graph, and editorial review workflow.
+Interactive reference workspace for exploring *The Memoirs of Lady Hyegyong* through one synchronized timeline, with people/events/relationships, evidence traceability, and editorial review tools.
 
-## Tier A scope implemented
+## Product Spine
 
-- Timeline spine (global year control)
-- Cross-section snapshot at selected year
-- People explorer (Tier A/B/C aware)
-- Person detail view with aliases, office terms, and relationship rows
-- Basic relationship graph (time-filtered)
-- Family-tree lens (relationship cards centered on selected person)
-- Inline cross-linking in prose:
-  - person-name links (canonical names + supported aliases)
-  - glossary-term links
-- Glossary tab with searchable historical terms
-- Evidence panel with source-linked excerpts
-- Editorial mode:
-  - claim review inbox (`pending` / `approved` / `rejected`)
-  - entity merge tool
+- One shared timeline controls context across the full app.
+- Every surfaced fact is traceable back to source passages.
+- Entity work is reversible (merge/split with action history).
+- English remains canonical data; Korean is an overlay.
+- Public and editorial modes are separated for safe publishing.
+
+## Current Capabilities
+
+- Timeline spine with year density strip and linked cross-section navigation.
+- People explorer with searchable aliases, biography context, office/rank timelines, and relationship drill-down.
+- Relationship network and family lens views.
+- Event cross-section matrix and palace/site map overlays.
+- Source comparison by selected person.
+- Editorial workflows:
+  - claim review inbox
+  - conflict/dispute queue
+  - merge/split tools
   - alias manager
   - add-character workflow
-  - state management (export/import/reset editorial decisions)
+  - reviewer roles, action feed, release notes export
+- Saved views and shareable query-string links.
+- Offline/PWA shell support.
+- Optional image slots for people/events/places/relationships/sources/evidence blocks.
 
-## Tier B scope implemented
+## Image Workflow
 
-- Office/rank timeline view (cross-person bars + active-year slice)
-- Event cross-section matrix (parallel people/time windows)
-- Palace/site map overlays with event hotspots
-- Source comparison panel (section-level coverage by selected person)
-- Conflict/dispute queue with resolve/dismiss/reset workflow
-- Split entity workflow (create/undo split candidates with audit records)
-- Tier B memoir-derived data expansion:
-  - additional events
-  - additional office terms
-  - map coordinates for key locations
-  - seeded dispute flags
+The app now supports visual curation through an optional media manifest:
 
-## Tier C scope implemented
+- Manifest path: `public/data/media-index.json`
+- Asset folder (recommended): `public/media/`
+- Supported buckets:
+  - `people`
+  - `events`
+  - `places`
+  - `relationships`
+  - `sources`
+  - `sourceSegments`
+  - `claims`
 
-- Advanced operational filters:
-  - person group/activity filters
-  - event-type filter
-  - review inbox confidence/source filters
-  - dispute reason/severity filters
-- Saved views and shareable query-string links
-- Multi-reviewer workflow scaffolding:
-  - reviewer identity + role (`viewer` / `editor` / `lead`)
-  - action log feed
-  - lead-gated release notes export
-- Publication-safe editorial controls:
-  - public build excludes editorial tab
-  - optional editorial unlock code (`VITE_EDITOR_ACCESS_CODE`)
-- Tier C QA dashboard:
-  - quality counters
-  - focused data-pass summaries (top sources + people needing review)
-- Mobile-friendly field mode toggle
-- Offline/PWA support:
-  - manifest + service worker caching for app shell and dataset files
-- Bilingual framework extension:
-  - English canonical data
-  - Korean overlay for people/events/relationships/places/glossary and label taxonomies in key UI contexts
+Each entry is keyed by canonical ID and supports:
 
-## Data and extraction
+- `src` (required)
+- `alt`
+- `caption`
+- `credit`
+- `focalPoint` (CSS object-position, e.g. `"50% 20%"`)
+
+Example:
+
+```json
+{
+  "people": {
+    "person-lady-hyegyong": {
+      "src": "/media/people/lady-hyegyong.jpg",
+      "alt": "Portrait of Lady Hyegyong",
+      "caption": "Reference portrait",
+      "credit": "Collection / rights holder",
+      "focalPoint": "50% 20%"
+    }
+  }
+}
+```
+
+If no image is mapped, the UI shows a non-breaking placeholder card.
+
+## Data + References
 
 - Source EPUB: `../The Memoirs of Lady Hyegyong.epub`
-- Generated references live in `references/`
-- Tier A dataset file: `public/data/tier-a.json`
-- Tier B dataset file: `public/data/tier-b.json`
-- Tier C dataset file: `public/data/tier-c.json`
-- Dataset build scripts:
-  - `scripts/build_tier_a_data.py`
-  - `scripts/build_tier_b_data.py`
-  - `scripts/build_tier_c_data.py`
+- Generated references: `references/`
+- Runtime dataset fallback order:
+  - `public/data/tier-c.json`
+  - `public/data/tier-b.json`
+  - `public/data/tier-a.json`
 
 ## Commands
 
@@ -86,90 +91,34 @@ Build production bundle:
 npm run build
 ```
 
-Public read-only build (no editorial tab):
+Public read-only build:
 
 ```bash
 VITE_APP_MODE=public npm run build
 ```
 
-Editor/studio build (authoring enabled):
+Editorial build:
 
 ```bash
 VITE_APP_MODE=editorial npm run build
 ```
 
-Rebuild dataset only:
+Rebuild datasets:
 
 ```bash
 npm run build:data
 ```
 
-Tier-specific dataset builds:
-
-```bash
-npm run build:data:tier-a
-npm run build:data:tier-b
-npm run build:data:tier-c
-```
-
-Freeze a Tier A baseline snapshot:
-
-```bash
-npm run freeze:tier-a
-```
-
-This writes:
-
-- `baselines/tier-a-baseline-<timestamp>.json`
-- `baselines/tier-a-baseline.latest.json`
-- `baselines/tier-a-baseline.meta.json`
-- `public/data/tier-a-baseline.meta.json` (for in-app baseline display)
-
-Freeze a Tier B baseline snapshot:
-
-```bash
-npm run freeze:tier-b
-```
-
-This writes:
-
-- `baselines/tier-b-baseline-<timestamp>.json`
-- `baselines/tier-b-baseline.latest.json`
-- `baselines/tier-b-baseline.meta.json`
-- `public/data/tier-b-baseline.meta.json` (for in-app baseline display)
-
-Freeze a Tier C baseline snapshot:
+Freeze a baseline snapshot:
 
 ```bash
 npm run freeze:tier-c
 ```
 
-This writes:
+## Operational Notes
 
-- `baselines/tier-c-baseline-<timestamp>.json`
-- `baselines/tier-c-baseline.latest.json`
-- `baselines/tier-c-baseline.meta.json`
-- `public/data/tier-c-baseline.meta.json` (for in-app baseline display)
-
-## Notes
-
-- Editorial actions persist in browser `localStorage` under key `hyegyong-atlas-tier-a-edits-v1`.
-- The app loads `public/data/tier-b.json` first and falls back to `public/data/tier-a.json` if Tier B is missing.
-- The app loads `public/data/tier-c.json` first and falls back to Tier B, then Tier A.
-- Tier B conflict/dispute generation is intentionally focused (one highest-priority dispute per claim, with stricter thresholds for medium-confidence flags).
-- Tier C focused pass computes extra operational metadata (`tierC.quality` + `tierC.focusedPass`) from the memoir-only dataset.
-- Export editorial state JSON before major ingest/review passes so decisions can be restored on another machine/browser.
-- Tier A claims are seeded as `pending` to support deliberate review passes.
-- English is canonical in the data model; structure is ready for Korean overlay fields.
-- Korean localization overlays are currently defined in:
-  - `src/localization-ko.ts` (memoir-derived historical content + label maps)
-- Production/public safety:
-  - use `VITE_APP_MODE=public` for read-only publication
-  - use `VITE_APP_MODE=editorial` (default) for authoring builds
-  - set `VITE_EDITOR_ACCESS_CODE=<code>` to require unlock before edits
-- Installability/offline:
-  - build includes `manifest.webmanifest` and `sw.js`
-  - service worker registers only in production builds
-- Evidence and review entries use two provenance layers:
-  - `Source Work` (book/journal-level citation, e.g., Haboush translation of *The Memoirs of Lady Hyegyong*)
-  - `Section` + `Path` + `Segment` (within-work provenance for extracted passages)
+- Editorial state persists in browser `localStorage`.
+- Export state JSON before major ingest/review sessions.
+- Korean overlays are defined in `src/localization-ko.ts`.
+- Service worker registers only in production builds.
+- Legacy script names still use `tier-*` naming for dataset compatibility.

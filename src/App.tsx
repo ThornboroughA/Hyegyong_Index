@@ -10,6 +10,8 @@ import type {
   DisputeStatus,
   Event,
   LocalEdits,
+  MediaAsset,
+  MediaIndex,
   Place,
   Person,
   ReviewerAction,
@@ -180,6 +182,8 @@ type LinkMatch = {
   priority: number;
 };
 
+type MediaBucket = keyof MediaIndex;
+
 const STORAGE_KEY = 'hyegyong-atlas-tier-a-edits-v1';
 const SAVED_VIEWS_KEY = 'hyegyong-atlas-saved-views-v1';
 const REVIEWER_KEY = 'hyegyong-atlas-reviewer-v1';
@@ -190,9 +194,69 @@ const APP_MODE =
     ? 'public'
     : 'editorial';
 const BASE_URL = import.meta.env.BASE_URL;
+const MEDIA_BUCKETS: MediaBucket[] = [
+  'people',
+  'events',
+  'places',
+  'relationships',
+  'sources',
+  'sourceSegments',
+  'claims',
+];
 
 function toBaseUrl(path: string): string {
   return `${BASE_URL}${path.replace(/^\/+/, '')}`;
+}
+
+function toAssetUrl(path: string): string {
+  const value = path.trim();
+  if (!value) return '';
+  if (/^(?:https?:)?\/\//i.test(value) || value.startsWith('data:') || value.startsWith('blob:')) return value;
+  return toBaseUrl(value);
+}
+
+function normalizeMediaAsset(input: unknown): MediaAsset | null {
+  if (!input || typeof input !== 'object') return null;
+  const row = input as Record<string, unknown>;
+  const src = typeof row.src === 'string' ? row.src.trim() : '';
+  if (!src) return null;
+  return {
+    src,
+    alt: typeof row.alt === 'string' ? row.alt.trim() : undefined,
+    caption: typeof row.caption === 'string' ? row.caption.trim() : undefined,
+    credit: typeof row.credit === 'string' ? row.credit.trim() : undefined,
+    focalPoint: typeof row.focalPoint === 'string' ? row.focalPoint.trim() : undefined,
+  };
+}
+
+function normalizeMediaIndex(input: unknown): MediaIndex {
+  const empty: MediaIndex = {};
+  if (!input || typeof input !== 'object') return empty;
+  const source = input as Record<string, unknown>;
+  const out: MediaIndex = {};
+  for (const bucket of MEDIA_BUCKETS) {
+    const bucketRaw = source[bucket];
+    if (!bucketRaw || typeof bucketRaw !== 'object') continue;
+    const entries = bucketRaw as Record<string, unknown>;
+    const normalized: Record<string, MediaAsset> = {};
+    for (const [id, payload] of Object.entries(entries)) {
+      const media = normalizeMediaAsset(payload);
+      if (media) normalized[id] = media;
+    }
+    if (Object.keys(normalized).length) out[bucket] = normalized;
+  }
+  return out;
+}
+
+function initials(value: string, fallback = 'IMG'): string {
+  const clean = value
+    .replace(/[^A-Za-z0-9\u00C0-\u024F\uAC00-\uD7A3\s]+/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (!clean.length) return fallback;
+  if (clean.length === 1) return clean[0].slice(0, 2).toUpperCase();
+  return `${clean[0][0] ?? ''}${clean[1][0] ?? ''}`.toUpperCase();
 }
 
 const UI_COPY: Record<UiLanguage, Record<string, string>> = {
@@ -484,7 +548,7 @@ function deriveDisputesFromClaims(claims: ClaimView[], segmentById: Map<string, 
       candidates.push({
         reasonType: 'low-confidence',
         severity: 'medium',
-        summary: 'Extraction confidence is below Tier B threshold (0.90) for a high-impact claim.',
+        summary: 'Extraction confidence is below the 0.90 threshold for a high-impact claim.',
         suggestedAction: 'Confirm evidence and leave pending if confidence cannot be raised.',
       });
     }
@@ -554,6 +618,7 @@ function deriveDisputesFromClaims(claims: ClaimView[], segmentById: Map<string, 
 function App() {
   const editorialEnabled = APP_MODE === 'editorial';
   const [dataset, setDataset] = useState<Dataset | null>(null);
+  const [mediaIndex, setMediaIndex] = useState<MediaIndex>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -673,12 +738,23 @@ function App() {
           break;
         }
         if (!next) throw new Error(`Failed to load dataset (${lastStatus ?? 'no response'})`);
+        let nextMedia: MediaIndex = {};
+        try {
+          const mediaResponse = await fetch(toBaseUrl('data/media-index.json'));
+          if (mediaResponse.ok) {
+            nextMedia = normalizeMediaIndex((await mediaResponse.json()) as unknown);
+          }
+        } catch {
+          nextMedia = {};
+        }
         if (cancelled) return;
+        setMediaIndex(nextMedia);
         setDataset(next);
         const focus = clamp(1762, next.yearRange.startYear, next.yearRange.endYear);
         setSelectedYear(focus);
       } catch (err) {
         if (!cancelled) {
+          setMediaIndex({});
           setError(err instanceof Error ? err.message : 'Unknown data loading error');
         }
       } finally {
@@ -1119,15 +1195,6 @@ function App() {
     [people, selectedYear],
   );
 
-  const activeTierAPeople = useMemo(
-    () => activePeopleAtYear.filter((person) => person.tier === 'A'),
-    [activePeopleAtYear],
-  );
-  const activeTierBPeople = useMemo(
-    () => activePeopleAtYear.filter((person) => person.tier === 'B'),
-    [activePeopleAtYear],
-  );
-
   const activeRelationshipsAtYear = useMemo(
     () => relationships.filter((rel) => isYearInRange(selectedYear, rel.startYear, rel.endYear)),
     [relationships, selectedYear],
@@ -1557,6 +1624,20 @@ function App() {
     [uiLanguage],
   );
 
+  const getCoverageLabel = useCallback(
+    (tier: Tier): string => {
+      if (uiLanguage === 'ko') {
+        if (tier === 'A') return '핵심 인물군';
+        if (tier === 'B') return '확장 인물군';
+        return '장기 검토 인물군';
+      }
+      if (tier === 'A') return 'Core set';
+      if (tier === 'B') return 'Expanded set';
+      return 'Long-tail set';
+    },
+    [uiLanguage],
+  );
+
   const getPersonDisplay = useCallback(
     (person: Person | null | undefined): string => {
       if (!person) return '';
@@ -1682,6 +1763,66 @@ function App() {
       return `${KO_WORK_TITLE} - ${KO_WORK_CONTRIBUTOR}`;
     },
     [uiLanguage],
+  );
+
+  const mediaHint =
+    uiLanguage === 'ko' ? 'data/media-index.json에 이미지 경로를 추가하세요.' : 'Add image paths in data/media-index.json.';
+
+  const getMediaAsset = useCallback(
+    (bucket: MediaBucket, id: string | null | undefined): MediaAsset | null => {
+      if (!id) return null;
+      return mediaIndex[bucket]?.[id] ?? null;
+    },
+    [mediaIndex],
+  );
+
+  const getPersonImage = useCallback(
+    (person: Person | null | undefined): MediaAsset | null => {
+      if (!person) return null;
+      return person.image ?? getMediaAsset('people', person.id);
+    },
+    [getMediaAsset],
+  );
+
+  const getEventImage = useCallback(
+    (event: Event | null | undefined): MediaAsset | null => {
+      if (!event) return null;
+      return event.image ?? getMediaAsset('events', event.id);
+    },
+    [getMediaAsset],
+  );
+
+  const getPlaceImage = useCallback(
+    (place: Place | null | undefined): MediaAsset | null => {
+      if (!place) return null;
+      return place.image ?? getMediaAsset('places', place.id);
+    },
+    [getMediaAsset],
+  );
+
+  const getRelationshipImage = useCallback(
+    (relationship: Relationship | null | undefined): MediaAsset | null => {
+      if (!relationship) return null;
+      const baseId = relationship.id.split('::')[0];
+      return relationship.image ?? getMediaAsset('relationships', baseId) ?? getMediaAsset('relationships', relationship.id);
+    },
+    [getMediaAsset],
+  );
+
+  const getSourceImage = useCallback(
+    (source: Source | null | undefined): MediaAsset | null => {
+      if (!source) return null;
+      return source.image ?? getMediaAsset('sources', source.id);
+    },
+    [getMediaAsset],
+  );
+
+  const getSegmentImage = useCallback(
+    (segment: SourceSegment | null | undefined): MediaAsset | null => {
+      if (!segment) return null;
+      return segment.image ?? getMediaAsset('sourceSegments', segment.id);
+    },
+    [getMediaAsset],
   );
 
   const formatClaimValueLocalized = useCallback(
@@ -2262,7 +2403,7 @@ function App() {
       },
       status: 'pending',
       sourceSegmentId: sourcePerson.sourceSegmentIds[0] ?? null,
-      notes: 'Tier B split workflow candidate. Review before canonical adoption.',
+      notes: 'Split workflow candidate. Review before canonical adoption.',
     };
 
     const splitRecord: SplitRecord = {
@@ -2442,14 +2583,10 @@ function App() {
 
   const yearMin = dataset.yearRange.startYear;
   const yearMax = dataset.yearRange.endYear;
+  const timelineDensityMax = Math.max(1, ...dataset.yearDensity.map((item) => item.count));
   const primaryWorkSource = dataset.sources[0];
   const primaryWorkLabel = primaryWorkSource ? getWorkLabelLocalized(primaryWorkSource) : dataset.meta.sourceEdition;
-  const tierLabel =
-    dataset.meta.dataset === 'hyegyong-tier-c'
-      ? 'Tier C reference workspace'
-      : dataset.meta.dataset === 'hyegyong-tier-b'
-        ? 'Tier B reference workspace'
-        : 'Tier A reference workspace';
+  const workspaceLabel = uiLanguage === 'ko' ? '연구용 기준 워크스페이스' : 'Reference workspace';
 
   return (
     <div className={`app-shell ${fieldMode ? 'field-mode' : ''}`}>
@@ -2457,7 +2594,7 @@ function App() {
         <div>
           <h1>Hyegyong Atlas</h1>
           <p>
-            {tierLabel} · canonical language: English
+            {workspaceLabel} · canonical language: English
           </p>
         </div>
         <div className="topbar-side">
@@ -2465,7 +2602,6 @@ function App() {
             <span title={primaryWorkSource?.workCitation ?? dataset.meta.sourceEdition}>
               {uiLanguage === 'ko' ? '출처 저작' : 'Source Work'}: {primaryWorkLabel}
             </span>
-            <span>Dataset: {dataset.meta.dataset}</span>
             <span>Snapshot: {new Date(dataset.meta.generatedAt).toLocaleString()}</span>
             <span>Network: {isOnline ? 'online' : 'offline'}</span>
             <span>People: {people.length}</span>
@@ -2529,8 +2665,15 @@ function App() {
 
       <section className="timeline-card">
         <div className="timeline-header">
-          <strong>{t('timelineSpine', 'Timeline Spine')}</strong>
-          <span>
+          <div>
+            <strong>{t('timelineSpine', 'Timeline Spine')}</strong>
+            <p className="timeline-subtitle">
+              {uiLanguage === 'ko'
+                ? '연도를 이동해 인물, 사건, 관계를 한 축에서 함께 탐색합니다.'
+                : 'Move through years to keep people, events, and relationships in one synchronized view.'}
+            </p>
+          </div>
+          <span className="timeline-year-badge">
             Year {selectedYear}
             {hyegyongAge != null ? ` · Hyegyŏng age ${hyegyongAge}` : ''}
           </span>
@@ -2542,15 +2685,18 @@ function App() {
           value={selectedYear}
           onChange={(event) => setSelectedYear(Number(event.target.value))}
         />
+        <div className="timeline-scale">
+          <span>{yearMin}</span>
+          <span>{yearMax}</span>
+        </div>
         <div className="year-density">
           {dataset.yearDensity.map((row) => {
-            const maxCount = Math.max(...dataset.yearDensity.map((item) => item.count));
             const active = row.year === selectedYear;
             return (
               <button
                 key={row.year}
                 className={`year-bar ${active ? 'active' : ''}`}
-                style={{ height: `${12 + (row.count / maxCount) * 38}px` }}
+                style={{ height: `${14 + (row.count / timelineDensityMax) * 50}px` }}
                 title={`${row.year} · mentions: ${row.count}`}
                 onClick={() => setSelectedYear(row.year)}
               />
@@ -2594,8 +2740,7 @@ function App() {
                   : 'Editorial (view-only)'
                 : 'Public (read-only)'}
             </p>
-            <p>Tier A people active: {activeTierAPeople.length}</p>
-            <p>Tier B people active: {activeTierBPeople.length}</p>
+            <p>People active: {activePeopleAtYear.length}</p>
             <p>Relationships active: {activeRelationshipsAtYear.length}</p>
             <p>Events active: {activeEventsAtYear.length}</p>
             <p>Offices active: {activeOfficeRows.length}</p>
@@ -2652,42 +2797,53 @@ function App() {
                     const eventMeta = getSourceMetaBySegmentId(event.sourceSegmentId);
                     return (
                       <article key={event.id} className={`event-item ${selectedEventId === event.id ? 'active' : ''}`}>
-                        <button
-                          type="button"
-                          className="event-select"
-                          onClick={() => {
-                            setSelectedEventId(event.id);
-                            setSelectedClaimId(`clm-event-${event.id}`);
-                          }}
-                        >
-                          <div>
-                            <strong>{getEventDisplay(event)}</strong>
-                            <span>
-                              {event.startYear}
-                              {event.endYear !== event.startYear ? `–${event.endYear}` : ''}
-                            </span>
-                          </div>
-                        </button>
-                        <p className="linked-block">{renderLinkedText(getEventSummaryText(event), 140)}</p>
-                        <SourceReference
-                          source={eventMeta?.source}
-                          sectionLabel={getSourceLabel(eventMeta?.source)}
-                          language={uiLanguage}
-                          workLabel={getWorkLabelLocalized(eventMeta?.source)}
-                        />
-                        {showDeepReference && (
-                          <ProvenanceTags
-                            items={[
-                              { label: 'Event', value: event.id },
-                              { label: 'Work', value: getWorkLabelLocalized(eventMeta?.source) },
-                              { label: 'Section', value: getSourceLabel(eventMeta?.source) || 'unknown' },
-                              { label: 'Path', value: eventMeta?.source?.path ?? 'n/a' },
-                              { label: 'Segment', value: eventMeta?.segment?.id ?? 'n/a' },
-                              { label: 'Method', value: 'seeded-event' },
-                              { label: 'Confidence', value: event.confidence.toFixed(2) },
-                            ]}
+                        <div className="event-item-layout">
+                          <DataCardImage
+                            asset={getEventImage(event)}
+                            label={getEventDisplay(event)}
+                            hint={mediaHint}
+                            variant="square"
+                            size="small"
                           />
-                        )}
+                          <div className="event-item-content">
+                            <button
+                              type="button"
+                              className="event-select"
+                              onClick={() => {
+                                setSelectedEventId(event.id);
+                                setSelectedClaimId(`clm-event-${event.id}`);
+                              }}
+                            >
+                              <div>
+                                <strong>{getEventDisplay(event)}</strong>
+                                <span>
+                                  {event.startYear}
+                                  {event.endYear !== event.startYear ? `–${event.endYear}` : ''}
+                                </span>
+                              </div>
+                            </button>
+                            <p className="linked-block">{renderLinkedText(getEventSummaryText(event), 140)}</p>
+                            <SourceReference
+                              source={eventMeta?.source}
+                              sectionLabel={getSourceLabel(eventMeta?.source)}
+                              language={uiLanguage}
+                              workLabel={getWorkLabelLocalized(eventMeta?.source)}
+                            />
+                            {showDeepReference && (
+                              <ProvenanceTags
+                                items={[
+                                  { label: 'Event', value: event.id },
+                                  { label: 'Work', value: getWorkLabelLocalized(eventMeta?.source) },
+                                  { label: 'Section', value: getSourceLabel(eventMeta?.source) || 'unknown' },
+                                  { label: 'Path', value: eventMeta?.source?.path ?? 'n/a' },
+                                  { label: 'Segment', value: eventMeta?.segment?.id ?? 'n/a' },
+                                  { label: 'Method', value: 'seeded-event' },
+                                  { label: 'Confidence', value: event.confidence.toFixed(2) },
+                                ]}
+                              />
+                            )}
+                          </div>
+                        </div>
                       </article>
                     );
                   })}
@@ -2695,9 +2851,9 @@ function App() {
               </section>
 
               <section className="card">
-                <h3>Active Tier A Figures</h3>
+                <h3>Active Figures in Focus</h3>
                 <div className="chip-grid">
-                  {activeTierAPeople.map((person) => (
+                  {activePeopleAtYear.slice(0, 18).map((person) => (
                     <button
                       key={person.id}
                       className={`chip ${selectedPersonId === person.id ? 'active' : ''}`}
@@ -2725,10 +2881,10 @@ function App() {
                     placeholder="Search name or alias"
                   />
                   <select value={tierFilter} onChange={(event) => setTierFilter(event.target.value as 'all' | Tier)}>
-                    <option value="all">All tiers</option>
-                    <option value="A">Tier A</option>
-                    <option value="B">Tier B</option>
-                    <option value="C">Tier C</option>
+                    <option value="all">{uiLanguage === 'ko' ? '모든 인물군' : 'All coverage sets'}</option>
+                    <option value="A">{getCoverageLabel('A')}</option>
+                    <option value="B">{getCoverageLabel('B')}</option>
+                    <option value="C">{getCoverageLabel('C')}</option>
                   </select>
                   <select value={personGroupFilter} onChange={(event) => setPersonGroupFilter(event.target.value)}>
                     {personGroupOptions.map((group) => (
@@ -2758,12 +2914,21 @@ function App() {
                         setSelectedEventId('');
                       }}
                     >
-                      <div>
-                        <strong>{getPersonDisplay(person)}</strong>
-                        <span>{person.lifeLabel}</span>
+                      <div className="person-row-main">
+                        <DataCardImage
+                          asset={getPersonImage(person)}
+                          label={getPersonDisplay(person)}
+                          hint={mediaHint}
+                          variant="square"
+                          size="tiny"
+                        />
+                        <div className="person-row-copy">
+                          <strong>{getPersonDisplay(person)}</strong>
+                          <span>{person.lifeLabel}</span>
+                        </div>
                       </div>
                       <small>
-                        Tier {person.tier} · {getGroupLabel(person.group)}
+                        {getCoverageLabel(person.tier)} · {getGroupLabel(person.group)}
                       </small>
                     </button>
                   ))}
@@ -2774,6 +2939,12 @@ function App() {
                 {selectedPerson ? (
                   <>
                     <h2>{getPersonDisplay(selectedPerson)}</h2>
+                    <DataCardImage
+                      asset={getPersonImage(selectedPerson)}
+                      label={getPersonDisplay(selectedPerson)}
+                      hint={mediaHint}
+                      variant="portrait"
+                    />
                     <p>{renderLinkedText(getPersonBiographyText(selectedPerson))}</p>
                     <SourceReference
                       source={selectedPersonSourceMeta?.source}
@@ -2819,7 +2990,7 @@ function App() {
                             </div>
                           ))
                         ) : (
-                          <p className="muted">No Tier A office terms seeded yet.</p>
+                          <p className="muted">No office/rank terms recorded yet.</p>
                         )}
                       </div>
                     </section>
@@ -2833,10 +3004,19 @@ function App() {
                               rel.sourcePersonId === selectedPerson.id ? rel.targetPersonId : rel.sourcePersonId;
                             return (
                               <button key={rel.id} className="relation-item">
-                                <strong>{getPersonLabel(counterpartId)}</strong>
-                                <span>
-                                  {getRelationTypeLabel(rel.relationType)} · {rel.startYear}-{rel.endYear}
-                                </span>
+                                <DataCardImage
+                                  asset={getRelationshipImage(rel)}
+                                  label={`${getPersonLabel(rel.sourcePersonId)} ${getPersonLabel(rel.targetPersonId)}`}
+                                  hint={mediaHint}
+                                  variant="square"
+                                  size="tiny"
+                                />
+                                <div className="relation-copy">
+                                  <strong>{getPersonLabel(counterpartId)}</strong>
+                                  <span>
+                                    {getRelationTypeLabel(rel.relationType)} · {rel.startYear}-{rel.endYear}
+                                  </span>
+                                </div>
                               </button>
                             );
                           })
@@ -2875,33 +3055,42 @@ function App() {
                   {activeRelationshipsAtYear.map((rel) => {
                     const relMeta = getSourceMetaBySegmentId(rel.sourceSegmentId);
                     return (
-                      <div key={rel.id} className="table-row">
-                        <strong>
-                          {getPersonLabel(rel.sourcePersonId)} ↔ {getPersonLabel(rel.targetPersonId)}
-                        </strong>
-                        <span>
-                          {getRelationTypeLabel(rel.relationType)} · {rel.startYear}-{rel.endYear}
-                        </span>
-                        <p>{renderLinkedText(getRelationshipSummaryText(rel), 140)}</p>
-                        <SourceReference
-                          source={relMeta?.source}
-                          sectionLabel={getSourceLabel(relMeta?.source)}
-                          language={uiLanguage}
-                          workLabel={getWorkLabelLocalized(relMeta?.source)}
+                      <div key={rel.id} className="table-row table-row-media">
+                        <DataCardImage
+                          asset={getRelationshipImage(rel)}
+                          label={`${getPersonLabel(rel.sourcePersonId)} ${getPersonLabel(rel.targetPersonId)}`}
+                          hint={mediaHint}
+                          variant="square"
+                          size="small"
                         />
-                        {showDeepReference && (
-                          <ProvenanceTags
-                            items={[
-                              { label: 'Relationship', value: rel.id },
-                              { label: 'Work', value: getWorkLabelLocalized(relMeta?.source) },
-                              { label: 'Section', value: getSourceLabel(relMeta?.source) || 'unknown' },
-                              { label: 'Path', value: relMeta?.source?.path ?? 'n/a' },
-                              { label: 'Segment', value: relMeta?.segment?.id ?? 'n/a' },
-                              { label: 'Method', value: 'seeded-relationship' },
-                              { label: 'Confidence', value: rel.confidence.toFixed(2) },
-                            ]}
+                        <div className="table-row-content">
+                          <strong>
+                            {getPersonLabel(rel.sourcePersonId)} ↔ {getPersonLabel(rel.targetPersonId)}
+                          </strong>
+                          <span>
+                            {getRelationTypeLabel(rel.relationType)} · {rel.startYear}-{rel.endYear}
+                          </span>
+                          <p>{renderLinkedText(getRelationshipSummaryText(rel), 140)}</p>
+                          <SourceReference
+                            source={relMeta?.source}
+                            sectionLabel={getSourceLabel(relMeta?.source)}
+                            language={uiLanguage}
+                            workLabel={getWorkLabelLocalized(relMeta?.source)}
                           />
-                        )}
+                          {showDeepReference && (
+                            <ProvenanceTags
+                              items={[
+                                { label: 'Relationship', value: rel.id },
+                                { label: 'Work', value: getWorkLabelLocalized(relMeta?.source) },
+                                { label: 'Section', value: getSourceLabel(relMeta?.source) || 'unknown' },
+                                { label: 'Path', value: relMeta?.source?.path ?? 'n/a' },
+                                { label: 'Segment', value: relMeta?.segment?.id ?? 'n/a' },
+                                { label: 'Method', value: 'seeded-relationship' },
+                                { label: 'Confidence', value: rel.confidence.toFixed(2) },
+                              ]}
+                            />
+                          )}
+                        </div>
                       </div>
                     );
                   })}
@@ -2923,13 +3112,11 @@ function App() {
                       setActiveTab('family');
                     }}
                   >
-                    {people
-                      .filter((person) => person.tier === 'A')
-                      .map((person) => (
-                        <option key={person.id} value={person.id}>
-                          {getPersonDisplay(person)}
-                        </option>
-                      ))}
+                    {people.map((person) => (
+                      <option key={person.id} value={person.id}>
+                        {getPersonDisplay(person)}
+                      </option>
+                    ))}
                   </select>
                 </p>
                 {familyRoot ? (
@@ -3052,8 +3239,8 @@ function App() {
               <section className="card">
                 <h2>Source Comparison</h2>
                 <p>
-                  Cross-section by section/source for the selected person. This is Tier B scaffolding for future
-                  multi-book comparison.
+                  Cross-section by section/source for the selected person. Designed to support future multi-work
+                  comparison as your corpus grows.
                 </p>
                 {selectedPerson ? (
                   <h3>{getPersonDisplay(selectedPerson)}</h3>
@@ -3063,19 +3250,28 @@ function App() {
                 <div className="table-list">
                   {sourceCoverageRows.length ? (
                     sourceCoverageRows.map((row) => (
-                      <article key={row.source.id} className="table-row source-coverage-row">
-                        <strong>{getSourceLabel(row.source)}</strong>
-                        <span>
-                          Claims {row.claimCount} · Events {row.eventCount} · Relationships {row.relationshipCount}
-                        </span>
-                        <span>Years: {row.yearSpan}</span>
-                        <SourceReference
-                          source={row.source}
-                          sectionLabel={getSourceLabel(row.source)}
-                          language={uiLanguage}
-                          workLabel={getWorkLabelLocalized(row.source)}
+                      <article key={row.source.id} className="table-row source-coverage-row table-row-media">
+                        <DataCardImage
+                          asset={getSourceImage(row.source)}
+                          label={getSourceLabel(row.source)}
+                          hint={mediaHint}
+                          variant="square"
+                          size="small"
                         />
-                        <p>{renderLinkedText(row.excerpt, 180)}</p>
+                        <div className="table-row-content">
+                          <strong>{getSourceLabel(row.source)}</strong>
+                          <span>
+                            Claims {row.claimCount} · Events {row.eventCount} · Relationships {row.relationshipCount}
+                          </span>
+                          <span>Years: {row.yearSpan}</span>
+                          <SourceReference
+                            source={row.source}
+                            sectionLabel={getSourceLabel(row.source)}
+                            language={uiLanguage}
+                            workLabel={getWorkLabelLocalized(row.source)}
+                          />
+                          <p>{renderLinkedText(row.excerpt, 180)}</p>
+                        </div>
                       </article>
                     ))
                   ) : (
@@ -3190,15 +3386,14 @@ function App() {
                     </>
                   ) : (
                     <p className="muted">
-                      No frozen baseline metadata found yet. Run <code>npm run freeze:tier-c</code> (or tier-specific{' '}
-                      <code>freeze:tier-b</code> / <code>freeze:tier-a</code>).
+                      No frozen baseline metadata found yet. Run <code>npm run freeze:tier-c</code> to create one.
                     </p>
                   )}
                 </div>
               </section>
 
               <section className="card">
-                <h2>Tier C QA Dashboard</h2>
+                <h2>Quality Dashboard</h2>
                 <div className="qa-grid">
                   <article>
                     <strong>{qaMetrics.pendingClaims}</strong>
@@ -3644,9 +3839,9 @@ function App() {
                   />
                   <div className="inline-fields">
                     <select value={newPersonTier} onChange={(event) => setNewPersonTier(event.target.value as Tier)}>
-                      <option value="A">Tier A</option>
-                      <option value="B">Tier B</option>
-                      <option value="C">Tier C</option>
+                      <option value="A">{getCoverageLabel('A')}</option>
+                      <option value="B">{getCoverageLabel('B')}</option>
+                      <option value="C">{getCoverageLabel('C')}</option>
                     </select>
                     <input
                       value={newPersonStart}
@@ -3708,28 +3903,39 @@ function App() {
                 const source = sourceById.get(segment.sourceId);
                 return (
                   <article key={segment.id} className="evidence-item">
-                    <header>
-                      <strong>{segment.label}</strong>
-                      <span>{getSourceLabel(source) || segment.sourceId}</span>
-                    </header>
-                    <SourceReference
-                      source={source}
-                      sectionLabel={getSourceLabel(source)}
-                      language={uiLanguage}
-                      workLabel={getWorkLabelLocalized(source)}
-                    />
-                    {showDeepReference && (
-                      <ProvenanceTags
-                        items={[
-                          { label: 'Work', value: getWorkLabelLocalized(source) },
-                          { label: 'Section', value: getSourceLabel(source) || 'unknown' },
-                          { label: 'Path', value: source?.path ?? 'n/a' },
-                          { label: 'Segment', value: segment.id },
-                        ]}
+                    <div className="table-row-media">
+                      <DataCardImage
+                        asset={getSegmentImage(segment)}
+                        label={segment.label}
+                        hint={mediaHint}
+                        variant="square"
+                        size="small"
                       />
-                    )}
-                    <p>{renderLinkedText(segment.excerpt)}</p>
-                    {showDeepReference && <small>{source?.path}</small>}
+                      <div className="table-row-content">
+                        <header>
+                          <strong>{segment.label}</strong>
+                          <span>{getSourceLabel(source) || segment.sourceId}</span>
+                        </header>
+                        <SourceReference
+                          source={source}
+                          sectionLabel={getSourceLabel(source)}
+                          language={uiLanguage}
+                          workLabel={getWorkLabelLocalized(source)}
+                        />
+                        {showDeepReference && (
+                          <ProvenanceTags
+                            items={[
+                              { label: 'Work', value: getWorkLabelLocalized(source) },
+                              { label: 'Section', value: getSourceLabel(source) || 'unknown' },
+                              { label: 'Path', value: source?.path ?? 'n/a' },
+                              { label: 'Segment', value: segment.id },
+                            ]}
+                          />
+                        )}
+                        <p>{renderLinkedText(segment.excerpt)}</p>
+                        {showDeepReference && <small>{source?.path}</small>}
+                      </div>
+                    </div>
                   </article>
                 );
               })
@@ -3772,11 +3978,18 @@ function App() {
                 .slice(0, 6)
                 .map((place) => (
                   <article key={place.id}>
+                    <DataCardImage
+                      asset={getPlaceImage(place)}
+                      label={getPlaceDisplay(place)}
+                      hint={mediaHint}
+                      variant="wide"
+                      size="small"
+                    />
                     <strong>{getPlaceDisplay(place)}</strong>
                     <p>{renderLinkedText(getPlaceSummaryText(place), 120)}</p>
                     <SourceReference
                       source={primaryWorkSource}
-                      sectionLabel={uiLanguage === 'ko' ? 'Tier A 회고록 기반 초기 모델' : 'Tier A memoir-derived seed model'}
+                      sectionLabel={uiLanguage === 'ko' ? '회고록 기반 초기 모델' : 'Memoir-derived seed model'}
                       language={uiLanguage}
                       workLabel={getWorkLabelLocalized(primaryWorkSource)}
                     />
@@ -4094,6 +4307,43 @@ function PalaceMap(props: {
 }
 
 export default App;
+
+function DataCardImage(props: {
+  asset?: MediaAsset | null;
+  label: string;
+  hint?: string;
+  variant?: 'square' | 'wide' | 'portrait';
+  size?: 'tiny' | 'small' | 'regular';
+}) {
+  const variant = props.variant ?? 'square';
+  const size = props.size ?? 'regular';
+  const src = props.asset?.src ? toAssetUrl(props.asset.src) : '';
+  const caption = props.asset?.caption?.trim();
+  const credit = props.asset?.credit?.trim();
+  const alt = props.asset?.alt?.trim() || props.label;
+  const focalPoint = props.asset?.focalPoint?.trim();
+  const showHint = Boolean(props.hint && (size === 'regular' || variant === 'portrait'));
+  if (src) {
+    return (
+      <figure className={`data-card-image ${variant} ${size}`}>
+        <img src={src} alt={alt} loading="lazy" style={focalPoint ? { objectPosition: focalPoint } : undefined} />
+        {(caption || credit) && (
+          <figcaption>
+            {caption}
+            {caption && credit ? ' · ' : ''}
+            {credit}
+          </figcaption>
+        )}
+      </figure>
+    );
+  }
+  return (
+    <figure className={`data-card-image placeholder ${variant} ${size}`}>
+      <span className="data-card-image-initials">{initials(props.label, 'IM')}</span>
+      {showHint ? <small>{props.hint}</small> : null}
+    </figure>
+  );
+}
 
 function SourceReference(props: {
   source?: Source | null;
