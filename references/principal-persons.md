@@ -1,0 +1,55 @@
+# Principal Persons
+
+Source: `OEBPS/chapter_02.xhtml`
+
+- THE HONG FAMILY
+- HONG HYŎNBO (1688–1740). Lady Hyegyŏng’s paternal grandfather. He was a descendant of Princess Chŏngmyŏng, King Sŏnjo’s daughter, and had a respectable official career that included an appointment as Minister of Rites.
+- HONG INHAN (1722–1776). Hong Ponghan’s younger brother. After passing the civil service examination in 1753, he served in important posts. He was Minister of the Right in 1774 and Minister of the Left in 1775. He opposed Chŏngjo’s regency in 1775. Upon Chŏngjo’s accession in 1776, he was executed under charges of disloyalty to Chŏngjo.
+- HONG NAGIM (1741–1801). Hong Ponghan’s third son. Referred to as the third brother by Lady Hyegyŏng. He passed the civil service examination in 1769 and shortly thereafter retired to private life. In 1801, he was accused of having converted to Catholicism, and executed.
+- HONG NAGIN (1730–1777). Hong Ponghan’s oldest son. Lady Hyegyŏng’s older brother. He had a successful official career.
+- HONG NAGYUN (1750–1813). Hong Ponghan’s fourth and youngest son. Referred to as the fourth brother. He never served in office.
+- HONG NAKSIN (1739–?). Hong Ponghan’s second son. Referred to as the second brother. He passed the civil service examination in 1766 but retired from office in 1770 to live in the countryside.
+- HONG PONGHAN (1713–1778). Lady Hyegyŏng’s father. With his daughter’s marriage to Crown Prince Sado and his subsequent passing of the civil service examination in 1744, he served in office for almost three decades. After Prince Sado’s death, Hong emerged as Chŏngjo’s protector. In his later years, he repeatedly came under attack for his supposed role in the Sado incident.
+- HONG SUYŎNG (1755–?). Hong Nagin’s eldest son, thus the heir to the Hong family. The Memoir 1795 is addressed to him.
+- MADAME HONG (1746–?). Lady Hyegyŏng’s younger sister. She married Yi Pogil in 1759, but because her husband’s father was implicated in a seditious plot, she led a difficult life.
+- MADAME MIN (dates unknown). Hong Nagin’s wife. Born to the illustrious Min of Yŏhung family, she married Hong Nagin in 1745.
+- MADAME YI (1713–1755). Hong Ponghan’s wife and Lady Hyegyŏng’s mother. She was the daughter of Yi Chip, who, at the time of his daughter’s marriage, was serving as Governor of Hwanghae Province.
+- THE YI ROYAL FAMILY
+- MADAME CHŎNG. See Princess Hwawan.
+- KING CHŎNGJO (r. 1776–1800). Prince Sado’s son born of Lady Hyegyŏng in 1752. Referred to as the Grand Heir, the King, and the late King. Appointed Crown Prince in 1762 after his father’s death, he was appointed Regent in 1775 and succeeded to the throne in 1776 upon the death of Yŏngjo, his grandfather. He died in 1800.
+- PRINCESS CH’ŎNGSŎN (1756–1802). Prince Sado and Lady Hyegyŏng’s second daughter. Married Chŏng Chaehwa, known as Lord Hŭngŭn, in 1766.
+- QUEEN CHŎNGSŎNG (1692–1757). Yongjo’s first wife. Sŏ Chongje’s daughter. Estranged from her husband, she was childless.
+- QUEEN CHŎNGSUN (1745–1805). Kim Han’gu’s daughter and Yŏngjo’s second queen. The royal wedding took place in 1759. For four years from 1800 to 1804, she was the dowager regent to the minor king, Sunjo, during which time Lady Hyegyŏng’s family suffered. Her family were archrivals of the Hong family.
+- PRINCESS CH’ŎNGYŎN (1754–?). Prince Sado and Lady Hyegyŏng’s first daughter. She married Kim Kisŏng in 1764.
+- LORD HŬNGŬN (dates unknown). Chŏng Chaehwa. The husband of Princess Ch’ŏngsŏn and the brother-in-law of Chŏngjo. He is known as a fun-loving person who led Chŏngjo a bit astray in his adolescence and before he ascended to the throne. This event led to difficulties between Hong Ponghan and his grandson, Chŏngjo.
+- PRINCESS HWAHYŎP (1733–1752). Yŏngjo’s seventh daughter, born of Lady Sŏnhŭi. She died of measles.
+- PRINCESS HWAP’YŎNG (d. 1748). Yongjo’s third daughter, born of Lady Sŏnhŭi. Beloved by her father, she died in childbirth.
+- PRINCESS HWASUN (d. 1758). Yŏngjo’s second daughter, born of Lady Yi Chŏngbin. She starved herself to death upon her husband’s death.
+- PRINCESS HWAWAN (1738–?). Yŏngjo’s favorite daughter. She married Chŏng Ch’idal but was widowed young. While her father was alive, she wielded great power. She left the palace when Chŏngjo ascended the throne. In 1778, under official pressure, Chŏngjo stripped her of her royal title and the privileges associated with it and banished her to Kanghwa Island. In 1782 Chŏngjo allowed her to move to a location near the capital.
+- LADY HYEGYŎNG (1735–1815). The author of the memoirs. Hong Ponghan’s daughter. She married Prince Sado in 1744 and bore him Chŏngjo and the Princesses Ch’ŏngyŏn and Ch’ŏngsŏn.
+- PRINCE HYOJANG (1719–1728). Yŏngjo’s first heir apparent, but he died in his tenth year.
+- QUEEN HYOSUN (d. 1751). Prince Hyojang’s widow and the daughter of Cho Munmyŏng. She was posthumously given the title of queen in 1776 when her adopted son, Chŏngjo, ascended the throne.
+- QUEEN HYOŬI (1753–1821). She married Chŏngjo in 1762. She was the daughter of Kim Simuk.
+- LORD ILSŎNG (d. 1757). Chŏng Ch’idal. Princess Hwawan’s husband.
+- QUEEN DOWAGER INWŎN (1687–1757). Sukchong’s third queen. Kim Chusin’s daughter. Yŏngjo was said to have been devoted to this stepmother.
+- LADY KASUN (dates unknown). King Chŏngjo’s secondary consort and King Sunjo’s mother. Unlike most secondary consorts, she was the daughter of a high-ranking official. Her father, Pak Chunwŏn, served as Minister of Justice. She was selected and brought into palace in 1787 through a formal procedure.
+- LADY MUN (d. 1776). Yŏngjo’s secondary consort. She gave birth to the Princesses Hwanyŏng and Hwagil in 1753 and 1754. She was thought to have engaged in schemes to eliminate the heir apparent, Chŏngjo, and thus, upon Chŏngjo’s accession in 1776, she was executed.
+- PINGAE (d. 1761). Sado’s secondary consort. Née Pak, she was given the title Kyŏngbin. She had been a lady-in-waiting to Queen Dowager Inwŏn, and so there was a taboo on Sado’s taking her in. Sado was fond of her and took her in despite the taboo and stern paternal disapproval. She bore him two children, Prince Ŭnjŏn and Princess Ch’ŏnggŭn. In 1761 Sado, in madness, beat her to death.
+- PRINCE SADO (1735–1762). Yŏngjo’s son born of Lady Sŏnhŭi. Lady Hyegyŏng married him 1744. He was appointed heir apparent in 1736 and Prince-Regent in 1749. He became mad and violent. In 1762, Sado was ordered by Yŏngjo to enter a rice chest in which he died eight days later.
+- LADY SŎNHŬI (d. 1764). Yŏngjo’s secondary consort. She bore Prince Sado and several princesses. She is reported to have urged Yŏngjo to kill Sado when Sado became very violent.
+- KING SUNJO (r. 1800–1834). Lady Hyegyŏng’s grandson and King Chŏngjo’s son born of Lady Kasun in 1790. Three of Lady Hyegyŏng’s memoirs, The Memoir of 1801, The Memoir of 1802, and The Memoir of 1805 were written for him. Referred to as the young King or the present King.
+- PRINCE ŬNŎN (1754–1801). Prince Sado’s son by Lady Yim Sukpin. He was named In. He was accused of involvement in Catholicism and executed in one of the persecutions of Catholics.
+- PRINCE ŬNSIN (1755–1771). Prince Sado’s son by Lady Yim Sukpin, and so, Ŭnŏn’s younger brother. He was named Chin. Accused of having been involved in a seditious scheme, he was banished to an island in 1771 and soon died there.
+- KING YŎNGJO (r. 1724–1776). Sukchong’s son born of Lady Ch’oe Sukpin in 1694. Referred to as His Majesty. Appointed heir apparent in 1721, he succeeded his brother to the throne in 1724. A brilliant but tempestuous ruler. Sado’s father.
+- OTHERS
+- CHŎNG HWIRYANG (1706–1762). Chŏng Ch’idal’s uncle. He had a successful official career that included an appointment as the Minister of the Left. When Prince Sado went to P’yŏngyang, Chŏng was the Governor of P’yŏngan Province.
+- CHŎNG HUGYŎM (1750–1776). Princess Hwawan’s adopted son. He passed examinations in 1766 and wielded power while King Yŏngjo was on the throne. When Chŏngjo came to the throne in 1776, he was executed under a charge of disloyalty to Chŏngjo.
+- LORD CH’ŎNGWŎN. See Kim Simuk.
+- HAN YU (d. 1770). A country scholar. He sent memorials viciously attacking Hong Ponghan, which led to Hong’s dismissal. He was executed.
+- HONG KUGYŎNG (1748–1781). Chŏngjo’s confidant in the early years of Chŏngjo’s reign. A member of another branch of the Hong family, but also a nemesis of Hong Inhan. Though he helped Chŏngjo to consolidate his power, he became too powerful. His schemes to become an affinal relative of the royal house did not succeed, and he died in banishment.
+- KIM CHONGSU (1728–1799). Related to the Hong family on his maternal side, but on bad terms with them. He worked closely with Hong Kugyŏng. When Hong Kugyŏng fell from power, he turned against him, and thus he was able to remain in office. He eventually rose to high positions, serving as Minister of the Right and Minister of the Left.
+- KIM HAN’GI (dates unknown). Kim Han’gu’s brother and ally.
+- KIM HAN’GU (d. 1769). Queen Chŏngsun’s father, thus Yŏngjo’s father-in-law. He was given the title Lord Ohŭng. The Kim family were archrivals of the Hong family.
+- KIM KWANJU (1743–1806). Kim Kwiju’s cousin and a political ally. He was banished after Chŏngjo’s accession. During Queen Chŏngsun’s regency (1800–1804), he reached the position of Minister of the Right. But subsequently, he was banished.
+- KIM KWIJU (d. 1786). Queen Chŏngsun’s brother. The most politically active member of the Kyŏngju Kim family, who were in contention with the Hong family. Upon Chŏngjo’s accession in 1776, he was banished to Hŭksan Island. In 1784 he was allowed to settle in Naju, where he died of illness.
+- KIM SIMUK (1722–1772). Father of Queen Hyoŭi and Chŏngjo’s father-in-law. He was given the title of Lord Ch’ŏngwŏn and served in various posts.

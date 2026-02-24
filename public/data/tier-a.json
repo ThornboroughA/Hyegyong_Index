@@ -1,0 +1,4293 @@
+{
+  "meta": {
+    "schemaVersion": "0.1.0",
+    "dataset": "hyegyong-tier-a",
+    "generatedAt": "2026-02-24T07:55:19.529551+00:00",
+    "generator": "scripts/build_tier_a_data.py",
+    "sourceEdition": "The Memoirs of Lady Hyegyong (UC Press translation)",
+    "languageCanonical": "en",
+    "languageOverlays": [
+      "ko"
+    ]
+  },
+  "yearRange": {
+    "startYear": 1689,
+    "endYear": 1805,
+    "focusStart": 1735,
+    "focusEnd": 1805
+  },
+  "yearDensity": [
+    {
+      "year": 1689,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1694,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1718,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1795"
+      ]
+    },
+    {
+      "year": 1721,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1722,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1727,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1795"
+      ]
+    },
+    {
+      "year": 1728,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1733,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1735,
+      "count": 4,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1736,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1738,
+      "count": 4,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1739,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1795"
+      ]
+    },
+    {
+      "year": 1740,
+      "count": 5,
+      "appearsIn": [
+        "The Memoir of 1795"
+      ]
+    },
+    {
+      "year": 1741,
+      "count": 5,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1742,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1743,
+      "count": 8,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1744,
+      "count": 8,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1745,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1746,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1747,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1748,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1749,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1750,
+      "count": 7,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1751,
+      "count": 6,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1752,
+      "count": 8,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1753,
+      "count": 4,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1754,
+      "count": 6,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1755,
+      "count": 8,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1756,
+      "count": 6,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1757,
+      "count": 7,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1758,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1759,
+      "count": 9,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1760,
+      "count": 8,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1761,
+      "count": 10,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1762,
+      "count": 22,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1764,
+      "count": 9,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1765,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1801"
+      ]
+    },
+    {
+      "year": 1766,
+      "count": 7,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1767,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1768,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1769,
+      "count": 9,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1770,
+      "count": 19,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1771,
+      "count": 15,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1772,
+      "count": 9,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1773,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1795"
+      ]
+    },
+    {
+      "year": 1774,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801"
+      ]
+    },
+    {
+      "year": 1775,
+      "count": 9,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801"
+      ]
+    },
+    {
+      "year": 1776,
+      "count": 15,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1777,
+      "count": 4,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801"
+      ]
+    },
+    {
+      "year": 1778,
+      "count": 7,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1779,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1801"
+      ]
+    },
+    {
+      "year": 1782,
+      "count": 5,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1784,
+      "count": 4,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1786,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1787,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1789,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1790,
+      "count": 4,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1791,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1792,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1795,
+      "count": 4,
+      "appearsIn": [
+        "The Memoir of 1795",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1797,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1801"
+      ]
+    },
+    {
+      "year": 1799,
+      "count": 3,
+      "appearsIn": [
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1800,
+      "count": 6,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1801,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1802,
+      "count": 2,
+      "appearsIn": [
+        "The Memoir of 1802",
+        "The Memoir of 1805"
+      ]
+    },
+    {
+      "year": 1804,
+      "count": 9,
+      "appearsIn": [
+        "The Memoir of 1801",
+        "The Memoir of 1802"
+      ]
+    },
+    {
+      "year": 1805,
+      "count": 1,
+      "appearsIn": [
+        "The Memoir of 1805"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_principal_people",
+      "label": "Principal Persons",
+      "path": "references/principal-persons.md",
+      "edition": "The Memoirs of Lady Hyegyong (UC Press, 2013 ebook)"
+    },
+    {
+      "id": "src_year_index",
+      "label": "Year Index",
+      "path": "references/year-index.md",
+      "edition": "Generated from memoir chapters"
+    },
+    {
+      "id": "src_memoir_flow",
+      "label": "Memoir Flow Guide",
+      "path": "references/memoir-flow.md",
+      "edition": "Generated from memoir chapters"
+    },
+    {
+      "id": "src_1795",
+      "label": "The Memoir of 1795",
+      "path": "OEBPS/chapter_04.xhtml",
+      "edition": "Memoir chapter"
+    },
+    {
+      "id": "src_1801",
+      "label": "The Memoir of 1801",
+      "path": "OEBPS/chapter_05.xhtml",
+      "edition": "Memoir chapter"
+    },
+    {
+      "id": "src_1802",
+      "label": "The Memoir of 1802",
+      "path": "OEBPS/chapter_07.xhtml",
+      "edition": "Memoir chapter"
+    },
+    {
+      "id": "src_1805",
+      "label": "The Memoir of 1805",
+      "path": "OEBPS/chapter_08.xhtml",
+      "edition": "Memoir chapter"
+    }
+  ],
+  "sourceSegments": [
+    {
+      "id": "seg-person-001-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: CHŎNG HUGYŎM",
+      "excerpt": "CHŎNG HUGYŎM (1750–1776). Princess Hwawan’s adopted son. He passed examinations in 1766 and wielded power while King Yŏngjo was on the throne. When Chŏngjo came to the throne in 1776, he was executed under a charge of disloyalty to Chŏngjo.",
+      "yearHint": 1750
+    },
+    {
+      "id": "seg-person-002-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: CHŎNG HWIRYANG",
+      "excerpt": "CHŎNG HWIRYANG (1706–1762). Chŏng Ch’idal’s uncle. He had a successful official career that included an appointment as the Minister of the Left. When Prince Sado went to P’yŏngyang, Chŏng was the Governor of P’yŏngan Province.",
+      "yearHint": 1706
+    },
+    {
+      "id": "seg-person-004-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG HYŎNBO",
+      "excerpt": "HONG HYŎNBO (1688–1740). Lady Hyegyŏng’s paternal grandfather. He was a descendant of Princess Chŏngmyŏng, King Sŏnjo’s daughter, and had a respectable official career that included an appointment as Minister of Rites.",
+      "yearHint": 1688
+    },
+    {
+      "id": "seg-person-005-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG INHAN",
+      "excerpt": "HONG INHAN (1722–1776). Hong Ponghan’s younger brother. After passing the civil service examination in 1753, he served in important posts. He was Minister of the Right in 1774 and Minister of the Left in 1775. He opposed Chŏngjo’s regency in 1775. Upon Chŏngjo’s accession in 1776, he was executed under charges of disloyalty to Chŏngjo.",
+      "yearHint": 1722
+    },
+    {
+      "id": "seg-person-006-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG KUGYŎNG",
+      "excerpt": "HONG KUGYŎNG (1748–1781). Chŏngjo’s confidant in the early years of Chŏngjo’s reign. A member of another branch of the Hong family, but also a nemesis of Hong Inhan. Though he helped Chŏngjo to consolidate his power, he became too powerful. His schemes to become an affinal relative of the royal house did not succeed, and he died in banishment.",
+      "yearHint": 1748
+    },
+    {
+      "id": "seg-person-007-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG NAGIM",
+      "excerpt": "HONG NAGIM (1741–1801). Hong Ponghan’s third son. Referred to as the third brother by Lady Hyegyŏng. He passed the civil service examination in 1769 and shortly thereafter retired to private life. In 1801, he was accused of having converted to Catholicism, and executed.",
+      "yearHint": 1741
+    },
+    {
+      "id": "seg-person-008-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG NAGIN",
+      "excerpt": "HONG NAGIN (1730–1777). Hong Ponghan’s oldest son. Lady Hyegyŏng’s older brother. He had a successful official career.",
+      "yearHint": 1730
+    },
+    {
+      "id": "seg-person-009-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG NAGYUN",
+      "excerpt": "HONG NAGYUN (1750–1813). Hong Ponghan’s fourth and youngest son. Referred to as the fourth brother. He never served in office.",
+      "yearHint": 1750
+    },
+    {
+      "id": "seg-person-010-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG NAKSIN",
+      "excerpt": "HONG NAKSIN (1739–?). Hong Ponghan’s second son. Referred to as the second brother. He passed the civil service examination in 1766 but retired from office in 1770 to live in the countryside.",
+      "yearHint": 1739
+    },
+    {
+      "id": "seg-person-011-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG PONGHAN",
+      "excerpt": "HONG PONGHAN (1713–1778). Lady Hyegyŏng’s father. With his daughter’s marriage to Crown Prince Sado and his subsequent passing of the civil service examination in 1744, he served in office for almost three decades. After Prince Sado’s death, Hong emerged as Chŏngjo’s protector. In his later years, he repeatedly came under attack for his supposed role in the Sado incident.",
+      "yearHint": 1713
+    },
+    {
+      "id": "seg-person-012-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: HONG SUYŎNG",
+      "excerpt": "HONG SUYŎNG (1755–?). Hong Nagin’s eldest son, thus the heir to the Hong family. The Memoir 1795 is addressed to him.",
+      "yearHint": 1755
+    },
+    {
+      "id": "seg-person-013-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: KIM CHONGSU",
+      "excerpt": "KIM CHONGSU (1728–1799). Related to the Hong family on his maternal side, but on bad terms with them. He worked closely with Hong Kugyŏng. When Hong Kugyŏng fell from power, he turned against him, and thus he was able to remain in office. He eventually rose to high positions, serving as Minister of the Right and Minister of the Left.",
+      "yearHint": 1728
+    },
+    {
+      "id": "seg-person-014-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: KIM HAN’GI",
+      "excerpt": "KIM HAN’GI (dates unknown). Kim Han’gu’s brother and ally.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-016-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: KIM KWANJU",
+      "excerpt": "KIM KWANJU (1743–1806). Kim Kwiju’s cousin and a political ally. He was banished after Chŏngjo’s accession. During Queen Chŏngsun’s regency (1800–1804), he reached the position of Minister of the Right. But subsequently, he was banished.",
+      "yearHint": 1743
+    },
+    {
+      "id": "seg-person-018-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: KIM SIMUK",
+      "excerpt": "KIM SIMUK (1722–1772). Father of Queen Hyoŭi and Chŏngjo’s father-in-law. He was given the title of Lord Ch’ŏngwŏn and served in various posts.",
+      "yearHint": 1722
+    },
+    {
+      "id": "seg-person-022-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: LADY HYEGYŎNG",
+      "excerpt": "LADY HYEGYŎNG (1735–1815). The author of the memoirs. Hong Ponghan’s daughter. She married Prince Sado in 1744 and bore him Chŏngjo and the Princesses Ch’ŏngyŏn and Ch’ŏngsŏn.",
+      "yearHint": 1735
+    },
+    {
+      "id": "seg-person-023-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: LADY KASUN",
+      "excerpt": "LADY KASUN (dates unknown). King Chŏngjo’s secondary consort and King Sunjo’s mother. Unlike most secondary consorts, she was the daughter of a high-ranking official. Her father, Pak Chunwŏn, served as Minister of Justice. She was selected and brought into palace in 1787 through a formal procedure.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-026-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: LORD HŬNGŬN",
+      "excerpt": "LORD HŬNGŬN (dates unknown). Chŏng Chaehwa. The husband of Princess Ch’ŏngsŏn and the brother-in-law of Chŏngjo. He is known as a fun-loving person who led Chŏngjo a bit astray in his adolescence and before he ascended to the throne. This event led to difficulties between Hong Ponghan and his grandson, Chŏngjo.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-028-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: MADAME HONG",
+      "excerpt": "MADAME HONG (1746–?). Lady Hyegyŏng’s younger sister. She married Yi Pogil in 1759, but because her husband’s father was implicated in a seditious plot, she led a difficult life.",
+      "yearHint": 1746
+    },
+    {
+      "id": "seg-person-029-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: MADAME MIN",
+      "excerpt": "MADAME MIN (dates unknown). Hong Nagin’s wife. Born to the illustrious Min of Yŏhung family, she married Hong Nagin in 1745.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-person-030-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: MADAME YI",
+      "excerpt": "MADAME YI (1713–1755). Hong Ponghan’s wife and Lady Hyegyŏng’s mother. She was the daughter of Yi Chip, who, at the time of his daughter’s marriage, was serving as Governor of Hwanghae Province.",
+      "yearHint": 1713
+    },
+    {
+      "id": "seg-person-032-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: PRINCE HYOJANG",
+      "excerpt": "PRINCE HYOJANG (1719–1728). Yŏngjo’s first heir apparent, but he died in his tenth year.",
+      "yearHint": 1719
+    },
+    {
+      "id": "seg-person-033-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: PRINCE SADO",
+      "excerpt": "PRINCE SADO (1735–1762). Yŏngjo’s son born of Lady Sŏnhŭi. Lady Hyegyŏng married him 1744. He was appointed heir apparent in 1736 and Prince-Regent in 1749. He became mad and violent. In 1762, Sado was ordered by Yŏngjo to enter a rice chest in which he died eight days later.",
+      "yearHint": 1735
+    },
+    {
+      "id": "seg-person-034-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: PRINCE ŬNŎN",
+      "excerpt": "PRINCE ŬNŎN (1754–1801). Prince Sado’s son by Lady Yim Sukpin. He was named In. He was accused of involvement in Catholicism and executed in one of the persecutions of Catholics.",
+      "yearHint": 1754
+    },
+    {
+      "id": "seg-person-035-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: PRINCE ŬNSIN",
+      "excerpt": "PRINCE ŬNSIN (1755–1771). Prince Sado’s son by Lady Yim Sukpin, and so, Ŭnŏn’s younger brother. He was named Chin. Accused of having been involved in a seditious scheme, he was banished to an island in 1771 and soon died there.",
+      "yearHint": 1755
+    },
+    {
+      "id": "seg-person-036-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: PRINCESS CH’ŎNGSŎN",
+      "excerpt": "PRINCESS CH’ŎNGSŎN (1756–1802). Prince Sado and Lady Hyegyŏng’s second daughter. Married Chŏng Chaehwa, known as Lord Hŭngŭn, in 1766.",
+      "yearHint": 1756
+    },
+    {
+      "id": "seg-person-037-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: PRINCESS CH’ŎNGYŎN",
+      "excerpt": "PRINCESS CH’ŎNGYŎN (1754–?). Prince Sado and Lady Hyegyŏng’s first daughter. She married Kim Kisŏng in 1764.",
+      "yearHint": 1754
+    },
+    {
+      "id": "seg-person-038-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: PRINCESS HWAHYŎP",
+      "excerpt": "PRINCESS HWAHYŎP (1733–1752). Yŏngjo’s seventh daughter, born of Lady Sŏnhŭi. She died of measles.",
+      "yearHint": 1733
+    },
+    {
+      "id": "seg-person-041-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: PRINCESS HWAWAN",
+      "excerpt": "PRINCESS HWAWAN (1738–?). Yŏngjo’s favorite daughter. She married Chŏng Ch’idal but was widowed young. While her father was alive, she wielded great power. She left the palace when Chŏngjo ascended the throne. In 1778, under official pressure, Chŏngjo stripped her of her royal title and the privileges associated with it and banished her to Kanghwa Island. In 1782 Chŏngjo allowed her to move to a location near the capital.",
+      "yearHint": 1738
+    },
+    {
+      "id": "seg-person-042-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: QUEEN CHŎNGSŎNG",
+      "excerpt": "QUEEN CHŎNGSŎNG (1692–1757). Yongjo’s first wife. Sŏ Chongje’s daughter. Estranged from her husband, she was childless.",
+      "yearHint": 1692
+    },
+    {
+      "id": "seg-person-043-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: QUEEN CHŎNGSUN",
+      "excerpt": "QUEEN CHŎNGSUN (1745–1805). Kim Han’gu’s daughter and Yŏngjo’s second queen. The royal wedding took place in 1759. For four years from 1800 to 1804, she was the dowager regent to the minor king, Sunjo, during which time Lady Hyegyŏng’s family suffered. Her family were archrivals of the Hong family.",
+      "yearHint": 1745
+    },
+    {
+      "id": "seg-person-044-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: QUEEN DOWAGER INWŎN",
+      "excerpt": "QUEEN DOWAGER INWŎN (1687–1757). Sukchong’s third queen. Kim Chusin’s daughter. Yŏngjo was said to have been devoted to this stepmother.",
+      "yearHint": 1687
+    },
+    {
+      "id": "seg-person-046-principal",
+      "sourceId": "src_principal_people",
+      "label": "Principal Persons: QUEEN HYOŬI",
+      "excerpt": "QUEEN HYOŬI (1753–1821). She married Chŏngjo in 1762. She was the daughter of Kim Simuk.",
+      "yearHint": 1753
+    },
+    {
+      "id": "seg-the-memoir-of-1795-opening",
+      "sourceId": "src_1795",
+      "label": "The Memoir of 1795: Opening movement",
+      "excerpt": "From the time I came to the palace as a child, each morning and evening I exchanged letters of greeting with my parents, and many of those letters should have remained with my family.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-the-memoir-of-1801-opening",
+      "sourceId": "src_1801",
+      "label": "The Memoir of 1801: Opening movement",
+      "excerpt": "Princess Hwap’yŏng was Lady Sŏnhŭi’s first daughter and His Majesty loved her above all his other children.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-the-memoir-of-1802-opening",
+      "sourceId": "src_1802",
+      "label": "The Memoir of 1802: Opening movement",
+      "excerpt": "It has been almost sixty years since I came to the palace as a child.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-the-memoir-of-1805-opening",
+      "sourceId": "src_1805",
+      "label": "The Memoir of 1805: Opening movement",
+      "excerpt": "The tragedy of the imo year (1762) is unparalleled.",
+      "yearHint": null
+    },
+    {
+      "id": "seg-evt-1735-birth-hyegyong-evidence",
+      "sourceId": "src_1795",
+      "label": "Birth of Lady Hyegyŏng",
+      "excerpt": "I was born ... in the ... ŭlmyo year (1735).",
+      "yearHint": 1735
+    },
+    {
+      "id": "seg-evt-1744-marriage-evidence",
+      "sourceId": "src_1795",
+      "label": "Hyegyŏng selected and married into the palace",
+      "excerpt": "... it was I who was selected as the bride of the Crown Prince.",
+      "yearHint": 1744
+    },
+    {
+      "id": "seg-evt-1752-birth-jeongjo-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Birth of Jeongjo",
+      "excerpt": "Prince Sado's son born of Lady Hyegyŏng in 1752.",
+      "yearHint": 1752
+    },
+    {
+      "id": "seg-evt-1757-double-loss-evidence",
+      "sourceId": "src_1805",
+      "label": "Deaths of Queen Chŏngsŏng and Queen Dowager Inwŏn",
+      "excerpt": "The Two Highnesses' passing ... left the palace empty and desolate.",
+      "yearHint": 1757
+    },
+    {
+      "id": "seg-evt-1761-pingae-killed-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Pingae killed during Sado's violent decline",
+      "excerpt": "In 1761 Sado, in madness, beat her to death.",
+      "yearHint": 1761
+    },
+    {
+      "id": "seg-evt-1762-imo-tragedy-evidence",
+      "sourceId": "src_1805",
+      "label": "Imo-year tragedy (death of Prince Sado)",
+      "excerpt": "The tragedy of the imo year (1762) is unparalleled.",
+      "yearHint": 1762
+    },
+    {
+      "id": "seg-evt-1776-jeongjo-accession-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Jeongjo accedes to throne",
+      "excerpt": "... succeeded to the throne in 1776 upon the death of Yŏngjo.",
+      "yearHint": 1776
+    },
+    {
+      "id": "seg-evt-1789-reinterment-evidence",
+      "sourceId": "src_1802",
+      "label": "Reinterment of Sado at Hyŏllyung",
+      "excerpt": "... he carried out reinterment, changing the name of the tomb to Hyŏllyung Tomb.",
+      "yearHint": 1789
+    },
+    {
+      "id": "seg-evt-1795-hwaseong-visit-evidence",
+      "sourceId": "src_1802",
+      "label": "1795 Hwasŏng visit and public filial ceremonies",
+      "excerpt": "In the spring of ŭlmyo (1795), he took me to the Prince's tomb ...",
+      "yearHint": 1795
+    },
+    {
+      "id": "seg-evt-1800-jeongjo-death-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Death of Jeongjo and accession of Sunjo",
+      "excerpt": "King Chŏngjo ... died in 1800.",
+      "yearHint": 1800
+    },
+    {
+      "id": "seg-evt-1801-execution-hong-nagim-evidence",
+      "sourceId": "src_principal_people",
+      "label": "Execution of Hong Nagim",
+      "excerpt": "In 1801, he was accused of having converted to Catholicism, and executed.",
+      "yearHint": 1801
+    },
+    {
+      "id": "seg-evt-1802-memoir-evidence",
+      "sourceId": "src_1802",
+      "label": "Memoir of 1802 composed for future vindication",
+      "excerpt": "... I will entrust these writings to Lady Kasun ... after my death.",
+      "yearHint": 1802
+    },
+    {
+      "id": "seg-evt-1805-memoir-evidence",
+      "sourceId": "src_1805",
+      "label": "Memoir of 1805 finalized",
+      "excerpt": "... resisting death and weeping blood, I wrote this record.",
+      "yearHint": 1805
+    }
+  ],
+  "people": [
+    {
+      "id": "person-001",
+      "canonicalName": "CHŎNG HUGYŎM",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1750–1776",
+      "birthYear": 1750,
+      "deathYear": 1776,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Princess Hwawan’s adopted son. He passed examinations in 1766 and wielded power while King Yŏngjo was on the throne. When Chŏngjo came to the throne in 1776, he was executed under a charge of disloyalty to Chŏngjo.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-001-principal"
+      ],
+      "activeRange": {
+        "startYear": 1750,
+        "endYear": 1776
+      }
+    },
+    {
+      "id": "person-002",
+      "canonicalName": "CHŎNG HWIRYANG",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1706–1762",
+      "birthYear": 1706,
+      "deathYear": 1762,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Chŏng Ch’idal’s uncle. He had a successful official career that included an appointment as the Minister of the Left. When Prince Sado went to P’yŏngyang, Chŏng was the Governor of P’yŏngan Province.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-002-principal"
+      ],
+      "activeRange": {
+        "startYear": 1706,
+        "endYear": 1762
+      }
+    },
+    {
+      "id": "person-003",
+      "canonicalName": "HAN YU",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1770",
+      "birthYear": null,
+      "deathYear": 1770,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "A country scholar. He sent memorials viciously attacking Hong Ponghan, which led to Hong’s dismissal. He was executed.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1770
+      }
+    },
+    {
+      "id": "person-004",
+      "canonicalName": "HONG HYŎNBO",
+      "group": "Hong Family",
+      "lifeLabel": "1688–1740",
+      "birthYear": 1688,
+      "deathYear": 1740,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Lady Hyegyŏng’s paternal grandfather. He was a descendant of Princess Chŏngmyŏng, King Sŏnjo’s daughter, and had a respectable official career that included an appointment as Minister of Rites.",
+      "relationToHyegyong": "paternal grandfather",
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-004-principal"
+      ],
+      "activeRange": {
+        "startYear": 1688,
+        "endYear": 1740
+      }
+    },
+    {
+      "id": "person-005",
+      "canonicalName": "HONG INHAN",
+      "group": "Hong Family",
+      "lifeLabel": "1722–1776",
+      "birthYear": 1722,
+      "deathYear": 1776,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hong Ponghan’s younger brother. After passing the civil service examination in 1753, he served in important posts. He was Minister of the Right in 1774 and Minister of the Left in 1775. He opposed Chŏngjo’s regency in 1775. Upon Chŏngjo’s accession in 1776, he was executed under charges of disloyalty to Chŏngjo.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-005-principal"
+      ],
+      "activeRange": {
+        "startYear": 1722,
+        "endYear": 1776
+      }
+    },
+    {
+      "id": "person-006",
+      "canonicalName": "HONG KUGYŎNG",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1748–1781",
+      "birthYear": 1748,
+      "deathYear": 1781,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Chŏngjo’s confidant in the early years of Chŏngjo’s reign. A member of another branch of the Hong family, but also a nemesis of Hong Inhan. Though he helped Chŏngjo to consolidate his power, he became too powerful. His schemes to become an affinal relative of the royal house did not succeed, and he died in banishment.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-006-principal"
+      ],
+      "activeRange": {
+        "startYear": 1748,
+        "endYear": 1781
+      }
+    },
+    {
+      "id": "person-007",
+      "canonicalName": "HONG NAGIM",
+      "group": "Hong Family",
+      "lifeLabel": "1741–1801",
+      "birthYear": 1741,
+      "deathYear": 1801,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hong Ponghan’s third son. Referred to as the third brother by Lady Hyegyŏng. He passed the civil service examination in 1769 and shortly thereafter retired to private life. In 1801, he was accused of having converted to Catholicism, and executed.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-007-principal"
+      ],
+      "activeRange": {
+        "startYear": 1741,
+        "endYear": 1801
+      }
+    },
+    {
+      "id": "person-008",
+      "canonicalName": "HONG NAGIN",
+      "group": "Hong Family",
+      "lifeLabel": "1730–1777",
+      "birthYear": 1730,
+      "deathYear": 1777,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hong Ponghan’s oldest son. Lady Hyegyŏng’s older brother. He had a successful official career.",
+      "relationToHyegyong": "older brother",
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-008-principal"
+      ],
+      "activeRange": {
+        "startYear": 1730,
+        "endYear": 1777
+      }
+    },
+    {
+      "id": "person-009",
+      "canonicalName": "HONG NAGYUN",
+      "group": "Hong Family",
+      "lifeLabel": "1750–1813",
+      "birthYear": 1750,
+      "deathYear": 1813,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hong Ponghan’s fourth and youngest son. Referred to as the fourth brother. He never served in office.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-009-principal"
+      ],
+      "activeRange": {
+        "startYear": 1750,
+        "endYear": 1813
+      }
+    },
+    {
+      "id": "person-010",
+      "canonicalName": "HONG NAKSIN",
+      "group": "Hong Family",
+      "lifeLabel": "1739–?",
+      "birthYear": 1739,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hong Ponghan’s second son. Referred to as the second brother. He passed the civil service examination in 1766 but retired from office in 1770 to live in the countryside.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-010-principal"
+      ],
+      "activeRange": {
+        "startYear": 1739,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-011",
+      "canonicalName": "HONG PONGHAN",
+      "group": "Hong Family",
+      "lifeLabel": "1713–1778",
+      "birthYear": 1713,
+      "deathYear": 1778,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Lady Hyegyŏng’s father. With his daughter’s marriage to Crown Prince Sado and his subsequent passing of the civil service examination in 1744, he served in office for almost three decades. After Prince Sado’s death, Hong emerged as Chŏngjo’s protector. In his later years, he repeatedly came under attack for his supposed role in the Sado incident.",
+      "relationToHyegyong": "father",
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [
+        {
+          "title": "Senior Court Official",
+          "startYear": 1744,
+          "endYear": 1778,
+          "confidence": 0.8,
+          "source": "src_principal_people"
+        }
+      ],
+      "sourceSegmentIds": [
+        "seg-person-011-principal"
+      ],
+      "activeRange": {
+        "startYear": 1713,
+        "endYear": 1778
+      }
+    },
+    {
+      "id": "person-012",
+      "canonicalName": "HONG SUYŎNG",
+      "group": "Hong Family",
+      "lifeLabel": "1755–?",
+      "birthYear": 1755,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hong Nagin’s eldest son, thus the heir to the Hong family. The Memoir 1795 is addressed to him.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-012-principal"
+      ],
+      "activeRange": {
+        "startYear": 1755,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-013",
+      "canonicalName": "KIM CHONGSU",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1728–1799",
+      "birthYear": 1728,
+      "deathYear": 1799,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Related to the Hong family on his maternal side, but on bad terms with them. He worked closely with Hong Kugyŏng. When Hong Kugyŏng fell from power, he turned against him, and thus he was able to remain in office. He eventually rose to high positions, serving as Minister of the Right and Minister of the Left.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-013-principal"
+      ],
+      "activeRange": {
+        "startYear": 1728,
+        "endYear": 1799
+      }
+    },
+    {
+      "id": "person-014",
+      "canonicalName": "KIM HAN’GI",
+      "group": "Yi Royal Family",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Kim Han’gu’s brother and ally.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-014-principal"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-015",
+      "canonicalName": "KIM HAN’GU",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1769",
+      "birthYear": null,
+      "deathYear": 1769,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Queen Chŏngsun’s father, thus Yŏngjo’s father-in-law. He was given the title Lord Ohŭng. The Kim family were archrivals of the Hong family.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1769
+      }
+    },
+    {
+      "id": "person-016",
+      "canonicalName": "KIM KWANJU",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1743–1806",
+      "birthYear": 1743,
+      "deathYear": 1806,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Kim Kwiju’s cousin and a political ally. He was banished after Chŏngjo’s accession. During Queen Chŏngsun’s regency (1800–1804), he reached the position of Minister of the Right. But subsequently, he was banished.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-016-principal"
+      ],
+      "activeRange": {
+        "startYear": 1743,
+        "endYear": 1806
+      }
+    },
+    {
+      "id": "person-017",
+      "canonicalName": "KIM KWIJU",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1786",
+      "birthYear": null,
+      "deathYear": 1786,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Queen Chŏngsun’s brother. The most politically active member of the Kyŏngju Kim family, who were in contention with the Hong family. Upon Chŏngjo’s accession in 1776, he was banished to Hŭksan Island. In 1784 he was allowed to settle in Naju, where he died of illness.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1786
+      }
+    },
+    {
+      "id": "person-018",
+      "canonicalName": "KIM SIMUK",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1722–1772",
+      "birthYear": 1722,
+      "deathYear": 1772,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Father of Queen Hyoŭi and Chŏngjo’s father-in-law. He was given the title of Lord Ch’ŏngwŏn and served in various posts.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [
+        {
+          "id": "alias-person-018-lord-ch-ongwon",
+          "text": "LORD CH’ŎNGWŎN",
+          "language": "en",
+          "script": "latin",
+          "type": "cross-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.95
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-018-principal"
+      ],
+      "activeRange": {
+        "startYear": 1722,
+        "endYear": 1772
+      }
+    },
+    {
+      "id": "person-019",
+      "canonicalName": "KING CHŎNGJO",
+      "group": "Yi Royal Family",
+      "lifeLabel": "r. 1776–1800",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": 1776,
+      "reignEndYear": 1800,
+      "biography": "Prince Sado’s son born of Lady Hyegyŏng in 1752. Referred to as the Grand Heir, the King, and the late King. Appointed Crown Prince in 1762 after his father’s death, he was appointed Regent in 1775 and succeeded to the throne in 1776 upon the death of Yŏngjo, his grandfather. He died in 1800.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [
+        {
+          "id": "alias-person-019-grand-heir",
+          "text": "Grand Heir",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        },
+        {
+          "id": "alias-person-019-the-king",
+          "text": "the King",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        },
+        {
+          "id": "alias-person-019-the-late-king",
+          "text": "the late King",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        }
+      ],
+      "officeTerms": [
+        {
+          "title": "Crown Prince",
+          "startYear": 1762,
+          "endYear": 1776,
+          "confidence": 0.95,
+          "source": "src_principal_people"
+        },
+        {
+          "title": "Regent",
+          "startYear": 1775,
+          "endYear": 1776,
+          "confidence": 0.92,
+          "source": "src_principal_people"
+        },
+        {
+          "title": "King of Joseon",
+          "startYear": 1776,
+          "endYear": 1800,
+          "confidence": 0.95,
+          "source": "src_principal_people"
+        }
+      ],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": 1762,
+        "endYear": 1800
+      }
+    },
+    {
+      "id": "person-020",
+      "canonicalName": "KING SUNJO",
+      "group": "Yi Royal Family",
+      "lifeLabel": "r. 1800–1834",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": 1800,
+      "reignEndYear": 1834,
+      "biography": "Lady Hyegyŏng’s grandson and King Chŏngjo’s son born of Lady Kasun in 1790. Three of Lady Hyegyŏng’s memoirs, The Memoir of 1801, The Memoir of 1802, and The Memoir of 1805 were written for him. Referred to as the young King or the present King.",
+      "relationToHyegyong": "grandson and King Chŏngjo’s son born of Lady Kasun in 1790",
+      "tier": "A",
+      "aliases": [
+        {
+          "id": "alias-person-020-the-present-king",
+          "text": "the present King",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        },
+        {
+          "id": "alias-person-020-the-young-king",
+          "text": "the young King",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        }
+      ],
+      "officeTerms": [
+        {
+          "title": "King of Joseon",
+          "startYear": 1800,
+          "endYear": 1834,
+          "confidence": 0.95,
+          "source": "src_principal_people"
+        }
+      ],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": 1800,
+        "endYear": 1834
+      }
+    },
+    {
+      "id": "person-021",
+      "canonicalName": "KING YŎNGJO",
+      "group": "Yi Royal Family",
+      "lifeLabel": "r. 1724–1776",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": 1724,
+      "reignEndYear": 1776,
+      "biography": "Sukchong’s son born of Lady Ch’oe Sukpin in 1694. Referred to as His Majesty. Appointed heir apparent in 1721, he succeeded his brother to the throne in 1724. A brilliant but tempestuous ruler. Sado’s father.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [
+        {
+          "id": "alias-person-021-his-majesty",
+          "text": "His Majesty",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        }
+      ],
+      "officeTerms": [
+        {
+          "title": "King of Joseon",
+          "startYear": 1724,
+          "endYear": 1776,
+          "confidence": 0.95,
+          "source": "src_principal_people"
+        }
+      ],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": 1724,
+        "endYear": 1776
+      }
+    },
+    {
+      "id": "person-022",
+      "canonicalName": "LADY HYEGYŎNG",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1735–1815",
+      "birthYear": 1735,
+      "deathYear": 1815,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "The author of the memoirs. Hong Ponghan’s daughter. She married Prince Sado in 1744 and bore him Chŏngjo and the Princesses Ch’ŏngyŏn and Ch’ŏngsŏn.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [
+        {
+          "id": "alias-person-022-hyegyonggung-hong-ssi",
+          "text": "Hyegyonggung Hong Ssi",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        }
+      ],
+      "officeTerms": [
+        {
+          "title": "Crown Princess Consort",
+          "startYear": 1744,
+          "endYear": 1762,
+          "confidence": 0.95,
+          "source": "src_principal_people"
+        }
+      ],
+      "sourceSegmentIds": [
+        "seg-person-022-principal"
+      ],
+      "activeRange": {
+        "startYear": 1735,
+        "endYear": 1815
+      }
+    },
+    {
+      "id": "person-023",
+      "canonicalName": "LADY KASUN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "King Chŏngjo’s secondary consort and King Sunjo’s mother. Unlike most secondary consorts, she was the daughter of a high-ranking official. Her father, Pak Chunwŏn, served as Minister of Justice. She was selected and brought into palace in 1787 through a formal procedure.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-023-principal"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-024",
+      "canonicalName": "LADY MUN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1776",
+      "birthYear": null,
+      "deathYear": 1776,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yŏngjo’s secondary consort. She gave birth to the Princesses Hwanyŏng and Hwagil in 1753 and 1754. She was thought to have engaged in schemes to eliminate the heir apparent, Chŏngjo, and thus, upon Chŏngjo’s accession in 1776, she was executed.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1776
+      }
+    },
+    {
+      "id": "person-025",
+      "canonicalName": "LADY SŎNHŬI",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1764",
+      "birthYear": null,
+      "deathYear": 1764,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yŏngjo’s secondary consort. She bore Prince Sado and several princesses. She is reported to have urged Yŏngjo to kill Sado when Sado became very violent.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1764
+      }
+    },
+    {
+      "id": "person-026",
+      "canonicalName": "LORD HŬNGŬN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Chŏng Chaehwa. The husband of Princess Ch’ŏngsŏn and the brother-in-law of Chŏngjo. He is known as a fun-loving person who led Chŏngjo a bit astray in his adolescence and before he ascended to the throne. This event led to difficulties between Hong Ponghan and his grandson, Chŏngjo.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-026-principal"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-027",
+      "canonicalName": "LORD ILSŎNG",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1757",
+      "birthYear": null,
+      "deathYear": 1757,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Chŏng Ch’idal. Princess Hwawan’s husband.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1757
+      }
+    },
+    {
+      "id": "person-028",
+      "canonicalName": "MADAME HONG",
+      "group": "Hong Family",
+      "lifeLabel": "1746–?",
+      "birthYear": 1746,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Lady Hyegyŏng’s younger sister. She married Yi Pogil in 1759, but because her husband’s father was implicated in a seditious plot, she led a difficult life.",
+      "relationToHyegyong": "younger sister",
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-028-principal"
+      ],
+      "activeRange": {
+        "startYear": 1746,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-029",
+      "canonicalName": "MADAME MIN",
+      "group": "Hong Family",
+      "lifeLabel": "dates unknown",
+      "birthYear": null,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hong Nagin’s wife. Born to the illustrious Min of Yŏhung family, she married Hong Nagin in 1745.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-029-principal"
+      ],
+      "activeRange": {
+        "startYear": null,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-030",
+      "canonicalName": "MADAME YI",
+      "group": "Hong Family",
+      "lifeLabel": "1713–1755",
+      "birthYear": 1713,
+      "deathYear": 1755,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Hong Ponghan’s wife and Lady Hyegyŏng’s mother. She was the daughter of Yi Chip, who, at the time of his daughter’s marriage, was serving as Governor of Hwanghae Province.",
+      "relationToHyegyong": "mother",
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-030-principal"
+      ],
+      "activeRange": {
+        "startYear": 1713,
+        "endYear": 1755
+      }
+    },
+    {
+      "id": "person-031",
+      "canonicalName": "PINGAE",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1761",
+      "birthYear": null,
+      "deathYear": 1761,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Sado’s secondary consort. Née Pak, she was given the title Kyŏngbin. She had been a lady-in-waiting to Queen Dowager Inwŏn, and so there was a taboo on Sado’s taking her in. Sado was fond of her and took her in despite the taboo and stern paternal disapproval. She bore him two children, Prince Ŭnjŏn and Princess Ch’ŏnggŭn. In 1761 Sado, in madness, beat her to death.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1761
+      }
+    },
+    {
+      "id": "person-032",
+      "canonicalName": "PRINCE HYOJANG",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1719–1728",
+      "birthYear": 1719,
+      "deathYear": 1728,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yŏngjo’s first heir apparent, but he died in his tenth year.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-032-principal"
+      ],
+      "activeRange": {
+        "startYear": 1719,
+        "endYear": 1728
+      }
+    },
+    {
+      "id": "person-033",
+      "canonicalName": "PRINCE SADO",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1735–1762",
+      "birthYear": 1735,
+      "deathYear": 1762,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yŏngjo’s son born of Lady Sŏnhŭi. Lady Hyegyŏng married him 1744. He was appointed heir apparent in 1736 and Prince-Regent in 1749. He became mad and violent. In 1762, Sado was ordered by Yŏngjo to enter a rice chest in which he died eight days later.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [
+        {
+          "id": "alias-person-033-crown-prince-sado",
+          "text": "Crown Prince Sado",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        }
+      ],
+      "officeTerms": [
+        {
+          "title": "Heir Apparent (Crown Prince)",
+          "startYear": 1736,
+          "endYear": 1762,
+          "confidence": 0.95,
+          "source": "src_principal_people"
+        },
+        {
+          "title": "Prince-Regent",
+          "startYear": 1749,
+          "endYear": 1762,
+          "confidence": 0.9,
+          "source": "src_principal_people"
+        }
+      ],
+      "sourceSegmentIds": [
+        "seg-person-033-principal"
+      ],
+      "activeRange": {
+        "startYear": 1735,
+        "endYear": 1762
+      }
+    },
+    {
+      "id": "person-034",
+      "canonicalName": "PRINCE ŬNŎN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1754–1801",
+      "birthYear": 1754,
+      "deathYear": 1801,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Prince Sado’s son by Lady Yim Sukpin. He was named In. He was accused of involvement in Catholicism and executed in one of the persecutions of Catholics.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-034-principal"
+      ],
+      "activeRange": {
+        "startYear": 1754,
+        "endYear": 1801
+      }
+    },
+    {
+      "id": "person-035",
+      "canonicalName": "PRINCE ŬNSIN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1755–1771",
+      "birthYear": 1755,
+      "deathYear": 1771,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Prince Sado’s son by Lady Yim Sukpin, and so, Ŭnŏn’s younger brother. He was named Chin. Accused of having been involved in a seditious scheme, he was banished to an island in 1771 and soon died there.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-035-principal"
+      ],
+      "activeRange": {
+        "startYear": 1755,
+        "endYear": 1771
+      }
+    },
+    {
+      "id": "person-036",
+      "canonicalName": "PRINCESS CH’ŎNGSŎN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1756–1802",
+      "birthYear": 1756,
+      "deathYear": 1802,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Prince Sado and Lady Hyegyŏng’s second daughter. Married Chŏng Chaehwa, known as Lord Hŭngŭn, in 1766.",
+      "relationToHyegyong": "second daughter",
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-036-principal"
+      ],
+      "activeRange": {
+        "startYear": 1756,
+        "endYear": 1802
+      }
+    },
+    {
+      "id": "person-037",
+      "canonicalName": "PRINCESS CH’ŎNGYŎN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1754–?",
+      "birthYear": 1754,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Prince Sado and Lady Hyegyŏng’s first daughter. She married Kim Kisŏng in 1764.",
+      "relationToHyegyong": "first daughter",
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-037-principal"
+      ],
+      "activeRange": {
+        "startYear": 1754,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-038",
+      "canonicalName": "PRINCESS HWAHYŎP",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1733–1752",
+      "birthYear": 1733,
+      "deathYear": 1752,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yŏngjo’s seventh daughter, born of Lady Sŏnhŭi. She died of measles.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-038-principal"
+      ],
+      "activeRange": {
+        "startYear": 1733,
+        "endYear": 1752
+      }
+    },
+    {
+      "id": "person-039",
+      "canonicalName": "PRINCESS HWAP’YŎNG",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1748",
+      "birthYear": null,
+      "deathYear": 1748,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yongjo’s third daughter, born of Lady Sŏnhŭi. Beloved by her father, she died in childbirth.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1748
+      }
+    },
+    {
+      "id": "person-040",
+      "canonicalName": "PRINCESS HWASUN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1758",
+      "birthYear": null,
+      "deathYear": 1758,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yŏngjo’s second daughter, born of Lady Yi Chŏngbin. She starved herself to death upon her husband’s death.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1758
+      }
+    },
+    {
+      "id": "person-041",
+      "canonicalName": "PRINCESS HWAWAN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1738–?",
+      "birthYear": 1738,
+      "deathYear": null,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yŏngjo’s favorite daughter. She married Chŏng Ch’idal but was widowed young. While her father was alive, she wielded great power. She left the palace when Chŏngjo ascended the throne. In 1778, under official pressure, Chŏngjo stripped her of her royal title and the privileges associated with it and banished her to Kanghwa Island. In 1782 Chŏngjo allowed her to move to a location near the capital.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [
+        {
+          "id": "alias-person-041-madame-chong",
+          "text": "Madame Chŏng",
+          "language": "en",
+          "script": "latin",
+          "type": "title-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.82
+        },
+        {
+          "id": "alias-person-041-madame-chong",
+          "text": "MADAME CHŎNG",
+          "language": "en",
+          "script": "latin",
+          "type": "cross-reference",
+          "startYear": null,
+          "endYear": null,
+          "confidence": 0.95
+        }
+      ],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-041-principal"
+      ],
+      "activeRange": {
+        "startYear": 1738,
+        "endYear": null
+      }
+    },
+    {
+      "id": "person-042",
+      "canonicalName": "QUEEN CHŎNGSŎNG",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1692–1757",
+      "birthYear": 1692,
+      "deathYear": 1757,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Yongjo’s first wife. Sŏ Chongje’s daughter. Estranged from her husband, she was childless.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-042-principal"
+      ],
+      "activeRange": {
+        "startYear": 1692,
+        "endYear": 1757
+      }
+    },
+    {
+      "id": "person-043",
+      "canonicalName": "QUEEN CHŎNGSUN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1745–1805",
+      "birthYear": 1745,
+      "deathYear": 1805,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Kim Han’gu’s daughter and Yŏngjo’s second queen. The royal wedding took place in 1759. For four years from 1800 to 1804, she was the dowager regent to the minor king, Sunjo, during which time Lady Hyegyŏng’s family suffered. Her family were archrivals of the Hong family.",
+      "relationToHyegyong": "family suffered",
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [
+        {
+          "title": "Queen Consort",
+          "startYear": 1759,
+          "endYear": 1776,
+          "confidence": 0.9,
+          "source": "src_principal_people"
+        },
+        {
+          "title": "Dowager Regent",
+          "startYear": 1800,
+          "endYear": 1804,
+          "confidence": 0.95,
+          "source": "src_principal_people"
+        }
+      ],
+      "sourceSegmentIds": [
+        "seg-person-043-principal"
+      ],
+      "activeRange": {
+        "startYear": 1745,
+        "endYear": 1805
+      }
+    },
+    {
+      "id": "person-044",
+      "canonicalName": "QUEEN DOWAGER INWŎN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1687–1757",
+      "birthYear": 1687,
+      "deathYear": 1757,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Sukchong’s third queen. Kim Chusin’s daughter. Yŏngjo was said to have been devoted to this stepmother.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-044-principal"
+      ],
+      "activeRange": {
+        "startYear": 1687,
+        "endYear": 1757
+      }
+    },
+    {
+      "id": "person-045",
+      "canonicalName": "QUEEN HYOSUN",
+      "group": "Yi Royal Family",
+      "lifeLabel": "d. 1751",
+      "birthYear": null,
+      "deathYear": 1751,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "Prince Hyojang’s widow and the daughter of Cho Munmyŏng. She was posthumously given the title of queen in 1776 when her adopted son, Chŏngjo, ascended the throne.",
+      "relationToHyegyong": null,
+      "tier": "B",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [],
+      "activeRange": {
+        "startYear": null,
+        "endYear": 1751
+      }
+    },
+    {
+      "id": "person-046",
+      "canonicalName": "QUEEN HYOŬI",
+      "group": "Yi Royal Family",
+      "lifeLabel": "1753–1821",
+      "birthYear": 1753,
+      "deathYear": 1821,
+      "reignStartYear": null,
+      "reignEndYear": null,
+      "biography": "She married Chŏngjo in 1762. She was the daughter of Kim Simuk.",
+      "relationToHyegyong": null,
+      "tier": "A",
+      "aliases": [],
+      "officeTerms": [],
+      "sourceSegmentIds": [
+        "seg-person-046-principal"
+      ],
+      "activeRange": {
+        "startYear": 1753,
+        "endYear": 1821
+      }
+    }
+  ],
+  "places": [
+    {
+      "id": "pl-changdeok",
+      "name": "Ch'angdŏk Palace",
+      "type": "palace",
+      "summary": "Primary Joseon palace setting for many inner-court events in the memoir narrative.",
+      "modern": "Seoul",
+      "confidence": 0.8
+    },
+    {
+      "id": "pl-changgyeong",
+      "name": "Ch'anggyŏng Palace",
+      "type": "palace",
+      "summary": "Frequent setting for royal residences, mourning spaces, and political tensions.",
+      "modern": "Seoul",
+      "confidence": 0.8
+    },
+    {
+      "id": "pl-choseung-pavilion",
+      "name": "Chŏsŭng Pavilion",
+      "type": "palace-building",
+      "summary": "Prince Sado's early residence, presented as formative in the 1805 memoir.",
+      "modern": "Palace precinct (historic)",
+      "confidence": 0.9
+    },
+    {
+      "id": "pl-hyeollyung",
+      "name": "Hyŏllyung Tomb",
+      "type": "tomb",
+      "summary": "Reinterment site for Prince Sado, central to Jeongjo's filial statecraft.",
+      "modern": "Suwon",
+      "confidence": 0.9
+    },
+    {
+      "id": "pl-hwaseong",
+      "name": "Hwasŏng",
+      "type": "fortress-city",
+      "summary": "Jeongjo's monumental urban and memorial project linked to Sado's tomb.",
+      "modern": "Suwon",
+      "confidence": 0.9
+    },
+    {
+      "id": "pl-kopyeong",
+      "name": "Kop'yŏng-dong",
+      "type": "residence",
+      "summary": "Hyegyong's stated birthplace in the 1795 memoir opening.",
+      "modern": "Seoul (historic district)",
+      "confidence": 0.92
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-1735-birth-hyegyong",
+      "title": "Birth of Lady Hyegyŏng",
+      "startYear": 1735,
+      "endYear": 1735,
+      "eventType": "personal",
+      "summary": "Hyegyong records her birth at Kop'yŏng-dong, opening her life chronology.",
+      "participantIds": [
+        "person-022",
+        "person-011",
+        "person-030"
+      ],
+      "placeId": "pl-kopyeong",
+      "sourceSegmentId": "seg-evt-1735-birth-hyegyong-evidence",
+      "confidence": 0.95,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1744-marriage",
+      "title": "Hyegyŏng selected and married into the palace",
+      "startYear": 1744,
+      "endYear": 1744,
+      "eventType": "dynastic",
+      "summary": "Hyegyong is selected as bride of Crown Prince Sado and enters palace life.",
+      "participantIds": [
+        "person-022",
+        "person-033",
+        "person-021"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1744-marriage-evidence",
+      "confidence": 0.95,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1752-birth-jeongjo",
+      "title": "Birth of Jeongjo",
+      "startYear": 1752,
+      "endYear": 1752,
+      "eventType": "dynastic",
+      "summary": "Prince Sado and Lady Hyegyong's son is born; he later reigns as Jeongjo.",
+      "participantIds": [
+        "person-019",
+        "person-022",
+        "person-033"
+      ],
+      "placeId": "pl-changgyeong",
+      "sourceSegmentId": "seg-evt-1752-birth-jeongjo-evidence",
+      "confidence": 0.94,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1757-double-loss",
+      "title": "Deaths of Queen Chŏngsŏng and Queen Dowager Inwŏn",
+      "startYear": 1757,
+      "endYear": 1757,
+      "eventType": "court",
+      "summary": "Two key senior queens die in close succession, deepening court instability.",
+      "participantIds": [
+        "person-042",
+        "person-044",
+        "person-033",
+        "person-021"
+      ],
+      "placeId": "pl-changgyeong",
+      "sourceSegmentId": "seg-evt-1757-double-loss-evidence",
+      "confidence": 0.89,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1761-pingae-killed",
+      "title": "Pingae killed during Sado's violent decline",
+      "startYear": 1761,
+      "endYear": 1761,
+      "eventType": "court",
+      "summary": "Pingae, Sado's favored consort, is killed amid escalating disorder.",
+      "participantIds": [
+        "person-031",
+        "person-033",
+        "person-022"
+      ],
+      "placeId": "pl-changgyeong",
+      "sourceSegmentId": "seg-evt-1761-pingae-killed-evidence",
+      "confidence": 0.93,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1762-imo-tragedy",
+      "title": "Imo-year tragedy (death of Prince Sado)",
+      "startYear": 1762,
+      "endYear": 1762,
+      "eventType": "dynastic-crisis",
+      "summary": "Sado is ordered into the rice chest and dies; memoir tradition revolves around this rupture.",
+      "participantIds": [
+        "person-033",
+        "person-021",
+        "person-022",
+        "person-019"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1762-imo-tragedy-evidence",
+      "confidence": 0.98,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1776-jeongjo-accession",
+      "title": "Jeongjo accedes to throne",
+      "startYear": 1776,
+      "endYear": 1776,
+      "eventType": "dynastic",
+      "summary": "Following Yŏngjo's death, Jeongjo's accession reshapes factional alignments.",
+      "participantIds": [
+        "person-019",
+        "person-021",
+        "person-022"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1776-jeongjo-accession-evidence",
+      "confidence": 0.95,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1789-reinterment",
+      "title": "Reinterment of Sado at Hyŏllyung",
+      "startYear": 1789,
+      "endYear": 1789,
+      "eventType": "memorial-statecraft",
+      "summary": "Jeongjo moves Sado's tomb, initiating a major filial-political project.",
+      "participantIds": [
+        "person-019",
+        "person-022",
+        "person-033"
+      ],
+      "placeId": "pl-hyeollyung",
+      "sourceSegmentId": "seg-evt-1789-reinterment-evidence",
+      "confidence": 0.94,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1795-hwaseong-visit",
+      "title": "1795 Hwasŏng visit and public filial ceremonies",
+      "startYear": 1795,
+      "endYear": 1795,
+      "eventType": "memorial-statecraft",
+      "summary": "Jeongjo takes Hyegyong to Sado's tomb and stages large commemorative ceremonies.",
+      "participantIds": [
+        "person-019",
+        "person-022"
+      ],
+      "placeId": "pl-hwaseong",
+      "sourceSegmentId": "seg-evt-1795-hwaseong-visit-evidence",
+      "confidence": 0.93,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1800-jeongjo-death",
+      "title": "Death of Jeongjo and accession of Sunjo",
+      "startYear": 1800,
+      "endYear": 1800,
+      "eventType": "dynastic",
+      "summary": "Jeongjo's death creates a regency period and a crisis phase in late memoirs.",
+      "participantIds": [
+        "person-019",
+        "person-020",
+        "person-043",
+        "person-022"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1800-jeongjo-death-evidence",
+      "confidence": 0.95,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1801-execution-hong-nagim",
+      "title": "Execution of Hong Nagim",
+      "startYear": 1801,
+      "endYear": 1801,
+      "eventType": "political-persecution",
+      "summary": "Hyegyong's third brother is executed, central to the 1802 memoir's tone.",
+      "participantIds": [
+        "person-007",
+        "person-022",
+        "person-020"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1801-execution-hong-nagim-evidence",
+      "confidence": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1802-memoir",
+      "title": "Memoir of 1802 composed for future vindication",
+      "startYear": 1802,
+      "endYear": 1802,
+      "eventType": "textual",
+      "summary": "Hyegyong writes to preserve testimony for Sunjo and future redress.",
+      "participantIds": [
+        "person-022",
+        "person-020",
+        "person-023"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1802-memoir-evidence",
+      "confidence": 0.93,
+      "tier": "A"
+    },
+    {
+      "id": "evt-1805-memoir",
+      "title": "Memoir of 1805 finalized",
+      "startYear": 1805,
+      "endYear": 1805,
+      "eventType": "textual",
+      "summary": "Hyegyong's final memoir presents a full account of the 1762 catastrophe.",
+      "participantIds": [
+        "person-022",
+        "person-020",
+        "person-033",
+        "person-021"
+      ],
+      "placeId": "pl-changdeok",
+      "sourceSegmentId": "seg-evt-1805-memoir-evidence",
+      "confidence": 0.94,
+      "tier": "A"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-person-022-person-033-spouse",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-033",
+      "relationType": "spouse",
+      "startYear": 1744,
+      "endYear": 1762,
+      "summary": "Marriage formed the core dynastic tie between the Hong family and the royal line.",
+      "confidence": 0.96,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-022-person-019-mother-son",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-019",
+      "relationType": "mother-son",
+      "startYear": 1752,
+      "endYear": 1800,
+      "summary": "Hyegyong's son Jeongjo became central to her political and personal survival.",
+      "confidence": 0.97,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-022-person-020-grandmother-grandson",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-020",
+      "relationType": "grandmother-grandson",
+      "startYear": 1790,
+      "endYear": 1815,
+      "summary": "Late memoirs are explicitly addressed to Sunjo as dynastic testimony.",
+      "confidence": 0.95,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-022-person-011-daughter-father",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-011",
+      "relationType": "daughter-father",
+      "startYear": 1735,
+      "endYear": 1778,
+      "summary": "Hyegyong repeatedly frames her life through filial ties to her father.",
+      "confidence": 0.96,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-022-person-030-daughter-mother",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-030",
+      "relationType": "daughter-mother",
+      "startYear": 1735,
+      "endYear": 1755,
+      "summary": "Her mother's death becomes a major emotional and narrative turning point.",
+      "confidence": 0.95,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-033-person-021-son-father",
+      "sourcePersonId": "person-033",
+      "targetPersonId": "person-021",
+      "relationType": "son-father",
+      "startYear": 1735,
+      "endYear": 1762,
+      "summary": "The father-son rupture drives the Imo-year catastrophe.",
+      "confidence": 0.96,
+      "sourceSegmentId": "seg-person-033-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-033-person-025-son-mother",
+      "sourcePersonId": "person-033",
+      "targetPersonId": "person-025",
+      "relationType": "son-mother",
+      "startYear": 1735,
+      "endYear": 1762,
+      "summary": "Lady Sŏnhŭi is a key maternal and court figure in Sado-era narrative episodes.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-033-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-019-person-021-grandson-grandfather",
+      "sourcePersonId": "person-019",
+      "targetPersonId": "person-021",
+      "relationType": "grandson-grandfather",
+      "startYear": 1752,
+      "endYear": 1776,
+      "summary": "Jeongjo's succession is shaped by his grandfather's court and decisions.",
+      "confidence": 0.92,
+      "sourceSegmentId": null,
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-019-person-046-spouse",
+      "sourcePersonId": "person-019",
+      "targetPersonId": "person-046",
+      "relationType": "spouse",
+      "startYear": 1762,
+      "endYear": 1800,
+      "summary": "Jeongjo's queen from the Kim lineage appears in succession and court context.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-046-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-019-person-023-consort",
+      "sourcePersonId": "person-019",
+      "targetPersonId": "person-023",
+      "relationType": "consort",
+      "startYear": 1787,
+      "endYear": 1800,
+      "summary": "Lady Kasun bears Sunjo and becomes central in late-dynastic continuity.",
+      "confidence": 0.92,
+      "sourceSegmentId": "seg-person-023-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-020-person-023-son-mother",
+      "sourcePersonId": "person-020",
+      "targetPersonId": "person-023",
+      "relationType": "son-mother",
+      "startYear": 1790,
+      "endYear": 1834,
+      "summary": "Sunjo's maternal line becomes key during minority rule and regency politics.",
+      "confidence": 0.93,
+      "sourceSegmentId": "seg-person-023-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-020-person-043-regency",
+      "sourcePersonId": "person-020",
+      "targetPersonId": "person-043",
+      "relationType": "regency",
+      "startYear": 1800,
+      "endYear": 1804,
+      "summary": "Queen Chŏngsun ruled as dowager regent during Sunjo's minority.",
+      "confidence": 0.96,
+      "sourceSegmentId": "seg-person-043-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-043-person-017-siblings",
+      "sourcePersonId": "person-043",
+      "targetPersonId": "person-017",
+      "relationType": "siblings",
+      "startYear": 1745,
+      "endYear": 1786,
+      "summary": "Kim Kwiju's factional activity is tied to Queen Chŏngsun's family network.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-043-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-041-person-001-adoptive-mother-son",
+      "sourcePersonId": "person-041",
+      "targetPersonId": "person-001",
+      "relationType": "adoptive-mother-son",
+      "startYear": 1750,
+      "endYear": 1776,
+      "summary": "Hugyŏm's power rose through Princess Hwawan's position at court.",
+      "confidence": 0.92,
+      "sourceSegmentId": "seg-person-041-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-011-person-007-father-son",
+      "sourcePersonId": "person-011",
+      "targetPersonId": "person-007",
+      "relationType": "father-son",
+      "startYear": 1741,
+      "endYear": 1778,
+      "summary": "Hong Nagim was Hyegyong's third brother and central in late memoir politics.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-011-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-022-person-007-siblings",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-007",
+      "relationType": "siblings",
+      "startYear": 1741,
+      "endYear": 1801,
+      "summary": "Hong Nagim's execution in 1801 is a major trauma in late memoirs.",
+      "confidence": 0.93,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-022-person-043-political-rivals",
+      "sourcePersonId": "person-022",
+      "targetPersonId": "person-043",
+      "relationType": "political-rivals",
+      "startYear": 1800,
+      "endYear": 1804,
+      "summary": "Hyegyong frames the regency years as a period of intensified persecution.",
+      "confidence": 0.85,
+      "sourceSegmentId": "seg-person-022-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-011-person-019-protector",
+      "sourcePersonId": "person-011",
+      "targetPersonId": "person-019",
+      "relationType": "protector",
+      "startYear": 1762,
+      "endYear": 1778,
+      "summary": "Hong Ponghan appears as a protector of Jeongjo after the 1762 crisis.",
+      "confidence": 0.88,
+      "sourceSegmentId": "seg-person-011-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-006-person-019-confidant",
+      "sourcePersonId": "person-006",
+      "targetPersonId": "person-019",
+      "relationType": "confidant",
+      "startYear": 1776,
+      "endYear": 1781,
+      "summary": "Hong Kugyŏng consolidated early Jeongjo authority before his own fall.",
+      "confidence": 0.9,
+      "sourceSegmentId": "seg-person-006-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-013-person-006-political-collaborators",
+      "sourcePersonId": "person-013",
+      "targetPersonId": "person-006",
+      "relationType": "political-collaborators",
+      "startYear": 1776,
+      "endYear": 1781,
+      "summary": "Kim Chongsu collaborated with and later turned against Hong Kugyŏng.",
+      "confidence": 0.88,
+      "sourceSegmentId": "seg-person-013-principal",
+      "tier": "A"
+    },
+    {
+      "id": "rel-person-017-person-011-political-rivals",
+      "sourcePersonId": "person-017",
+      "targetPersonId": "person-011",
+      "relationType": "political-rivals",
+      "startYear": 1760,
+      "endYear": 1778,
+      "summary": "The Kim-Hong rivalry is a recurrent political axis in the memoirs.",
+      "confidence": 0.86,
+      "sourceSegmentId": "seg-person-011-principal",
+      "tier": "A"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm-person-biography-person-001",
+      "subjectType": "person",
+      "subjectId": "person-001",
+      "predicate": "biography",
+      "value": "Princess Hwawan’s adopted son. He passed examinations in 1766 and wielded power while King Yŏngjo was on the throne. When Chŏngjo came to the throne in 1776, he was executed under a charge of disloyalty to Chŏngjo.",
+      "startYear": 1750,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-001-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-002",
+      "subjectType": "person",
+      "subjectId": "person-002",
+      "predicate": "biography",
+      "value": "Chŏng Ch’idal’s uncle. He had a successful official career that included an appointment as the Minister of the Left. When Prince Sado went to P’yŏngyang, Chŏng was the Governor of P’yŏngan Province.",
+      "startYear": 1706,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-002-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-003",
+      "subjectType": "person",
+      "subjectId": "person-003",
+      "predicate": "biography",
+      "value": "A country scholar. He sent memorials viciously attacking Hong Ponghan, which led to Hong’s dismissal. He was executed.",
+      "startYear": null,
+      "endYear": 1770,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-003-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-004",
+      "subjectType": "person",
+      "subjectId": "person-004",
+      "predicate": "biography",
+      "value": "Lady Hyegyŏng’s paternal grandfather. He was a descendant of Princess Chŏngmyŏng, King Sŏnjo’s daughter, and had a respectable official career that included an appointment as Minister of Rites.",
+      "startYear": 1688,
+      "endYear": 1740,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-004-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-005",
+      "subjectType": "person",
+      "subjectId": "person-005",
+      "predicate": "biography",
+      "value": "Hong Ponghan’s younger brother. After passing the civil service examination in 1753, he served in important posts. He was Minister of the Right in 1774 and Minister of the Left in 1775. He opposed Chŏngjo’s regency in 1775. Upon Chŏngjo’s accession in 1776, he was executed under charges of disloyalty to Chŏngjo.",
+      "startYear": 1722,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-005-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-006",
+      "subjectType": "person",
+      "subjectId": "person-006",
+      "predicate": "biography",
+      "value": "Chŏngjo’s confidant in the early years of Chŏngjo’s reign. A member of another branch of the Hong family, but also a nemesis of Hong Inhan. Though he helped Chŏngjo to consolidate his power, he became too powerful. His schemes to become an affinal relative of the royal house did not succeed, and he died in banishment.",
+      "startYear": 1748,
+      "endYear": 1781,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-006-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-007",
+      "subjectType": "person",
+      "subjectId": "person-007",
+      "predicate": "biography",
+      "value": "Hong Ponghan’s third son. Referred to as the third brother by Lady Hyegyŏng. He passed the civil service examination in 1769 and shortly thereafter retired to private life. In 1801, he was accused of having converted to Catholicism, and executed.",
+      "startYear": 1741,
+      "endYear": 1801,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-007-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-008",
+      "subjectType": "person",
+      "subjectId": "person-008",
+      "predicate": "biography",
+      "value": "Hong Ponghan’s oldest son. Lady Hyegyŏng’s older brother. He had a successful official career.",
+      "startYear": 1730,
+      "endYear": 1777,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-008-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-009",
+      "subjectType": "person",
+      "subjectId": "person-009",
+      "predicate": "biography",
+      "value": "Hong Ponghan’s fourth and youngest son. Referred to as the fourth brother. He never served in office.",
+      "startYear": 1750,
+      "endYear": 1813,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-009-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-010",
+      "subjectType": "person",
+      "subjectId": "person-010",
+      "predicate": "biography",
+      "value": "Hong Ponghan’s second son. Referred to as the second brother. He passed the civil service examination in 1766 but retired from office in 1770 to live in the countryside.",
+      "startYear": 1739,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-010-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-011",
+      "subjectType": "person",
+      "subjectId": "person-011",
+      "predicate": "biography",
+      "value": "Lady Hyegyŏng’s father. With his daughter’s marriage to Crown Prince Sado and his subsequent passing of the civil service examination in 1744, he served in office for almost three decades. After Prince Sado’s death, Hong emerged as Chŏngjo’s protector. In his later years, he repeatedly came under attack for his supposed role in the Sado incident.",
+      "startYear": 1713,
+      "endYear": 1778,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-011-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-office-person-011-1",
+      "subjectType": "person",
+      "subjectId": "person-011",
+      "predicate": "office-term",
+      "value": {
+        "title": "Senior Court Official",
+        "startYear": 1744,
+        "endYear": 1778,
+        "confidence": 0.8,
+        "source": "src_principal_people"
+      },
+      "startYear": 1744,
+      "endYear": 1778,
+      "confidence": {
+        "extraction": 0.8,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-011-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-person-biography-person-012",
+      "subjectType": "person",
+      "subjectId": "person-012",
+      "predicate": "biography",
+      "value": "Hong Nagin’s eldest son, thus the heir to the Hong family. The Memoir 1795 is addressed to him.",
+      "startYear": 1755,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-012-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-013",
+      "subjectType": "person",
+      "subjectId": "person-013",
+      "predicate": "biography",
+      "value": "Related to the Hong family on his maternal side, but on bad terms with them. He worked closely with Hong Kugyŏng. When Hong Kugyŏng fell from power, he turned against him, and thus he was able to remain in office. He eventually rose to high positions, serving as Minister of the Right and Minister of the Left.",
+      "startYear": 1728,
+      "endYear": 1799,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-013-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-014",
+      "subjectType": "person",
+      "subjectId": "person-014",
+      "predicate": "biography",
+      "value": "Kim Han’gu’s brother and ally.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-014-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-015",
+      "subjectType": "person",
+      "subjectId": "person-015",
+      "predicate": "biography",
+      "value": "Queen Chŏngsun’s father, thus Yŏngjo’s father-in-law. He was given the title Lord Ohŭng. The Kim family were archrivals of the Hong family.",
+      "startYear": null,
+      "endYear": 1769,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-015-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-016",
+      "subjectType": "person",
+      "subjectId": "person-016",
+      "predicate": "biography",
+      "value": "Kim Kwiju’s cousin and a political ally. He was banished after Chŏngjo’s accession. During Queen Chŏngsun’s regency (1800–1804), he reached the position of Minister of the Right. But subsequently, he was banished.",
+      "startYear": 1743,
+      "endYear": 1806,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-016-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-017",
+      "subjectType": "person",
+      "subjectId": "person-017",
+      "predicate": "biography",
+      "value": "Queen Chŏngsun’s brother. The most politically active member of the Kyŏngju Kim family, who were in contention with the Hong family. Upon Chŏngjo’s accession in 1776, he was banished to Hŭksan Island. In 1784 he was allowed to settle in Naju, where he died of illness.",
+      "startYear": null,
+      "endYear": 1786,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-017-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-018",
+      "subjectType": "person",
+      "subjectId": "person-018",
+      "predicate": "biography",
+      "value": "Father of Queen Hyoŭi and Chŏngjo’s father-in-law. He was given the title of Lord Ch’ŏngwŏn and served in various posts.",
+      "startYear": 1722,
+      "endYear": 1772,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-018-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-019",
+      "subjectType": "person",
+      "subjectId": "person-019",
+      "predicate": "biography",
+      "value": "Prince Sado’s son born of Lady Hyegyŏng in 1752. Referred to as the Grand Heir, the King, and the late King. Appointed Crown Prince in 1762 after his father’s death, he was appointed Regent in 1775 and succeeded to the throne in 1776 upon the death of Yŏngjo, his grandfather. He died in 1800.",
+      "startYear": 1776,
+      "endYear": 1800,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-019-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-office-person-019-1",
+      "subjectType": "person",
+      "subjectId": "person-019",
+      "predicate": "office-term",
+      "value": {
+        "title": "Crown Prince",
+        "startYear": 1762,
+        "endYear": 1776,
+        "confidence": 0.95,
+        "source": "src_principal_people"
+      },
+      "startYear": 1762,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-019-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-office-person-019-2",
+      "subjectType": "person",
+      "subjectId": "person-019",
+      "predicate": "office-term",
+      "value": {
+        "title": "Regent",
+        "startYear": 1775,
+        "endYear": 1776,
+        "confidence": 0.92,
+        "source": "src_principal_people"
+      },
+      "startYear": 1775,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.92,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-019-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-office-person-019-3",
+      "subjectType": "person",
+      "subjectId": "person-019",
+      "predicate": "office-term",
+      "value": {
+        "title": "King of Joseon",
+        "startYear": 1776,
+        "endYear": 1800,
+        "confidence": 0.95,
+        "source": "src_principal_people"
+      },
+      "startYear": 1776,
+      "endYear": 1800,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-019-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-person-biography-person-020",
+      "subjectType": "person",
+      "subjectId": "person-020",
+      "predicate": "biography",
+      "value": "Lady Hyegyŏng’s grandson and King Chŏngjo’s son born of Lady Kasun in 1790. Three of Lady Hyegyŏng’s memoirs, The Memoir of 1801, The Memoir of 1802, and The Memoir of 1805 were written for him. Referred to as the young King or the present King.",
+      "startYear": 1800,
+      "endYear": 1834,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-020-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-office-person-020-1",
+      "subjectType": "person",
+      "subjectId": "person-020",
+      "predicate": "office-term",
+      "value": {
+        "title": "King of Joseon",
+        "startYear": 1800,
+        "endYear": 1834,
+        "confidence": 0.95,
+        "source": "src_principal_people"
+      },
+      "startYear": 1800,
+      "endYear": 1834,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-020-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-person-biography-person-021",
+      "subjectType": "person",
+      "subjectId": "person-021",
+      "predicate": "biography",
+      "value": "Sukchong’s son born of Lady Ch’oe Sukpin in 1694. Referred to as His Majesty. Appointed heir apparent in 1721, he succeeded his brother to the throne in 1724. A brilliant but tempestuous ruler. Sado’s father.",
+      "startYear": 1724,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-021-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-office-person-021-1",
+      "subjectType": "person",
+      "subjectId": "person-021",
+      "predicate": "office-term",
+      "value": {
+        "title": "King of Joseon",
+        "startYear": 1724,
+        "endYear": 1776,
+        "confidence": 0.95,
+        "source": "src_principal_people"
+      },
+      "startYear": 1724,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-021-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-person-biography-person-022",
+      "subjectType": "person",
+      "subjectId": "person-022",
+      "predicate": "biography",
+      "value": "The author of the memoirs. Hong Ponghan’s daughter. She married Prince Sado in 1744 and bore him Chŏngjo and the Princesses Ch’ŏngyŏn and Ch’ŏngsŏn.",
+      "startYear": 1735,
+      "endYear": 1815,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-office-person-022-1",
+      "subjectType": "person",
+      "subjectId": "person-022",
+      "predicate": "office-term",
+      "value": {
+        "title": "Crown Princess Consort",
+        "startYear": 1744,
+        "endYear": 1762,
+        "confidence": 0.95,
+        "source": "src_principal_people"
+      },
+      "startYear": 1744,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-person-biography-person-023",
+      "subjectType": "person",
+      "subjectId": "person-023",
+      "predicate": "biography",
+      "value": "King Chŏngjo’s secondary consort and King Sunjo’s mother. Unlike most secondary consorts, she was the daughter of a high-ranking official. Her father, Pak Chunwŏn, served as Minister of Justice. She was selected and brought into palace in 1787 through a formal procedure.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-023-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-024",
+      "subjectType": "person",
+      "subjectId": "person-024",
+      "predicate": "biography",
+      "value": "Yŏngjo’s secondary consort. She gave birth to the Princesses Hwanyŏng and Hwagil in 1753 and 1754. She was thought to have engaged in schemes to eliminate the heir apparent, Chŏngjo, and thus, upon Chŏngjo’s accession in 1776, she was executed.",
+      "startYear": null,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-024-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-025",
+      "subjectType": "person",
+      "subjectId": "person-025",
+      "predicate": "biography",
+      "value": "Yŏngjo’s secondary consort. She bore Prince Sado and several princesses. She is reported to have urged Yŏngjo to kill Sado when Sado became very violent.",
+      "startYear": null,
+      "endYear": 1764,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-025-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-026",
+      "subjectType": "person",
+      "subjectId": "person-026",
+      "predicate": "biography",
+      "value": "Chŏng Chaehwa. The husband of Princess Ch’ŏngsŏn and the brother-in-law of Chŏngjo. He is known as a fun-loving person who led Chŏngjo a bit astray in his adolescence and before he ascended to the throne. This event led to difficulties between Hong Ponghan and his grandson, Chŏngjo.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-026-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-027",
+      "subjectType": "person",
+      "subjectId": "person-027",
+      "predicate": "biography",
+      "value": "Chŏng Ch’idal. Princess Hwawan’s husband.",
+      "startYear": null,
+      "endYear": 1757,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-027-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-028",
+      "subjectType": "person",
+      "subjectId": "person-028",
+      "predicate": "biography",
+      "value": "Lady Hyegyŏng’s younger sister. She married Yi Pogil in 1759, but because her husband’s father was implicated in a seditious plot, she led a difficult life.",
+      "startYear": 1746,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-028-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-029",
+      "subjectType": "person",
+      "subjectId": "person-029",
+      "predicate": "biography",
+      "value": "Hong Nagin’s wife. Born to the illustrious Min of Yŏhung family, she married Hong Nagin in 1745.",
+      "startYear": null,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-029-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-030",
+      "subjectType": "person",
+      "subjectId": "person-030",
+      "predicate": "biography",
+      "value": "Hong Ponghan’s wife and Lady Hyegyŏng’s mother. She was the daughter of Yi Chip, who, at the time of his daughter’s marriage, was serving as Governor of Hwanghae Province.",
+      "startYear": 1713,
+      "endYear": 1755,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-030-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-031",
+      "subjectType": "person",
+      "subjectId": "person-031",
+      "predicate": "biography",
+      "value": "Sado’s secondary consort. Née Pak, she was given the title Kyŏngbin. She had been a lady-in-waiting to Queen Dowager Inwŏn, and so there was a taboo on Sado’s taking her in. Sado was fond of her and took her in despite the taboo and stern paternal disapproval. She bore him two children, Prince Ŭnjŏn and Princess Ch’ŏnggŭn. In 1761 Sado, in madness, beat her to death.",
+      "startYear": null,
+      "endYear": 1761,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-031-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-032",
+      "subjectType": "person",
+      "subjectId": "person-032",
+      "predicate": "biography",
+      "value": "Yŏngjo’s first heir apparent, but he died in his tenth year.",
+      "startYear": 1719,
+      "endYear": 1728,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-032-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-033",
+      "subjectType": "person",
+      "subjectId": "person-033",
+      "predicate": "biography",
+      "value": "Yŏngjo’s son born of Lady Sŏnhŭi. Lady Hyegyŏng married him 1744. He was appointed heir apparent in 1736 and Prince-Regent in 1749. He became mad and violent. In 1762, Sado was ordered by Yŏngjo to enter a rice chest in which he died eight days later.",
+      "startYear": 1735,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-033-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-office-person-033-1",
+      "subjectType": "person",
+      "subjectId": "person-033",
+      "predicate": "office-term",
+      "value": {
+        "title": "Heir Apparent (Crown Prince)",
+        "startYear": 1736,
+        "endYear": 1762,
+        "confidence": 0.95,
+        "source": "src_principal_people"
+      },
+      "startYear": 1736,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-033-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-office-person-033-2",
+      "subjectType": "person",
+      "subjectId": "person-033",
+      "predicate": "office-term",
+      "value": {
+        "title": "Prince-Regent",
+        "startYear": 1749,
+        "endYear": 1762,
+        "confidence": 0.9,
+        "source": "src_principal_people"
+      },
+      "startYear": 1749,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-033-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-person-biography-person-034",
+      "subjectType": "person",
+      "subjectId": "person-034",
+      "predicate": "biography",
+      "value": "Prince Sado’s son by Lady Yim Sukpin. He was named In. He was accused of involvement in Catholicism and executed in one of the persecutions of Catholics.",
+      "startYear": 1754,
+      "endYear": 1801,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-034-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-035",
+      "subjectType": "person",
+      "subjectId": "person-035",
+      "predicate": "biography",
+      "value": "Prince Sado’s son by Lady Yim Sukpin, and so, Ŭnŏn’s younger brother. He was named Chin. Accused of having been involved in a seditious scheme, he was banished to an island in 1771 and soon died there.",
+      "startYear": 1755,
+      "endYear": 1771,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-035-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-036",
+      "subjectType": "person",
+      "subjectId": "person-036",
+      "predicate": "biography",
+      "value": "Prince Sado and Lady Hyegyŏng’s second daughter. Married Chŏng Chaehwa, known as Lord Hŭngŭn, in 1766.",
+      "startYear": 1756,
+      "endYear": 1802,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-036-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-037",
+      "subjectType": "person",
+      "subjectId": "person-037",
+      "predicate": "biography",
+      "value": "Prince Sado and Lady Hyegyŏng’s first daughter. She married Kim Kisŏng in 1764.",
+      "startYear": 1754,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-037-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-038",
+      "subjectType": "person",
+      "subjectId": "person-038",
+      "predicate": "biography",
+      "value": "Yŏngjo’s seventh daughter, born of Lady Sŏnhŭi. She died of measles.",
+      "startYear": 1733,
+      "endYear": 1752,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-038-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-039",
+      "subjectType": "person",
+      "subjectId": "person-039",
+      "predicate": "biography",
+      "value": "Yongjo’s third daughter, born of Lady Sŏnhŭi. Beloved by her father, she died in childbirth.",
+      "startYear": null,
+      "endYear": 1748,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-039-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-040",
+      "subjectType": "person",
+      "subjectId": "person-040",
+      "predicate": "biography",
+      "value": "Yŏngjo’s second daughter, born of Lady Yi Chŏngbin. She starved herself to death upon her husband’s death.",
+      "startYear": null,
+      "endYear": 1758,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-040-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-041",
+      "subjectType": "person",
+      "subjectId": "person-041",
+      "predicate": "biography",
+      "value": "Yŏngjo’s favorite daughter. She married Chŏng Ch’idal but was widowed young. While her father was alive, she wielded great power. She left the palace when Chŏngjo ascended the throne. In 1778, under official pressure, Chŏngjo stripped her of her royal title and the privileges associated with it and banished her to Kanghwa Island. In 1782 Chŏngjo allowed her to move to a location near the capital.",
+      "startYear": 1738,
+      "endYear": null,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-041-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-042",
+      "subjectType": "person",
+      "subjectId": "person-042",
+      "predicate": "biography",
+      "value": "Yongjo’s first wife. Sŏ Chongje’s daughter. Estranged from her husband, she was childless.",
+      "startYear": 1692,
+      "endYear": 1757,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-042-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-043",
+      "subjectType": "person",
+      "subjectId": "person-043",
+      "predicate": "biography",
+      "value": "Kim Han’gu’s daughter and Yŏngjo’s second queen. The royal wedding took place in 1759. For four years from 1800 to 1804, she was the dowager regent to the minor king, Sunjo, during which time Lady Hyegyŏng’s family suffered. Her family were archrivals of the Hong family.",
+      "startYear": 1745,
+      "endYear": 1805,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-043-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-office-person-043-1",
+      "subjectType": "person",
+      "subjectId": "person-043",
+      "predicate": "office-term",
+      "value": {
+        "title": "Queen Consort",
+        "startYear": 1759,
+        "endYear": 1776,
+        "confidence": 0.9,
+        "source": "src_principal_people"
+      },
+      "startYear": 1759,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-043-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-office-person-043-2",
+      "subjectType": "person",
+      "subjectId": "person-043",
+      "predicate": "office-term",
+      "value": {
+        "title": "Dowager Regent",
+        "startYear": 1800,
+        "endYear": 1804,
+        "confidence": 0.95,
+        "source": "src_principal_people"
+      },
+      "startYear": 1800,
+      "endYear": 1804,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-043-principal",
+      "notes": "Seed office term for timeline exploration."
+    },
+    {
+      "id": "clm-person-biography-person-044",
+      "subjectType": "person",
+      "subjectId": "person-044",
+      "predicate": "biography",
+      "value": "Sukchong’s third queen. Kim Chusin’s daughter. Yŏngjo was said to have been devoted to this stepmother.",
+      "startYear": 1687,
+      "endYear": 1757,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-044-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-045",
+      "subjectType": "person",
+      "subjectId": "person-045",
+      "predicate": "biography",
+      "value": "Prince Hyojang’s widow and the daughter of Cho Munmyŏng. She was posthumously given the title of queen in 1776 when her adopted son, Chŏngjo, ascended the throne.",
+      "startYear": null,
+      "endYear": 1751,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-045-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-person-biography-person-046",
+      "subjectType": "person",
+      "subjectId": "person-046",
+      "predicate": "biography",
+      "value": "She married Chŏngjo in 1762. She was the daughter of Kim Simuk.",
+      "startYear": 1753,
+      "endYear": 1821,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.95,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-046-principal",
+      "notes": "Auto-extracted from Principal Persons list."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-033-spouse",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-033-spouse",
+      "predicate": "spouse",
+      "value": "Marriage formed the core dynastic tie between the Hong family and the royal line.",
+      "startYear": 1744,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.96,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-019-mother-son",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-019-mother-son",
+      "predicate": "mother-son",
+      "value": "Hyegyong's son Jeongjo became central to her political and personal survival.",
+      "startYear": 1752,
+      "endYear": 1800,
+      "confidence": {
+        "extraction": 0.97,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-020-grandmother-grandson",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-020-grandmother-grandson",
+      "predicate": "grandmother-grandson",
+      "value": "Late memoirs are explicitly addressed to Sunjo as dynastic testimony.",
+      "startYear": 1790,
+      "endYear": 1815,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-011-daughter-father",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-011-daughter-father",
+      "predicate": "daughter-father",
+      "value": "Hyegyong repeatedly frames her life through filial ties to her father.",
+      "startYear": 1735,
+      "endYear": 1778,
+      "confidence": {
+        "extraction": 0.96,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-030-daughter-mother",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-030-daughter-mother",
+      "predicate": "daughter-mother",
+      "value": "Her mother's death becomes a major emotional and narrative turning point.",
+      "startYear": 1735,
+      "endYear": 1755,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-033-person-021-son-father",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-033-person-021-son-father",
+      "predicate": "son-father",
+      "value": "The father-son rupture drives the Imo-year catastrophe.",
+      "startYear": 1735,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.96,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-033-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-033-person-025-son-mother",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-033-person-025-son-mother",
+      "predicate": "son-mother",
+      "value": "Lady Sŏnhŭi is a key maternal and court figure in Sado-era narrative episodes.",
+      "startYear": 1735,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-033-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-019-person-021-grandson-grandfather",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-021-grandson-grandfather",
+      "predicate": "grandson-grandfather",
+      "value": "Jeongjo's succession is shaped by his grandfather's court and decisions.",
+      "startYear": 1752,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.92,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": null,
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-019-person-046-spouse",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-046-spouse",
+      "predicate": "spouse",
+      "value": "Jeongjo's queen from the Kim lineage appears in succession and court context.",
+      "startYear": 1762,
+      "endYear": 1800,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-046-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-019-person-023-consort",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-019-person-023-consort",
+      "predicate": "consort",
+      "value": "Lady Kasun bears Sunjo and becomes central in late-dynastic continuity.",
+      "startYear": 1787,
+      "endYear": 1800,
+      "confidence": {
+        "extraction": 0.92,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-023-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-020-person-023-son-mother",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-020-person-023-son-mother",
+      "predicate": "son-mother",
+      "value": "Sunjo's maternal line becomes key during minority rule and regency politics.",
+      "startYear": 1790,
+      "endYear": 1834,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-023-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-020-person-043-regency",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-020-person-043-regency",
+      "predicate": "regency",
+      "value": "Queen Chŏngsun ruled as dowager regent during Sunjo's minority.",
+      "startYear": 1800,
+      "endYear": 1804,
+      "confidence": {
+        "extraction": 0.96,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-043-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-043-person-017-siblings",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-043-person-017-siblings",
+      "predicate": "siblings",
+      "value": "Kim Kwiju's factional activity is tied to Queen Chŏngsun's family network.",
+      "startYear": 1745,
+      "endYear": 1786,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-043-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-041-person-001-adoptive-mother-son",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-041-person-001-adoptive-mother-son",
+      "predicate": "adoptive-mother-son",
+      "value": "Hugyŏm's power rose through Princess Hwawan's position at court.",
+      "startYear": 1750,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.92,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-041-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-011-person-007-father-son",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-011-person-007-father-son",
+      "predicate": "father-son",
+      "value": "Hong Nagim was Hyegyong's third brother and central in late memoir politics.",
+      "startYear": 1741,
+      "endYear": 1778,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-011-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-007-siblings",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-007-siblings",
+      "predicate": "siblings",
+      "value": "Hong Nagim's execution in 1801 is a major trauma in late memoirs.",
+      "startYear": 1741,
+      "endYear": 1801,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-022-person-043-political-rivals",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-022-person-043-political-rivals",
+      "predicate": "political-rivals",
+      "value": "Hyegyong frames the regency years as a period of intensified persecution.",
+      "startYear": 1800,
+      "endYear": 1804,
+      "confidence": {
+        "extraction": 0.85,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-022-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-011-person-019-protector",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-011-person-019-protector",
+      "predicate": "protector",
+      "value": "Hong Ponghan appears as a protector of Jeongjo after the 1762 crisis.",
+      "startYear": 1762,
+      "endYear": 1778,
+      "confidence": {
+        "extraction": 0.88,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-011-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-006-person-019-confidant",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-006-person-019-confidant",
+      "predicate": "confidant",
+      "value": "Hong Kugyŏng consolidated early Jeongjo authority before his own fall.",
+      "startYear": 1776,
+      "endYear": 1781,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-006-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-013-person-006-political-collaborators",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-013-person-006-political-collaborators",
+      "predicate": "political-collaborators",
+      "value": "Kim Chongsu collaborated with and later turned against Hong Kugyŏng.",
+      "startYear": 1776,
+      "endYear": 1781,
+      "confidence": {
+        "extraction": 0.88,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-013-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-relationship-rel-person-017-person-011-political-rivals",
+      "subjectType": "relationship",
+      "subjectId": "rel-person-017-person-011-political-rivals",
+      "predicate": "political-rivals",
+      "value": "The Kim-Hong rivalry is a recurrent political axis in the memoirs.",
+      "startYear": 1760,
+      "endYear": 1778,
+      "confidence": {
+        "extraction": 0.86,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-person-011-principal",
+      "notes": "Manual seed relation; validate with chapter evidence during review."
+    },
+    {
+      "id": "clm-event-evt-1735-birth-hyegyong",
+      "subjectType": "event",
+      "subjectId": "evt-1735-birth-hyegyong",
+      "predicate": "event-summary",
+      "value": "Hyegyong records her birth at Kop'yŏng-dong, opening her life chronology.",
+      "startYear": 1735,
+      "endYear": 1735,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1735-birth-hyegyong-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1744-marriage",
+      "subjectType": "event",
+      "subjectId": "evt-1744-marriage",
+      "predicate": "event-summary",
+      "value": "Hyegyong is selected as bride of Crown Prince Sado and enters palace life.",
+      "startYear": 1744,
+      "endYear": 1744,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1744-marriage-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1752-birth-jeongjo",
+      "subjectType": "event",
+      "subjectId": "evt-1752-birth-jeongjo",
+      "predicate": "event-summary",
+      "value": "Prince Sado and Lady Hyegyong's son is born; he later reigns as Jeongjo.",
+      "startYear": 1752,
+      "endYear": 1752,
+      "confidence": {
+        "extraction": 0.94,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1752-birth-jeongjo-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1757-double-loss",
+      "subjectType": "event",
+      "subjectId": "evt-1757-double-loss",
+      "predicate": "event-summary",
+      "value": "Two key senior queens die in close succession, deepening court instability.",
+      "startYear": 1757,
+      "endYear": 1757,
+      "confidence": {
+        "extraction": 0.89,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1757-double-loss-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1761-pingae-killed",
+      "subjectType": "event",
+      "subjectId": "evt-1761-pingae-killed",
+      "predicate": "event-summary",
+      "value": "Pingae, Sado's favored consort, is killed amid escalating disorder.",
+      "startYear": 1761,
+      "endYear": 1761,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1761-pingae-killed-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1762-imo-tragedy",
+      "subjectType": "event",
+      "subjectId": "evt-1762-imo-tragedy",
+      "predicate": "event-summary",
+      "value": "Sado is ordered into the rice chest and dies; memoir tradition revolves around this rupture.",
+      "startYear": 1762,
+      "endYear": 1762,
+      "confidence": {
+        "extraction": 0.98,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1762-imo-tragedy-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1776-jeongjo-accession",
+      "subjectType": "event",
+      "subjectId": "evt-1776-jeongjo-accession",
+      "predicate": "event-summary",
+      "value": "Following Yŏngjo's death, Jeongjo's accession reshapes factional alignments.",
+      "startYear": 1776,
+      "endYear": 1776,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1776-jeongjo-accession-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1789-reinterment",
+      "subjectType": "event",
+      "subjectId": "evt-1789-reinterment",
+      "predicate": "event-summary",
+      "value": "Jeongjo moves Sado's tomb, initiating a major filial-political project.",
+      "startYear": 1789,
+      "endYear": 1789,
+      "confidence": {
+        "extraction": 0.94,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1789-reinterment-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1795-hwaseong-visit",
+      "subjectType": "event",
+      "subjectId": "evt-1795-hwaseong-visit",
+      "predicate": "event-summary",
+      "value": "Jeongjo takes Hyegyong to Sado's tomb and stages large commemorative ceremonies.",
+      "startYear": 1795,
+      "endYear": 1795,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1795-hwaseong-visit-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1800-jeongjo-death",
+      "subjectType": "event",
+      "subjectId": "evt-1800-jeongjo-death",
+      "predicate": "event-summary",
+      "value": "Jeongjo's death creates a regency period and a crisis phase in late memoirs.",
+      "startYear": 1800,
+      "endYear": 1800,
+      "confidence": {
+        "extraction": 0.95,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1800-jeongjo-death-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1801-execution-hong-nagim",
+      "subjectType": "event",
+      "subjectId": "evt-1801-execution-hong-nagim",
+      "predicate": "event-summary",
+      "value": "Hyegyong's third brother is executed, central to the 1802 memoir's tone.",
+      "startYear": 1801,
+      "endYear": 1801,
+      "confidence": {
+        "extraction": 0.9,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1801-execution-hong-nagim-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1802-memoir",
+      "subjectType": "event",
+      "subjectId": "evt-1802-memoir",
+      "predicate": "event-summary",
+      "value": "Hyegyong writes to preserve testimony for Sunjo and future redress.",
+      "startYear": 1802,
+      "endYear": 1802,
+      "confidence": {
+        "extraction": 0.93,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1802-memoir-evidence",
+      "notes": "Tier A seed chronology claim."
+    },
+    {
+      "id": "clm-event-evt-1805-memoir",
+      "subjectType": "event",
+      "subjectId": "evt-1805-memoir",
+      "predicate": "event-summary",
+      "value": "Hyegyong's final memoir presents a full account of the 1762 catastrophe.",
+      "startYear": 1805,
+      "endYear": 1805,
+      "confidence": {
+        "extraction": 0.94,
+        "resolution": 0.9,
+        "historical": "memoir-edition"
+      },
+      "status": "pending",
+      "sourceSegmentId": "seg-evt-1805-memoir-evidence",
+      "notes": "Tier A seed chronology claim."
+    }
+  ]
+}
