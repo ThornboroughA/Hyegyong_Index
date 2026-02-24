@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "0.2.0",
     "dataset": "hyegyong-tier-b",
-    "generatedAt": "2026-02-24T12:08:37.724171+00:00",
+    "generatedAt": "2026-02-24T12:24:59.845634+00:00",
     "generator": "scripts/build_tier_b_data.py",
     "sourceEdition": "The Memoirs of Lady Hyegyong, translated by JaHyun Kim Haboush (University of California Press, 1996; reissued 2013).",
     "languageCanonical": "en",
@@ -11,10 +11,10 @@
     ]
   },
   "yearRange": {
-    "startYear": 1689,
-    "endYear": 1805,
+    "startYear": 1735,
+    "endYear": 1815,
     "focusStart": 1735,
-    "focusEnd": 1805
+    "focusEnd": 1815
   },
   "yearDensity": [
     {

@@ -945,6 +945,42 @@ def compute_active_range(person: Dict[str, Any]) -> Dict[str, Optional[int]]:
     return {"startYear": start, "endYear": end}
 
 
+def build_timeline_year_range(people: List[Dict[str, Any]], year_density: List[Dict[str, Any]]) -> Dict[str, int]:
+    years = [row["year"] for row in year_density if isinstance(row.get("year"), int)]
+    fallback_start = min(years) if years else 1689
+    fallback_end = max(years) if years else 1805
+
+    hyegyong = next(
+        (
+            person
+            for person in people
+            if normalize_text(str(person.get("canonicalName", ""))) == normalize_text("LADY HYEGYŎNG")
+        ),
+        None,
+    )
+
+    start_year = fallback_start
+    end_year = fallback_end
+    if hyegyong:
+        birth_year = hyegyong.get("birthYear")
+        death_year = hyegyong.get("deathYear")
+        if isinstance(birth_year, int):
+            start_year = birth_year
+        if isinstance(death_year, int):
+            end_year = death_year
+
+    if start_year > end_year:
+        start_year = fallback_start
+        end_year = fallback_end
+
+    return {
+        "startYear": start_year,
+        "endYear": end_year,
+        "focusStart": start_year,
+        "focusEnd": end_year,
+    }
+
+
 def build_relationships(
     people: List[Dict[str, Any]], source_segments: List[Dict[str, Any]]
 ) -> List[Dict[str, Any]]:
@@ -1154,13 +1190,7 @@ def main() -> None:
     events, source_segments = build_events(people, source_segments, places)
     claims = build_claims(people, relationships, events)
 
-    years = [row["year"] for row in year_density]
-    year_range = {
-        "startYear": min(years) if years else 1689,
-        "endYear": max(years) if years else 1805,
-        "focusStart": 1735,
-        "focusEnd": 1805,
-    }
+    year_range = build_timeline_year_range(people, year_density)
 
     dataset = {
         "meta": {

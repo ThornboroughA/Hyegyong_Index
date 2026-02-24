@@ -2698,7 +2698,7 @@ function App() {
                 className={`year-bar ${active ? 'active' : ''}`}
                 style={{ height: `${14 + (row.count / timelineDensityMax) * 50}px` }}
                 title={`${row.year} · mentions: ${row.count}`}
-                onClick={() => setSelectedYear(row.year)}
+                onClick={() => setSelectedYear(clamp(row.year, yearMin, yearMax))}
               />
             );
           })}
